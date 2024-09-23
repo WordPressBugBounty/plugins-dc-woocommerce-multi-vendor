@@ -1,0 +1,1 @@
+# plugins-dc-woocommerce-multi-vendor
