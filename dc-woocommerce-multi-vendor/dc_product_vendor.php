@@ -4,7 +4,7 @@
  * Plugin URI: https://multivendorx.com/
  * Description: A Free Extension That Transforms Your WooCommerce Site into a Marketplace.
  * Author: MultiVendorX
- * Version: 4.2.10
+ * Version: 4.2.11
  * Author URI: https://multivendorx.com/
  * Requires at least: 5.4
  * Tested up to: 6.7.1
@@ -82,7 +82,8 @@ if (!class_exists('MVX') && WC_Dependencies_Product_Vendor::is_woocommerce_activ
     function mvx_admin_notice() {
         ?>
         <div class="error">
-            <p><?php _e('MultiVendorX plugin requires <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a> plugins to be active! and <a href='. admin_url('options-permalink.php') .'>permalink</a> structure should be configured', 'multivendorx'); ?></p>
+            <p><?php printf(__( 'MultiVendorX plugin requires <a href="%s">WooCommerce</a> plugin to be active! and <a href="%s">permalink</a> structure should be configured', 'multivendorx'), 'https://wordpress.org/plugins/woocommerce/', admin_url('options-permalink.php') );
+            ?></p>
         </div>
         <?php
     }

@@ -5,7 +5,7 @@ Donate link: http://multivendorx.com/donate/
 Requires at least: 5.4
 Tested up to: 6.7.1
 Requires PHP: 8.0
-Stable tag: 4.2.10
+Stable tag: 4.2.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -203,6 +203,10 @@ Ans. Obviously, you can! Join in on our [GitHub repository](https://github.com/m
 14. Show Multiple Seller in Single Product.
 
 == Changelog ==
+
+= 4.2.11 - 2024-12-03 =
+* Fix       - Translation issue fixed.
+* Updated   - Language file.
 
 = 4.2.10 - 2024-12-03 =
 * Fix       - Suborder remove from mobile app #876.
