@@ -1,11 +1,11 @@
-=== MultiVendorX - The Ultimate WooCommerce Multivendor Marketplace Solution  ===
+=== MultiVendorX - Empower Your WooCommerce Store with a Dynamic Multivendor Marketplace – Build the Next Amazon, eBay, Etsy  ===
 Contributors: wcmp, purnendu
 Tags: multi seller, multi vendor marketplace, woocommerce multivendor marketplace, multi seller store, best marketplace plugin
 Donate link: http://multivendorx.com/donate/
 Requires at least: 5.4
-Tested up to: 6.7.1
+Tested up to: 6.7.2
 Requires PHP: 8.0
-Stable tag: 4.2.16
+Stable tag: 4.2.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Transform your WooCommerce store into thriving marketplace with MultiVendorX - a
 
 == Description ==
 
-= Leading MULTIVENDOR MARKETPLACE PLUGIN - BASED ON WOOCOMMERCE POWERED BY WORDPRESS =
+= Marketplace for WordPress: The Advanced Multivendor plugin for WooCommerce =
 
 **MultiVendorX** is a powerful WordPress multivendor plugin seamlessly integrated with WooCommerce, empowering you to build a full-fledged multi-vendor marketplace. With **MultiVendorX**, you can effortlessly bring your dream marketplace to life in just minutes, with minimal setup. Ideal for entrepreneurs aiming to establish their own multivendor platform reminiscent of popular marketplaces like  <strong> Amazon,  eBay, Etsy,  Airbnb , or Flipkart. </strong>
 
@@ -203,6 +203,13 @@ Ans. Obviously, you can! Join in on our [GitHub repository](https://github.com/m
 14. Show Multiple Seller in Single Product.
 
 == Changelog ==
+
+= 4.2.17 - 2025-02-25 =
+* Added     - Compatibility with WordPress 6.7.2.
+* Added     - Compatibility of WooCommerce 9.6.2.
+* Added     - Commission table improvements #857.
+* Fixed     - Question & Answer module structure update.
+* Fixed     - Issue with Elementor widget loading continuously in latest Elementor and Elementor Pro #908.
 
 = 4.2.16 - 2025-02-11 =
 * Added     - Compatibility of WooCommerce 9.6.1.
