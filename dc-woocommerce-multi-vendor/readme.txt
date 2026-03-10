@@ -5,7 +5,7 @@ Donate link: http://multivendorx.com/donate/
 Requires at least: 6.0
 Tested up to: 6.9.1
 Requires PHP: 8.0
-Stable tag: 4.2.41
+Stable tag: 4.2.42
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -243,6 +243,9 @@ Ans. Obviously, you can! Join in on our [GitHub repository](https://github.com/m
 14. Show Multiple Seller in Single Product.
 
 == Changelog ==
+
+= 4.2.42 - 2026-03-10 =
+* Added     - Compatibility of WooCommerce 10.5.3.
 
 = 4.2.41 - 2026-02-10 =
 * Added     - Compatibility with WordPress 6.9.1.
