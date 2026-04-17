@@ -1,0 +1,1 @@
+(()=>{"use strict";(0,window.wp.blocks.registerBlockType)("multivendorx/store-provider",{edit:()=>null,save:()=>null})})();

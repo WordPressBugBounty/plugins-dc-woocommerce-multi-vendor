@@ -1,11 +1,11 @@
-=== MultiVendorX - WooCommerce Multivendor Marketplace Solutions ===
+=== MultiVendorX - WooCommerce Multivendor Marketplace AI Powered Solutions ===
 Contributors: wcmp, purnendu
 Tags: marketplace, WooCommerce marketplace, multi vendor, multivendor, multivendor marketplace
 Donate link: http://multivendorx.com/donate/
-Requires at least: 6.0
-Tested up to: 6.9.1
+Requires at least: 6.3
+Tested up to: 6.9.4
 Requires PHP: 8.0
-Stable tag: 4.2.42
+Stable tag: 5.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ With fast setup, seamless vendor management, and built-in commission control, Mu
 * **Regular Updates** for security fixes and better user experience
 * A fabulous **Support Team**
 
-      [Try Our Demo](https://multivendordemo.com/mvx/wp-admin) | [Support](https://multivendorx.com/support-forum/) | [Features](https://multivendorx.com/features/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg) | [Pro](https://multivendorx.com/pricing/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg) | [Videos](https://www.youtube.com/@MultiVendorX/videos) | [Docs](https://multivendorx.com/get-help/knowledgebase/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg)
+      [Try Our Demo](https://multivendordemo.com/multivendorx/wp-admin) | [Support](https://multivendorx.com/support-forum/) | [Features](https://multivendorx.com/features/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg) | [Pro](https://multivendorx.com/pricing/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg) | [Videos](https://www.youtube.com/@MultiVendorX/videos) | [Docs](https://multivendorx.com/get-help/knowledgebase/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg)
 
 = Marketplaces You Can Set Up with MultiVendorX: = 
 * 🛍️ [Niche Marketplace](https://multivendorx.com/niche-marketplace/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg) like Myntra, Nykaa
@@ -89,7 +89,7 @@ With fast setup, seamless vendor management, and built-in commission control, Mu
 Discover everything **MultiVendorX's Features** [here](https://multivendorx.com/features/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg) offers to power your multivendor marketplace.
 
 
-👉 Official Demo Link: Try out Free and Pro [**MultiVendorX**](https://multivendordemo.com/mvx/wp-admin) 
+👉 Official Demo Link: Try out Free and Pro [**MultiVendorX**](https://multivendordemo.com/multivendorx/wp-admin) 
 
 = 🌟 Hear directly from our valued customers! = 
 
@@ -119,7 +119,7 @@ Competition requires the right toolkit. To thrive in today’s dynamic multi ven
 
 👉 UPGRADE TO [**MultiVendorX Pro**](https://multivendorx.com/pricing/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg)
 
-👉 Official Demo Link: Try out Free and Pro [**MultiVendorX**](https://multivendordemo.com/mvx/) 
+👉 Official Demo Link: Try out Free and Pro [**MultiVendorX**](https://multivendordemo.com/multivendorx/) 
 
 = Migrate to MultiVendorX worry-free! =
 
@@ -227,22 +227,51 @@ Ans. You can find the documentation of our REST API on the [MultiVendorX REST AP
 Ans. Obviously, you can! Join in on our [GitHub repository](https://github.com/multivendorx/MultiVendorX) :)
 
 == Screenshots ==
-1. Vendor Dashboard.
-2. General settings.
-3. Vendor front-end settings.
-4. Payment settings.
-5. Capability settings.
-6. Vendor storefront settings.
-7. Vendor commissions.
-8. Vendor sales reports.
-9. Product specific sales report.
-10. Vendors management backend.
-11. Vendor quick view.
-12. Vendor application and admin notes.
-13. Vendor profile management form dashboard.
-14. Show Multiple Seller in Single Product.
+1. Dashboard.
+2. AI Image.
+3. Onboarding.
+4. StorePermission.
+5. Finance-settings.
+6. Commission.
+7. Approval queue.
+8. Customers.
+9. Review.
+10. Announcement.
+11. Knowladgebase.
+12. Report.
+13. Store Add product.
+14. Store list.
+15. Store-admin-list.
 
 == Changelog ==
+
+= 5.0.0 - 2026-04-17 =
+* Added     - Compatibility with WordPress 6.9.4.
+* Added     - Compatibility of WooCommerce 10.7.0.
+* Added     - Rebuilt MultiVendorX completely from the ground up, replacing the previous plugin with an entirely new architecture.
+* Added     - Store-centric system, replacing the legacy vendor-based model.
+* Added     - Multi-store capability allowing a single user to manage multiple stores.
+* Added     - Store assistant roles with role-based access control.
+* Added     - Shared Listings, replacing Single Product Multiple Vendor (SPMV).
+* Added     - Franchise module to enable hierarchical store expansion, allowing stores to create and manage franchise-based sub-stores [Pro].
+* Added     - Introduced Marketplace fee management system for flexible admin earnings [Pro].
+* Added     - Integrated AI support for product content and media generation (OpenAI, Gemini).
+* Added     - Wallet system for stores to track earnings, manage balances, and process withdrawals.
+* Added     - Transaction system to track and manage all financial activities including commissions, payouts, credits, and debits.
+* Added     - Delivery tracking system for better accuracy and order status visibility.
+* Added     - Stores to create orders from their dashboard for manual order management.
+* Added     - Facilitator support, allowing designated users to act as intermediaries to manage operations, onboarding, or coordination between stores and admin [Pro].
+* Added     - Added advanced product/listing preference controls for admin configuration.
+* Added     - Added dashboard menu manager for menu visibility, ordering, and slug control.
+* Fixed     - Revamped entire admin panel UI for improved usability and navigation.
+* Fixed     - Introduced a brand-new store UI for better storefront experience.
+* Fixed     - Improved overall settings structure and organization.
+* Fixed     - Enhanced commission and fee calculation logic.
+* Fixed     - Optimized onboarding and marketplace setup flow.
+* Fixed     - Improved system performance and scalability.
+* Fixed     - Memory exhaustion issues during high-load operations.
+* Fixed     - Addressed UI/UX inconsistencies across admin panels.
+* Updated   - Language file.
 
 = 4.2.42 - 2026-03-10 =
 * Added     - Compatibility of WooCommerce 10.5.3.

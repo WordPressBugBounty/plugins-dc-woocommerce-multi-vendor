@@ -1,0 +1,1 @@
+(globalThis.webpackChunkmultivendorx=globalThis.webpackChunkmultivendorx||[]).push([[6274],{1714(){},73799(){}}]);
