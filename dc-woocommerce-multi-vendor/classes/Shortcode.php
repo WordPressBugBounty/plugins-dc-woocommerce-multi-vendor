@@ -42,7 +42,7 @@ class Shortcode {
         FrontendScripts::enqueue_style( 'multivendorx-store-product-style' );
         if ( Utill::is_store_dashboard() ) {
             wp_deregister_style( 'wc-blocks-style' );
-            FrontendScripts::enqueue_script( 'multivendorx-dashboard-components-script' );
+            FrontendScripts::enqueue_script( 'multivendorx-vendor-script' );
             FrontendScripts::enqueue_script( 'multivendorx-dashboard-script' );
             FrontendScripts::localize_scripts( 'multivendorx-dashboard-script' );
             FrontendScripts::enqueue_style( 'multivendorx-dashboard-style' );
@@ -167,6 +167,7 @@ class Shortcode {
         FrontendScripts::load_scripts();
         FrontendScripts::enqueue_script( 'multivendorx-marketplace-coupons-script' );
         FrontendScripts::localize_scripts( 'multivendorx-marketplace-coupons-script' );
+        FrontendScripts::enqueue_style( 'multivendorx-common-block-style' );
 
         return '<div id="marketplace-coupons" data-attributes="' . $json_attrs . '"></div>';
     }

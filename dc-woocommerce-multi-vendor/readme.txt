@@ -5,11 +5,11 @@ Donate link: http://multivendorx.com/donate/
 Requires at least: 6.3
 Tested up to: 6.9.4
 Requires PHP: 8.0
-Stable tag: 5.0.0
+Stable tag: 5.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-MultiVendorX: WordPress multivendor plugin to build your dream marketplace. Top-rated multi-vendor plugin to launch your dream WooCommerce marketplace.
+MultiVendorX: WordPress multivendor plugin to build your dream marketplace. Top-rated multi-vendor plugin to launch your WooCommerce marketplace.
 
 == Description ==
 
@@ -148,10 +148,11 @@ MultiVendorX enhances your WordPress multivendor marketplace with seamless compa
 
 = Short Codes = 
 
-👉 <code>[mvx_vendorslist]</code> = Displays all vendors in a list, allowing users to sort vendors by location, category, etc.
-👉 <code>[mvx_best_selling_products vendor="" ]</code> = Displays the best selling products of the vendor. 
-👉 <code> [mvx_featured_products vendor="" ]</code> = Displays the featured products added by vendor. 
-👉 <code> [mvx_product_category vendor=]</code> = Displays the product categories added by the vendor.
+👉 <code>[marketplace_registration]</code> = Displays the store registration form. Use this to allow new users to sign up as stores.
+👉 <code>[marketplace_dashboard]</code> = Displays the store dashboard where stores manage products/listings, orders, earnings, and store settings.
+👉 <code>[marketplace_stores]</code> = Displays a list of all registered stores with ratings. Use this to help customers discover stores.
+👉 <code>[marketplace_products]</code> = Displays all listings added by a store. Use this to create store-specific listings listing pages.
+👉 <code>[marketplace_coupons]</code> = Displays coupons created by a store along with their usage details.
 And [many more](https://multivendorx.com/list-of-shortcodes/?utm_source=wordpress.org&utm_medium=plugindescription&utm_campaign=MultiVendorxWPOrg). 
 
 = Widgets = 
@@ -244,6 +245,10 @@ Ans. Obviously, you can! Join in on our [GitHub repository](https://github.com/m
 15. Store-admin-list.
 
 == Changelog ==
+
+= 5.0.1 - 2026-04-21 =
+* Fixed     - Migration-related error when upgrading from older versions to 5.0.
+* Fixed     - Issue with shipping that prevented admin from accessing or editing posts and products.
 
 = 5.0.0 - 2026-04-17 =
 * Added     - Compatibility with WordPress 6.9.4.
@@ -702,159 +707,6 @@ Ans. Obviously, you can! Join in on our [GitHub repository](https://github.com/m
 * Fix       - Elementor Issue #403.
 * Fix       - MultiVendorX table rate error #398.
 * Fix       - Error #406.
-* Updated   - Language file.
-
-= 4.0.19 - 2023-05-09 =
-* Fix     	- Fatal error on the cart page.
-
-= 4.0.18 - 2023-05-30 =
-* Added     - Compatibility of WordPress 6.2.2.
-* Added     - Compatibility of WooCommerce 7.7.1.
-* Fix     	- Issue frontend for [mvx_vendorslist] shortcode #389.
-* Fix     	- Issue in policies submenu in Vendor dashboard #386.
-* Fix     	- Withdrawal request to Admin from Vendor by BAC change #385.
-* Fix     	- Vlite jsin vendor shop page issue #382.
-* Fix     	- Email right align issue #380.
-* Fix     	- QnA flow improvement #378.
-* Fix     	- Vendor Banner video #376.
-* Fix     	- My Account page error #392.
-* Updated   - Language file.
-
-= 4.0.17 - 2023-05-09 =
-* Added     - Compatibility of WooCommerce 7.6.1.
-* Fix     	- Withdrawal mail trigger #372.
-* Fix     	- Workboard blank screen #368.
-* Fix     	- Customer details not visible on vendor dashboard #371.
-* Fix     	- Issue with Pending transaction appoval #373.
-* Updated   - Language file.
-
-= 4.0.16 - 2023-04-26 =
-* Fix       - Error while activating the plugin.
-* Updated   - Language file.
-
-= 4.0.15 - 2023-04-21 =
-* Fix       - WPML error at frontend.
-* Updated   - Language file.
-
-= 4.0.14 - 2023-04-18 =
-* Added     - Compatibility of WooCommerce 7.6.0.
-* Added     - Auto SKU Generator.
-* Fix     	- Datepicker not working #353.
-* Fix     	- Cart Page error  #363
-* Fix     	- WPML issue.
-* Fix       - Query optimization.
-* Dev 		- Added `mvx_action_before_customer_refund_request` action.
-* Dev 		- Added `mvx_action_after_customer_refund_request` action.
-* Dev 		- Added `mvx_action_after_order_notes` action.
-* Updated   - Language file.
-
-= 4.0.13 - 2023-04-04 =
-* Added     - Compatibility of WooCommerce 7.5.1.
-* Added     - Compatibility of WordPress 6.2.
-* Added     - All commission displayed by using a filter.
-* Added     - Users can choose their shop name on the vendor registration page.
-* Fix     	- Attachment is not visible on the vendor registration section #348.
-* Fix     	- Text update.
-* Fix     	- Error at product page.
-* Dev 		- Added `mvx_commission_list_args` filter.
-* Updated   - Language file.
-
-= 4.0.12 - 2023-03-21 =
-* Added     - Compatibility of WooCommerce 7.5.0.
-* Added     - Registration form new field for store name #320.
-* Added     - Minimum Maximum quantity #307.
-* Added     - Followed Vendor Coupon mail #288
-* Fix 		- Dashboard is not showing taxes, commissions, shipping not set up #337.
-* Fix 		- Registration page store description error.
-* Updated   - Language file.
-
-= 4.0.11 - 2023-03-07 =
-* Added     - Compatibility of WooCommerce 7.4.1.
-* Fix 		- Policy issue #328.
-* Fix 		- Vendor control panel does not work in mobile mode #327.
-* Fix 		- Coupon Issues #331.
-* Fix 		- Report Abuse not working #334.
-* Fix 		- Error on vendor followed.
-* Updated   - Language file.
-
-= 4.0.10 - 2023-02-22 =
-* Fix 		- Vendor dashboard css broken.
-* Updated   - Language file.
-
-= 4.0.9 - 2023-02-21 =
-* Added     - Compatibility of WooCommerce 7.4.0.
-* Added     - Let Vendor Add Slider and Video for shop page #282
-* Fix       - Registration Form Description not getting displayed #316.
-* Fix 		- Multiple Vendor Notice At Cart and Checkout Page #315.
-* Dev 		- Added `mvx_analytics_tabs_datas` filter.
-* Dev 		- Added `mvx_report_analytics_strings` filter.
-* Updated   - Language file.
-
-= 4.0.8 - 2023-02-06 =
-* Added     - New Follower menue for vendors.
-* Fix       - Username is disabled for edit vendor profile.
-* Updated   - Language file.
-
-= 4.0.7 - 2023-01-17 =
-* Added     - Compatibility of WooCommerce 7.3.0.
-* Added     - Widget support with Gutenberg Blocks.
-* Enhancement   - SPMV flow enhancement.
-* Enhancement   - Refund tab for vendor.
-* Fix       - GTIN Fields Issue #285.
-* Fix       - Error on backend payment tab.
-* Fix       - Razorpay plugin inactive issue.
-* Fix       - Buddypress deprecated filter update.
-* Updated   - Language file.
-
-= 4.0.6 - 2023-01-03 =
-* Added     - Compatibility of WooCommerce 7.2.2.
-* Fix       - GTIN Fields Issue #285.
-* Fix       - Settings not saving when wpml active #284.
-* Fix       - Admin not able to delete order using "Empty Trash" #277.
-* Fix       - Workboard section pending vendor edit link issue.
-* Fix       - Registration page section not working #276.
-* Fix       - Admin not able to upload vendor logo #278.
-* Updated   - Language file.
-
-= 4.0.5 - 2022-12-20 =
-* Added     - Compatibility of WooCommerce 7.2.0
-* Fix       - Buddypress settings not working #264
-* Fix       - Password reset issue #263.
-* Fix       - Error on navigation menu #268
-* Fix       - Customer Refund status box is missing #267
-* Fix       - Shipping by distance link #265
-* Updated   - Language file.
-
-= 4.0.4 - 2022-12-06 =
-* Fix       - Error at the time of accessing products.
-* Fix       - Text rename.
-* Fix       - Virtual, downloadable option not working.
-* Fix       - Table rate enabled issue.
-* Fix       - Commission on tax.
-* Fix       - Show shipping methods added by vendors to admin.
-* Fix       - Complete store front migration from other multivendor plugins.
-* Updated   - Language file.
-
-= 4.0.3 - 2022-11-22 =
-* Added     - Compatibility of WordPress 6.1.1
-* Added     - Compatibility of WooCommerce 7.1.0
-* Added     - New data added on commission CSV.
-* Fix       - Related Product not working.
-* Fix       - Email template override folder issue.
-* Updated   - Language file.
-
-= 4.0.2 - 2022-11-08 =
-* Added     - Compatibility of WordPress 6.1.
-* Added     - Compatibility of WooCommerce 7.0.1.
-* Added     - Let admin delete questions.
-* Added     - TinyMCE support.
-* Added     - Date section on commission list page.
-* Fix       - Question and Answer endpoint show a 404 error.
-* Fix       - Mark as reading button is not working.
-* Fix       - Let admin add images or style for announcement and knowledgebase.
-* Fix       - String update.
-* Fix       - The vendor list page pending option show nulled.
-* Dev       - Added `mvx_commissions_table_columns_data` filter.
 * Updated   - Language file.
 
 = 4.0.1 - 2022-10-24 =
