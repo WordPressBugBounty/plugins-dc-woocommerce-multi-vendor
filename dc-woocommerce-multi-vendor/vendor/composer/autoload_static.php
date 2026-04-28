@@ -28,6 +28,8 @@ class ComposerStaticInit67f175a643d5f81257d6afac1f10045f
         'MultiVendorX\\Announcement\\Module' => __DIR__ . '/../..' . '/modules/Announcement/Module.php',
         'MultiVendorX\\Announcement\\Rest' => __DIR__ . '/../..' . '/modules/Announcement/Rest.php',
         'MultiVendorX\\Block' => __DIR__ . '/../..' . '/classes/Block.php',
+        'MultiVendorX\\BuddyPress\\Functions' => __DIR__ . '/../..' . '/modules/BuddyPress/Functions.php',
+        'MultiVendorX\\BuddyPress\\Module' => __DIR__ . '/../..' . '/modules/BuddyPress/Module.php',
         'MultiVendorX\\Commission\\Commission' => __DIR__ . '/../..' . '/classes/Commission/Commission.php',
         'MultiVendorX\\Commission\\CommissionManager' => __DIR__ . '/../..' . '/classes/Commission/CommissionManager.php',
         'MultiVendorX\\Commission\\CommissionUtil' => __DIR__ . '/../..' . '/classes/Commission/CommissionUtil.php',

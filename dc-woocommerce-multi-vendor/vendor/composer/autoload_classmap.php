@@ -12,6 +12,8 @@ return array(
     'MultiVendorX\\Announcement\\Module' => $baseDir . '/modules/Announcement/Module.php',
     'MultiVendorX\\Announcement\\Rest' => $baseDir . '/modules/Announcement/Rest.php',
     'MultiVendorX\\Block' => $baseDir . '/classes/Block.php',
+    'MultiVendorX\\BuddyPress\\Functions' => $baseDir . '/modules/BuddyPress/Functions.php',
+    'MultiVendorX\\BuddyPress\\Module' => $baseDir . '/modules/BuddyPress/Module.php',
     'MultiVendorX\\Commission\\Commission' => $baseDir . '/classes/Commission/Commission.php',
     'MultiVendorX\\Commission\\CommissionManager' => $baseDir . '/classes/Commission/CommissionManager.php',
     'MultiVendorX\\Commission\\CommissionUtil' => $baseDir . '/classes/Commission/CommissionUtil.php',

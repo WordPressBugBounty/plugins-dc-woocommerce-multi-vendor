@@ -1,14 +1,14 @@
 # Copyright (c) 2026 Multivendorx Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.1\n"
+"Project-Id-Version: MultiVendorX 5.0.2\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-04-21T09:25:58+00:00\n"
+"POT-Creation-Date: 2026-04-27T14:45:41+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -16,9 +16,10 @@ msgstr ""
 #. Plugin Name of the plugin
 #. Author of the plugin
 #: dc_product_vendor.php
-#: classes/FrontendScripts.php:435
+#: classes/FrontendScripts.php:446
 #: classes/Pattern.php:46
 #: classes/Status.php:43
+#: modules/Elementor/WidgetLoader.php:106
 msgid "MultiVendorX"
 msgstr ""
 
@@ -30,10 +31,11 @@ msgstr ""
 
 #. Description of the plugin
 #: dc_product_vendor.php
-msgid "A Free Extension That Transforms Your WooCommerce Site into a Marketplace."
+msgid "An AI-powered WooCommerce multivendor marketplace solution to build, manage, and scale your platform."
 msgstr ""
 
 #: classes/Admin.php:84
+#: classes/RestAPI/Controllers/Dashboard.php:110
 #: release/assets/js/index.js:1
 msgid "Dashboard"
 msgstr ""
@@ -44,6 +46,7 @@ msgid "Stores"
 msgstr ""
 
 #: classes/Admin.php:94
+#: classes/RestAPI/Controllers/Dashboard.php:149
 #: release/assets/js/index.js:1
 msgid "Commissions"
 msgstr ""
@@ -73,6 +76,7 @@ msgstr ""
 
 #: classes/Admin.php:124
 #: classes/MultiVendorX.php:322
+#: classes/RestAPI/Controllers/Dashboard.php:235
 #: release/assets/js/index.js:1
 msgid "Settings"
 msgstr ""
@@ -103,6 +107,7 @@ msgstr ""
 #: classes/Admin.php:532
 #: classes/Admin.php:625
 #: classes/Product.php:56
+#: modules/Privacy/Frontend.php:50
 #: templates/store/shared-listing-single-product-tab.php:21
 #: release/assets/js/index.js:1
 msgid "Store"
@@ -247,17 +252,17 @@ msgstr ""
 msgid "Go to store dashboard"
 msgstr ""
 
-#: classes/FrontendScripts.php:477
+#: classes/FrontendScripts.php:488
 msgid "Select an item..."
 msgstr ""
 
-#: classes/FrontendScripts.php:537
-#: classes/FrontendScripts.php:553
+#: classes/FrontendScripts.php:549
+#: classes/FrontendScripts.php:565
 msgid "This field is required"
 msgstr ""
 
-#: classes/FrontendScripts.php:538
-#: classes/FrontendScripts.php:554
+#: classes/FrontendScripts.php:550
+#: classes/FrontendScripts.php:566
 msgid "Invalid email format"
 msgstr ""
 
@@ -365,6 +370,8 @@ msgid "Sold by"
 msgstr ""
 
 #: classes/Order/Hooks.php:200
+#: modules/Privacy/Frontend.php:83
+#: modules/Privacy/Frontend.php:106
 msgid "Sold By"
 msgstr ""
 
@@ -603,15 +610,47 @@ msgstr ""
 #: classes/RestAPI/Controllers/Settings.php:218
 #: classes/RestAPI/Controllers/Status.php:80
 #: classes/RestAPI/Controllers/Status.php:119
-#: classes/RestAPI/Controllers/Stores.php:126
-#: classes/RestAPI/Controllers/Stores.php:494
-#: classes/RestAPI/Controllers/Stores.php:729
-#: classes/RestAPI/Controllers/Stores.php:878
+#: classes/RestAPI/Controllers/Stores.php:116
+#: classes/RestAPI/Controllers/Stores.php:484
+#: classes/RestAPI/Controllers/Stores.php:719
+#: classes/RestAPI/Controllers/Stores.php:868
 #: classes/RestAPI/Controllers/Tour.php:78
 #: classes/RestAPI/Controllers/Tour.php:124
 #: classes/RestAPI/Controllers/Transactions.php:98
 #: classes/RestAPI/Controllers/Transactions.php:235
 #: classes/RestAPI/Controllers/Transactions.php:295
+#: modules/Announcement/Rest.php:127
+#: modules/Announcement/Rest.php:257
+#: modules/Announcement/Rest.php:314
+#: modules/Announcement/Rest.php:456
+#: modules/Announcement/Rest.php:556
+#: modules/CustomerQueries/Rest.php:112
+#: modules/CustomerQueries/Rest.php:243
+#: modules/CustomerQueries/Rest.php:271
+#: modules/CustomerQueries/Rest.php:393
+#: modules/FollowStore/Rest.php:104
+#: modules/FollowStore/Rest.php:197
+#: modules/FollowStore/Rest.php:280
+#: modules/Knowledgebase/Rest.php:122
+#: modules/Knowledgebase/Rest.php:213
+#: modules/Knowledgebase/Rest.php:241
+#: modules/Knowledgebase/Rest.php:331
+#: modules/Knowledgebase/Rest.php:408
+#: modules/MarketplaceCompliance/Rest.php:99
+#: modules/MarketplaceCompliance/Rest.php:187
+#: modules/MarketplaceRefund/Rest.php:100
+#: modules/StoreReview/Rest.php:126
+#: modules/StoreReview/Rest.php:264
+#: modules/StoreReview/Rest.php:315
+#: modules/StoreReview/Rest.php:435
+#: modules/StoreReview/Rest.php:544
+#: modules/StoreShipping/Rest.php:123
+#: modules/StoreShipping/Rest.php:151
+#: modules/StoreShipping/Rest.php:239
+#: modules/StoreShipping/Rest.php:281
+#: modules/StoreShipping/Rest.php:356
+#: modules/WPML/Rest.php:90
+#: modules/WPML/Rest.php:182
 msgid "Invalid nonce"
 msgstr ""
 
@@ -625,49 +664,159 @@ msgstr ""
 #: classes/RestAPI/Controllers/Settings.php:248
 #: classes/RestAPI/Controllers/Status.php:101
 #: classes/RestAPI/Controllers/Status.php:186
-#: classes/RestAPI/Controllers/Stores.php:403
-#: classes/RestAPI/Controllers/Stores.php:712
-#: classes/RestAPI/Controllers/Stores.php:860
-#: classes/RestAPI/Controllers/Stores.php:1286
+#: classes/RestAPI/Controllers/Stores.php:393
+#: classes/RestAPI/Controllers/Stores.php:702
+#: classes/RestAPI/Controllers/Stores.php:850
+#: classes/RestAPI/Controllers/Stores.php:1276
 #: classes/RestAPI/Controllers/Tour.php:112
 #: classes/RestAPI/Controllers/Tour.php:157
 #: classes/RestAPI/Controllers/Transactions.php:219
+#: modules/Announcement/Rest.php:240
+#: modules/Announcement/Rest.php:298
+#: modules/Announcement/Rest.php:438
+#: modules/Announcement/Rest.php:535
+#: modules/Announcement/Rest.php:621
+#: modules/CustomerQueries/Rest.php:229
+#: modules/CustomerQueries/Rest.php:376
+#: modules/FollowStore/Rest.php:183
+#: modules/FollowStore/Rest.php:264
+#: modules/FollowStore/Rest.php:376
+#: modules/Knowledgebase/Rest.php:199
+#: modules/Knowledgebase/Rest.php:318
+#: modules/Knowledgebase/Rest.php:394
+#: modules/MarketplaceCompliance/Rest.php:174
+#: modules/MarketplaceCompliance/Rest.php:232
+#: modules/MarketplaceRefund/Rest.php:272
+#: modules/StoreReview/Rest.php:252
+#: modules/StoreReview/Rest.php:297
+#: modules/StoreReview/Rest.php:421
+#: modules/StoreReview/Rest.php:532
+#: modules/StoreReview/Rest.php:590
+#: modules/StoreShipping/Rest.php:139
+#: modules/StoreShipping/Rest.php:227
+#: modules/StoreShipping/Rest.php:269
+#: modules/StoreShipping/Rest.php:344
+#: modules/StoreShipping/Rest.php:399
 msgid "Unexpected server error"
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:181
+#: classes/RestAPI/Controllers/Dashboard.php:117
+#: classes/Store/StoreUtil.php:135
+#: modules/Elementor/widgets/StoreTab.php:117
+#: release/assets/js/block/marketplace-products/index.js:1
+#: release/assets/js/block/marketplace-stores/index.js:1
+#: release/assets/js/block/setup-wizard/index.js:1
+#: release/assets/js/block/store-quick-info/index.js:1
+#: release/assets/js/block/store-tabs/index.js:1
+#: release/assets/js/index.js:1
+msgid "Products"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:124
+#: release/assets/js/block/marketplace-coupons/index.js:1
+#: release/assets/js/index.js:1
+msgid "Coupons"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:130
+#: release/assets/js/block/store-quick-info/index.js:1
+#: release/assets/js/index.js:1
+msgid "Sales"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:136
+#: release/assets/js/block/setup-wizard/index.js:1
+#: release/assets/js/index.js:1
+msgid "Orders"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:142
+#: release/assets/js/index.js:1
+msgid "Refund"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:158
+msgid "Wallet"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:164
+#: release/assets/js/index.js:1
+msgid "Transactions"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:170
+#: release/assets/js/index.js:1
+msgid "Withdrawals"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:179
+#: release/assets/js/index.js:1
+msgid "Store Support"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:185
+msgid "Support Tickets"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:192
+msgid "Product Questions"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:199
+msgid "Followers"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:206
+msgid "Customer Reviews"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:214
+msgid "Resources"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:220
+#: release/assets/js/index.js:1
+msgid "Documentation"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Dashboard.php:227
+#: release/assets/js/index.js:1
+msgid "Tools"
+msgstr ""
+
+#: classes/RestAPI/Controllers/ImportDummyData.php:190
 msgid "Store owners imported successfully."
 msgstr ""
 
-#. translators: %s is the name of the XML file being checked.
-#: classes/RestAPI/Controllers/ImportDummyData.php:205
+#. translators: %s is a comma-separated list of XML filenames being checked.
+#: classes/RestAPI/Controllers/ImportDummyData.php:214
 #, php-format
 msgid "%s XML file not found."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:218
+#: classes/RestAPI/Controllers/ImportDummyData.php:227
 msgid "Invalid XML structure."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:308
+#: classes/RestAPI/Controllers/ImportDummyData.php:321
 #: classes/RestAPI/Controllers/Migrations.php:116
 msgid "Stores imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:485
+#: classes/RestAPI/Controllers/ImportDummyData.php:502
 #: classes/RestAPI/Controllers/Migrations.php:144
 msgid "Products imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:578
+#: classes/RestAPI/Controllers/ImportDummyData.php:599
 msgid "Commissions imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:678
+#: classes/RestAPI/Controllers/ImportDummyData.php:703
 msgid "Orders imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:770
+#: classes/RestAPI/Controllers/ImportDummyData.php:799
 msgid "Reviews imported successfully."
 msgstr ""
 
@@ -685,7 +834,7 @@ msgid "Notification(s) updated successfully."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Settings.php:201
-#: classes/RestAPI/Controllers/Stores.php:1278
+#: classes/RestAPI/Controllers/Stores.php:1268
 msgid "Settings Saved"
 msgstr ""
 
@@ -693,11 +842,12 @@ msgstr ""
 msgid "MultiVendorX visitors stats successfully deleted"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1002
+#: classes/RestAPI/Controllers/Stores.php:992
 msgid "New owner ID missing."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1326
+#: classes/RestAPI/Controllers/Stores.php:1293
+#: modules/FollowStore/Rest.php:216
 msgid "Invalid store ID"
 msgstr ""
 
@@ -771,22 +921,952 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: classes/Store/StoreUtil.php:135
-#: release/assets/js/block/marketplace-products/index.js:1
-#: release/assets/js/block/marketplace-stores/index.js:1
-#: release/assets/js/block/setup-wizard/index.js:1
-#: release/assets/js/block/store-quick-info/index.js:1
-#: release/assets/js/block/store-tabs/index.js:1
-#: release/assets/js/index.js:1
-msgid "Products"
-msgstr ""
-
 #: classes/Widgets.php:38
 msgid "MultiVendorX Store Sidebar"
 msgstr ""
 
 #: classes/Widgets.php:40
 msgid "Widgets for MultiVendorX store pages only."
+msgstr ""
+
+#: modules/Announcement/Frontend.php:35
+#: release/assets/js/index.js:1
+msgid "Announcements"
+msgstr ""
+
+#: modules/Announcement/Rest.php:275
+#: modules/Announcement/Rest.php:575
+msgid "Invalid announcement ID"
+msgstr ""
+
+#: modules/Announcement/Rest.php:287
+#: modules/Announcement/Rest.php:484
+#: modules/Announcement/Rest.php:588
+msgid "Announcement not found"
+msgstr ""
+
+#: modules/Announcement/Rest.php:601
+msgid "Failed to delete announcement"
+msgstr ""
+
+#: modules/Announcement/Rest.php:613
+msgid "Announcement deleted successfully"
+msgstr ""
+
+#: modules/BuddyPress/Functions.php:31
+msgid "Shop"
+msgstr ""
+
+#: modules/BuddyPress/Functions.php:57
+msgid "Browse all products listed by this seller across their stores. Each section below represents a different store they manage."
+msgstr ""
+
+#: modules/BuddyPress/Functions.php:62
+msgid "No user found."
+msgstr ""
+
+#: modules/BuddyPress/Functions.php:70
+msgid "No stores found for this user."
+msgstr ""
+
+#: modules/BuddyPress/Functions.php:104
+#, php-format
+msgid "Products from %s"
+msgstr ""
+
+#: modules/BuddyPress/Functions.php:147
+msgid "No products available in this store yet."
+msgstr ""
+
+#. translators: %d: Number of answered questions for this product
+#: modules/CustomerQueries/Frontend.php:106
+#, php-format
+msgid "Customer Queries (%d)"
+msgstr ""
+
+#: modules/CustomerQueries/Rest.php:250
+msgid "Invalid ID"
+msgstr ""
+
+#: modules/CustomerQueries/Rest.php:255
+#: modules/CustomerQueries/Rest.php:297
+#: modules/CustomerQueries/Rest.php:413
+msgid "Question not found"
+msgstr ""
+
+#: modules/CustomerQueries/Rest.php:287
+#: modules/CustomerQueries/Rest.php:403
+msgid "Invalid question ID"
+msgstr ""
+
+#: modules/CustomerQueries/Rest.php:324
+msgid "Invalid visibility value"
+msgstr ""
+
+#: modules/CustomerQueries/Rest.php:333
+#: modules/StoreReview/Rest.php:494
+msgid "No valid fields to update"
+msgstr ""
+
+#: modules/CustomerQueries/Rest.php:424
+msgid "Failed to delete question"
+msgstr ""
+
+#: modules/Elementor/Helper.php:22
+msgid "Demo Store"
+msgstr ""
+
+#: modules/Elementor/Helper.php:23
+msgid "This is a sample store description shown only in Elementor editor preview."
+msgstr ""
+
+#: modules/Elementor/StoreDocument.php:51
+msgid "Store Page"
+msgstr ""
+
+#: modules/Elementor/StoreDocument.php:60
+msgid "Store Pages"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreBanner.php:58
+#: modules/Elementor/widgets/StoreBanner.php:39
+msgid "Store Banner"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreBanner.php:114
+#: modules/Elementor/Tags/StoreLogo.php:105
+msgid "Fallback"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreDummyProducts.php:48
+msgid "Store Dummy Products"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreInfo.php:39
+#: modules/Elementor/widgets/StoreInfo.php:43
+msgid "Store Info"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreInfo.php:73
+#: release/assets/js/index.js:1
+msgid "Address"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreInfo.php:83
+#: modules/MarketplaceCompliance/Frontend.php:123
+#: release/assets/js/block/contact-info/index.js:1
+#: release/assets/js/index.js:1
+msgid "Email"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreInfo.php:93
+msgid "Phone No."
+msgstr ""
+
+#: modules/Elementor/Tags/StoreLogo.php:49
+#: modules/Elementor/widgets/StoreLogo.php:37
+#: modules/Elementor/widgets/StoreLogo.php:78
+msgid "Store Logo"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreName.php:37
+#: modules/Elementor/widgets/StoreName.php:38
+msgid "Store Name"
+msgstr ""
+
+#: modules/Elementor/Tags/StoreSocial.php:48
+#: modules/Elementor/widgets/StoreSocial.php:33
+msgid "Store Social"
+msgstr ""
+
+#: modules/Elementor/WidgetLoader.php:40
+msgid "MultiVendorX Store Widgets"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreBanner.php:72
+#: release/assets/js/index.js:1
+msgid "Banner"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreDescription.php:40
+msgid "Store Description"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:90
+msgid "Store Info Details"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:97
+msgid "Store Info Visibility"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:105
+msgid "Show Address"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:107
+#: modules/Elementor/widgets/StoreInfo.php:119
+#: modules/Elementor/widgets/StoreInfo.php:131
+#: modules/StoreReview/widgets/StoreRating.php:111
+msgid "Show"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:108
+#: modules/Elementor/widgets/StoreInfo.php:120
+#: modules/Elementor/widgets/StoreInfo.php:132
+#: modules/StoreReview/widgets/StoreRating.php:112
+msgid "Hide"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:117
+msgid "Show Email"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:129
+msgid "Show Phone"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:143
+msgid "Icon"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:151
+#: release/assets/js/block/store-logo/index.js:1
+msgid "Color"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreInfo.php:164
+msgid "Size"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreTab.php:38
+msgid "Store Tabs"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreTab.php:118
+#: modules/StorePolicy/Admin.php:37
+#: modules/StorePolicy/Frontend.php:108
+#: release/assets/js/block/store-tabs/index.js:1
+#: release/assets/js/index.js:1
+msgid "Policy"
+msgstr ""
+
+#: modules/Elementor/widgets/StoreTab.php:119
+#: modules/StoreReview/Frontend.php:130
+#: release/assets/js/block/store-quick-info/index.js:1
+#: release/assets/js/block/store-tabs/index.js:1
+#: release/assets/js/index.js:1
+msgid "Reviews"
+msgstr ""
+
+#: modules/FollowStore/Rest.php:298
+msgid "Invalid data."
+msgstr ""
+
+#: modules/FollowStore/Tags/StoreFollow.php:50
+#: modules/FollowStore/widgets/StoreFollow.php:42
+msgid "Store Follow Button"
+msgstr ""
+
+#: modules/FollowStore/Tags/StoreFollow.php:92
+#: modules/FollowStore/widgets/StoreFollow.php:114
+msgid "Unfollow"
+msgstr ""
+
+#: modules/FollowStore/Tags/StoreFollow.php:93
+#: modules/FollowStore/widgets/StoreFollow.php:115
+msgid "Follow"
+msgstr ""
+
+#: modules/FollowStore/Tags/StoreFollow.php:97
+msgid "You must log in to follow."
+msgstr ""
+
+#: modules/FollowStore/Tags/StoreFollow.php:99
+msgid "Follow."
+msgstr ""
+
+#: modules/FollowStore/widgets/StoreFollow.php:141
+#, php-format
+msgid "%d Follower"
+msgid_plural "%d Followers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/Intelligence/Rest.php:43
+msgid "Invalid nonce."
+msgstr ""
+
+#: modules/Intelligence/Rest.php:57
+msgid "Server error."
+msgstr ""
+
+#: modules/Knowledgebase/Frontend.php:31
+#: release/assets/js/index.js:1
+msgid "Knowledgebase"
+msgstr ""
+
+#: modules/Knowledgebase/Rest.php:224
+#: modules/Knowledgebase/Rest.php:350
+#: modules/Knowledgebase/Rest.php:419
+msgid "Knowledge Base article not found"
+msgstr ""
+
+#: modules/Knowledgebase/Rest.php:430
+msgid "Failed to delete the Knowledge Base article"
+msgstr ""
+
+#: modules/Knowledgebase/Rest.php:439
+msgid "Knowledge Base article deleted successfully"
+msgstr ""
+
+#: modules/MarketplaceCompliance/Frontend.php:98
+msgid "Report Abuse"
+msgstr ""
+
+#. translators: %s: Product name for abuse report
+#: modules/MarketplaceCompliance/Frontend.php:109
+#, php-format
+msgid "Report abuse for \"%s\""
+msgstr ""
+
+#: modules/MarketplaceCompliance/Frontend.php:118
+#: release/assets/js/block/contact-info/index.js:1
+#: release/assets/js/block/marketplace-stores/index.js:1
+#: release/assets/js/index.js:1
+msgid "Name"
+msgstr ""
+
+#: modules/MarketplaceCompliance/Frontend.php:137
+#: release/assets/js/block/contact-info/index.js:1
+msgid "Message"
+msgstr ""
+
+#: modules/MarketplaceCompliance/Frontend.php:144
+msgid "Report"
+msgstr ""
+
+#: modules/MarketplaceCompliance/Rest.php:202
+msgid "Invalid report ID"
+msgstr ""
+
+#: modules/MarketplaceCompliance/Rest.php:212
+msgid "Report not found"
+msgstr ""
+
+#: modules/MarketplaceCompliance/Rest.php:223
+#: release/assets/js/index.js:1
+msgid "Failed to delete report"
+msgstr ""
+
+#: modules/MarketplaceRefund/Admin.php:38
+#: modules/MarketplaceRefund/Admin.php:86
+msgctxt "Order status"
+msgid "Refund Requested"
+msgstr ""
+
+#. translators: %s: Number of orders with the "Refund Requested" status.
+#: modules/MarketplaceRefund/Admin.php:44
+#, php-format
+msgid "Refund Requested (%s)"
+msgid_plural "Refund Requested (%s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/MarketplaceRefund/Admin.php:50
+#: modules/MarketplaceRefund/Admin.php:87
+msgctxt "Order status"
+msgid "Refund Accepted"
+msgstr ""
+
+#. translators: %s: Number of orders with the "Refund Accepted" status.
+#: modules/MarketplaceRefund/Admin.php:56
+#, php-format
+msgid "Refund Accepted (%s)"
+msgid_plural "Refund Accepted (%s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/MarketplaceRefund/Admin.php:62
+#: modules/MarketplaceRefund/Admin.php:88
+msgctxt "Order status"
+msgid "Refund Rejected"
+msgstr ""
+
+#. translators: %s: Number of orders with the "Refund Rejected" status.
+#: modules/MarketplaceRefund/Admin.php:68
+#, php-format
+msgid "Refund Rejected (%s)"
+msgid_plural "Refund Rejected (%s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/MarketplaceRefund/Admin.php:129
+msgid "accepted"
+msgstr ""
+
+#: modules/MarketplaceRefund/Admin.php:131
+msgid "rejected"
+msgstr ""
+
+#: modules/MarketplaceRefund/Admin.php:134
+#: modules/MarketplaceRefund/Admin.php:148
+msgid "Site admin "
+msgstr ""
+
+#: modules/MarketplaceRefund/Admin.php:134
+#: modules/MarketplaceRefund/Admin.php:148
+msgid " refund request for order #"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:97
+msgid "Request a refund"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:121
+msgid "Choose the product(s) you want a refund for"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:149
+msgid "Please mention your reason for refund"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:168
+msgid "Others reason"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:172
+#: modules/MarketplaceRefund/Frontend.php:180
+#: modules/MarketplaceRefund/Frontend.php:563
+msgid "Refund reason"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:189
+msgid "Provide additional information"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:194
+msgid "Upload an image of the product"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:198
+msgid "You can select multiple images."
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:203
+#: release/assets/js/index.js:1
+msgid "Submit"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:247
+#: modules/MarketplaceRefund/Frontend.php:269
+msgid "Refund is not allowed for the current order status."
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:248
+msgid "Your refund period has expired"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:249
+msgid "*** Your request has been rejected ***"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:250
+#: modules/MarketplaceRefund/Frontend.php:276
+msgid "Your request is pending."
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:251
+msgid "*** Your request has been accepted. *** "
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:265
+msgid "Your refund period has expired."
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:273
+msgid "Sorry!! Your request has been rejected"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:279
+msgid "Congratulation: *** Your request has been accepted. *** "
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:315
+msgid "Kindly choose a product"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:320
+msgid "Kindly choose a refund reason"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:497
+msgid "Refund request successfully submitted."
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:569
+msgid "Category:"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:571
+msgid "N/A"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:581
+msgid "No additional information provided."
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:588
+msgid "Attached images:"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:605
+msgid "Request timeline"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:616
+msgid "Refund requested"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:627
+msgid "Under review"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:641
+msgid "Refund rejected"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:643
+msgid "Decision pending"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:653
+msgid "Rejected by admin:"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:658
+msgid "Rejected by store:"
+msgstr ""
+
+#: modules/MarketplaceRefund/Frontend.php:673
+msgid "Refund processed"
+msgstr ""
+
+#: modules/MarketplaceRefund/Rest.php:305
+msgid "Invalid refund amount."
+msgstr ""
+
+#: modules/MarketplaceRefund/Rest.php:397
+msgid "Refund Failed"
+msgstr ""
+
+#: modules/MinMax/Admin.php:48
+msgid "Minimum quantity to order"
+msgstr ""
+
+#: modules/MinMax/Admin.php:60
+msgid "Maximum quantity to order"
+msgstr ""
+
+#: modules/MinMax/Admin.php:74
+msgid "Minimum amount to order"
+msgstr ""
+
+#: modules/MinMax/Admin.php:87
+msgid "Maximum amount to order"
+msgstr ""
+
+#: modules/MinMax/Frontend.php:121
+#: modules/MinMax/Frontend.php:126
+msgid "Minimum product "
+msgstr ""
+
+#: modules/MinMax/Frontend.php:131
+msgid "Minimum order quantity required is "
+msgstr ""
+
+#: modules/MinMax/Frontend.php:136
+msgid "Minimum order amount required is "
+msgstr ""
+
+#: modules/MinMax/Frontend.php:143
+#: modules/MinMax/Frontend.php:148
+msgid "Maximum product "
+msgstr ""
+
+#: modules/MinMax/Frontend.php:153
+msgid "Maximum order quantity required is "
+msgstr ""
+
+#: modules/MinMax/Frontend.php:158
+msgid "Maximum order amount required is "
+msgstr ""
+
+#: modules/MinMax/Frontend.php:187
+msgid "Min Qty: "
+msgstr ""
+
+#: modules/MinMax/Frontend.php:190
+msgid "Min Amount: "
+msgstr ""
+
+#. translators: %d: minimum quantity required
+#: modules/MinMax/Frontend.php:215
+#, php-format
+msgid "Minimum quantity required is %d"
+msgstr ""
+
+#: modules/SharedListing/Frontend.php:259
+msgid "More Offers"
+msgstr ""
+
+#: modules/SharedListing/Frontend.php:325
+msgid "More Stores"
+msgstr ""
+
+#: modules/StorePolicy/Admin.php:59
+#: modules/StorePolicy/Admin.php:124
+#: modules/StorePolicy/Admin.php:141
+msgid "Cancellation Policy"
+msgstr ""
+
+#: modules/StorePolicy/Admin.php:76
+#: templates/store/store-policy.php:21
+#: templates/store/store-single-product-policy-tab.php:25
+#: release/assets/js/index.js:1
+msgid "Shipping Policy"
+msgstr ""
+
+#: modules/StorePolicy/Admin.php:77
+msgid "Shipping Policy."
+msgstr ""
+
+#: modules/StorePolicy/Admin.php:91
+#: modules/StorePolicy/Admin.php:108
+#: templates/store/store-policy.php:22
+#: templates/store/store-single-product-policy-tab.php:30
+#: release/assets/js/index.js:1
+msgid "Refund Policy"
+msgstr ""
+
+#: modules/StorePolicy/Admin.php:109
+msgid "Refund Policy."
+msgstr ""
+
+#: modules/StorePolicy/Admin.php:142
+msgid "Cancellation Policy."
+msgstr ""
+
+#: modules/StorePolicy/Frontend.php:138
+#: release/assets/js/index.js:1
+msgid "Policies"
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:67
+#: modules/StoreReview/Rest.php:331
+msgid "Missing required fields."
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:71
+#: modules/StoreReview/Rest.php:339
+msgid "You have already reviewed this store."
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:89
+msgid "Invalid file upload data."
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:138
+msgid "Review submitted successfully!"
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:154
+msgid "Anonymous"
+msgstr ""
+
+#. translators: %s: rating value
+#. Translators: %s is the rating value out of 5.
+#: modules/StoreReview/Ajax.php:175
+#: modules/StoreReview/widgets/StoreRating.php:302
+#: templates/store/store-banner-info.php:135
+#: release/assets/js/block/marketplace-stores/index.js:1
+#, php-format,js-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:179
+#: modules/StoreReview/widgets/StoreRating.php:308
+#: templates/store/store-banner-info.php:140
+#: release/assets/js/block/marketplace-stores/index.js:1
+#: release/assets/js/block/store-quick-info/index.js:1
+#: release/assets/js/block/store-review/index.js:1
+msgid "out of 5"
+msgstr ""
+
+#. translators: %s: time difference
+#: modules/StoreReview/Ajax.php:190
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:210
+#: release/assets/js/block/store-review/index.js:1
+msgid "Review Image"
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:220
+msgid "Admin reply:"
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:233
+msgid "No reviews yet — they'll show up here once received."
+msgstr ""
+
+#: modules/StoreReview/Frontend.php:182
+msgid "Leave a Review"
+msgstr ""
+
+#: modules/StoreReview/Rest.php:288
+#: modules/StoreReview/Rest.php:460
+#: modules/StoreReview/Rest.php:569
+msgid "Review not found"
+msgstr ""
+
+#: modules/StoreReview/Rest.php:404
+msgid "Review could not be created."
+msgstr ""
+
+#: modules/StoreReview/Rest.php:450
+#: modules/StoreReview/Rest.php:559
+msgid "Invalid review ID"
+msgstr ""
+
+#: modules/StoreReview/Rest.php:485
+msgid "Invalid status value"
+msgstr ""
+
+#: modules/StoreReview/Rest.php:580
+msgid "Failed to delete review"
+msgstr ""
+
+#: modules/StoreReview/Rest.php:601
+#: release/assets/js/index.js:1
+msgid "Guest"
+msgstr ""
+
+#: modules/StoreReview/Tags/StoreRating.php:46
+#: modules/StoreReview/widgets/StoreRating.php:37
+msgid "Store Rating"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:73
+#: release/assets/js/index.js:1
+msgid "Content"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:81
+#: release/assets/js/block/store-quick-info/index.js:1
+#: release/assets/js/index.js:1
+msgid "Rating"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:97
+msgid "Rating Scale"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:109
+msgid "Show Rating Text"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:124
+msgid "Style"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:132
+msgid "Star Color"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:144
+msgid "Unmarked Star Color"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:156
+msgid "Star Size"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:178
+msgid "Stars Spacing"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:201
+msgid "Text Typography"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:212
+msgid "Text Color"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:227
+msgid "Text Spacing"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:251
+msgid "Alignment"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:255
+#: release/assets/js/block/store-banner/index.js:1
+#: release/assets/js/index.js:1
+msgid "Left"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:259
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Center"
+msgstr ""
+
+#: modules/StoreReview/widgets/StoreRating.php:263
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Right"
+msgstr ""
+
+#: modules/StoreShipping/Country_Shipping.php:47
+#: modules/StoreShipping/Distance_Shipping.php:43
+msgid "Shipping Cost"
+msgstr ""
+
+#. translators: %s: URL to MultiVendorX shipping settings page
+#: modules/StoreShipping/Country_Shipping.php:70
+#: modules/StoreShipping/Distance_Shipping.php:66
+#, php-format
+msgid "This shipping method is fully managed in the <a href=\"%s\" target=\"_blank\">MultiVendorX Shipping Settings</a>."
+msgstr ""
+
+#: modules/StoreShipping/Country_Shipping.php:116
+#: modules/StoreShipping/Distance_Shipping.php:161
+msgid "Free Shipping"
+msgstr ""
+
+#: modules/StoreShipping/Country_Shipping.php:305
+#: modules/StoreShipping/Distance_Shipping.php:189
+msgid "Pickup from Store"
+msgstr ""
+
+#: modules/StoreShipping/Distance_Shipping.php:139
+msgid "Some cart item(s) are not deliverable to your location."
+msgstr ""
+
+#: modules/StoreShipping/Frontend.php:111
+msgid "Shipping by Country"
+msgstr ""
+
+#: modules/StoreShipping/Frontend.php:129
+msgid "Shipping by Distance"
+msgstr ""
+
+#: modules/StoreShipping/Frontend.php:147
+msgid "Shipping by Zone"
+msgstr ""
+
+#: modules/StoreShipping/Frontend.php:178
+msgid "Delivery Location"
+msgstr ""
+
+#: modules/StoreShipping/Frontend.php:179
+msgctxt "placeholder"
+msgid "Insert your address .."
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:170
+msgid "Shipping method is required"
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:179
+msgid "Zone ID is required"
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:188
+msgid "Store ID is required"
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:218
+msgid "Shipping method settings saved successfully"
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:258
+msgid "store_id, method_id and zone_id are required"
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:300
+#: modules/StoreShipping/Rest.php:374
+msgid "Missing required parameters"
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:321
+msgid "Failed to save shipping method"
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:337
+msgid "Shipping method saved successfully"
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:393
+msgid "Shipping method deleted successfully"
+msgstr ""
+
+#: modules/StoreShipping/Util.php:111
+msgid "Shipping method not found."
+msgstr ""
+
+#: modules/StoreShipping/Util.php:143
+msgid "Shipping method not found"
+msgstr ""
+
+#: modules/StoreShipping/Zone_Shipping.php:53
+#: modules/StoreShipping/Zone_Shipping.php:211
+#: release/assets/js/index.js:1
+msgid "Store Shipping"
+msgstr ""
+
+#: modules/StoreShipping/Zone_Shipping.php:54
+msgid "Charge varying rates based on user defined conditions"
+msgstr ""
+
+#: modules/StoreShipping/Zone_Shipping.php:208
+msgid "Method title"
+msgstr ""
+
+#: modules/StoreShipping/Zone_Shipping.php:210
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: modules/StoreShipping/Zone_Shipping.php:215
+msgid "Tax status"
+msgstr ""
+
+#: modules/StoreShipping/Zone_Shipping.php:220
+msgid "Taxable"
+msgstr ""
+
+#: modules/StoreShipping/Zone_Shipping.php:221
+msgctxt "Tax status"
+msgid "None"
+msgstr ""
+
+#: modules/WPML/Rest.php:164
+msgid "WPML Failed"
+msgstr ""
+
+#: modules/WPML/Rest.php:191
+msgid "WPML not active"
+msgstr ""
+
+#: modules/WPML/Rest.php:204
+msgid "Missing product ID or language"
+msgstr ""
+
+#: modules/WPML/Rest.php:249
+msgid "Failed to create translated product"
 msgstr ""
 
 #: templates/elementor-canvas.php:49
@@ -803,20 +1883,6 @@ msgstr ""
 msgid "Details"
 msgstr ""
 
-#. Translators: %s is the rating value out of 5.
-#: templates/store/store-banner-info.php:135
-#: release/assets/js/block/marketplace-stores/index.js:1
-#, php-format,js-format
-msgid "Rated %s out of 5"
-msgstr ""
-
-#: templates/store/store-banner-info.php:140
-#: release/assets/js/block/marketplace-stores/index.js:1
-#: release/assets/js/block/store-quick-info/index.js:1
-#: release/assets/js/block/store-review/index.js:1
-msgid "out of 5"
-msgstr ""
-
 #. Translators: label for single/multiple review counts.
 #: templates/store/store-banner-info.php:147
 #: release/assets/js/index.js:1
@@ -829,18 +1895,6 @@ msgstr[1] ""
 #: templates/store/store-single-product-policy-tab.php:20
 #: release/assets/js/index.js:1
 msgid "Store Policy"
-msgstr ""
-
-#: templates/store/store-policy.php:21
-#: templates/store/store-single-product-policy-tab.php:25
-#: release/assets/js/index.js:1
-msgid "Shipping Policy"
-msgstr ""
-
-#: templates/store/store-policy.php:22
-#: templates/store/store-single-product-policy-tab.php:30
-#: release/assets/js/index.js:1
-msgid "Refund Policy"
 msgstr ""
 
 #: templates/store/store-policy.php:23
@@ -938,28 +1992,7 @@ msgid "Do you need more information? Write to us!"
 msgstr ""
 
 #: release/assets/js/block/contact-info/index.js:1
-#: release/assets/js/block/marketplace-stores/index.js:1
-#: release/assets/js/index.js:1
-msgid "Name"
-msgstr ""
-
-#: release/assets/js/block/contact-info/index.js:1
-#: release/assets/js/index.js:1
-msgid "Email"
-msgstr ""
-
-#: release/assets/js/block/contact-info/index.js:1
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Message"
-msgstr ""
-
-#: release/assets/js/block/contact-info/index.js:1
 msgid "Send Message"
-msgstr ""
-
-#: release/assets/js/block/marketplace-coupons/index.js:1
-#: release/assets/js/index.js:1
-msgid "Coupons"
 msgstr ""
 
 #: release/assets/js/block/marketplace-coupons/index.js:1
@@ -1547,11 +2580,6 @@ msgid "All products listed by vendors"
 msgstr ""
 
 #: release/assets/js/block/setup-wizard/index.js:1
-#: release/assets/js/index.js:1
-msgid "Orders"
-msgstr ""
-
-#: release/assets/js/block/setup-wizard/index.js:1
 msgid "Vendor-specific order history"
 msgstr ""
 
@@ -1637,27 +2665,7 @@ msgid "Kolkata, India"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
-msgid "Welcome to our store. We offer the best products with excellent customer service."
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Browse Products"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Contact Us"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
 msgid "Banner Settings"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Inner Banner Content"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Enable to show content blocks inside the banner"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
@@ -1665,20 +2673,97 @@ msgid "Template"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
-msgid "Template 1"
+#: release/assets/js/index.js:1
+msgid "Luxe Display"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
-msgid "Template 2"
+#: release/assets/js/index.js:1
+msgid "Signature View"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
-msgid "Template 3"
+#: release/assets/js/index.js:1
+msgid "Dynamic Showcase"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
 #: release/assets/js/block/store-logo/index.js:1
 msgid "Custom"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+#: release/assets/js/block/store-logo/index.js:1
+#: release/assets/js/index.js:1
+msgid "Height"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Small (18.75rem)"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Medium (25rem)"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Large (31.25rem)"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Extra Large (37.5rem)"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Auto"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Min Height"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Small (12.5em)"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Medium (18.75rem)"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Large (25rem)"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Extra Large (31.25rem)"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Background Position"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Top"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Bottom"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Top Left"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Top Right"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Bottom Left"
+msgstr ""
+
+#: release/assets/js/block/store-banner/index.js:1
+msgid "Bottom Right"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
@@ -1702,94 +2787,7 @@ msgid "Top Center"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
-msgid "Top Left"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Top Right"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
 msgid "Bottom Center"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Bottom Left"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Bottom Right"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-#: release/assets/js/block/store-logo/index.js:1
-#: release/assets/js/index.js:1
-msgid "Height"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Small (18.75rem)"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Medium (25rem)"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Large (500px)"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Extra Large (600px)"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Auto"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Min Height"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Small (200px)"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Medium (18.75rem)"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Large (25rem)"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Extra Large (500px)"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Background Position"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Center"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Top"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Bottom"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-#: release/assets/js/index.js:1
-msgid "Left"
-msgstr ""
-
-#: release/assets/js/block/store-banner/index.js:1
-msgid "Right"
 msgstr ""
 
 #: release/assets/js/block/store-banner/index.js:1
@@ -1830,36 +2828,6 @@ msgstr ""
 
 #: release/assets/js/block/store-engagement-tools/index.js:1
 msgid "followers"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Live Chat com"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-#: release/assets/js/index.js:1
-msgid "Get Support"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Create a new support"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Subject"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Something went wrong"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Subject and message are required"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-#: release/assets/js/index.js:1
-msgid "Submit"
 msgstr ""
 
 #: release/assets/js/block/store-engagement-tools/index.js:1
@@ -1917,10 +2885,6 @@ msgid "Width"
 msgstr ""
 
 #: release/assets/js/block/store-logo/index.js:1
-msgid "Color"
-msgstr ""
-
-#: release/assets/js/block/store-logo/index.js:1
 msgid "Overlay"
 msgstr ""
 
@@ -1945,12 +2909,6 @@ msgid "(0 reviews)"
 msgstr ""
 
 #: release/assets/js/block/store-quick-info/index.js:1
-#: release/assets/js/block/store-tabs/index.js:1
-#: release/assets/js/index.js:1
-msgid "Reviews"
-msgstr ""
-
-#: release/assets/js/block/store-quick-info/index.js:1
 msgid "Store1"
 msgstr ""
 
@@ -1960,16 +2918,6 @@ msgstr ""
 
 #: release/assets/js/block/store-quick-info/index.js:1
 msgid "★★★★★"
-msgstr ""
-
-#: release/assets/js/block/store-quick-info/index.js:1
-#: release/assets/js/index.js:1
-msgid "Rating"
-msgstr ""
-
-#: release/assets/js/block/store-quick-info/index.js:1
-#: release/assets/js/index.js:1
-msgid "Sales"
 msgstr ""
 
 #: release/assets/js/block/store-review/index.js:1
@@ -1997,10 +2945,6 @@ msgstr ""
 #: release/assets/js/block/store-review/index.js:1
 #: release/assets/js/index.js:1
 msgid "Read more"
-msgstr ""
-
-#: release/assets/js/block/store-review/index.js:1
-msgid "Review Image"
 msgstr ""
 
 #: release/assets/js/block/store-review/index.js:1
@@ -2093,11 +3037,6 @@ msgstr ""
 
 #: release/assets/js/block/store-social-icons/index.js:1
 msgid "Custom Color"
-msgstr ""
-
-#: release/assets/js/block/store-tabs/index.js:1
-#: release/assets/js/index.js:1
-msgid "Policy"
 msgstr ""
 
 #: release/assets/js/block/store-tabs/index.js:1
@@ -2326,10 +3265,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Activities"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Announcements"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -2685,10 +3620,6 @@ msgid "Shipping"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Refund"
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Cancellation / return"
 msgstr ""
 
@@ -2774,10 +3705,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Delete"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Content"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -3294,10 +4221,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Let stores link related products, upsells, and cross-sells."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Policies"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -3900,10 +4823,6 @@ msgid "Store Staff"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Store Shipping"
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Facilitator"
 msgstr ""
 
@@ -3917,10 +4836,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Delete store"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Banner"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -4214,10 +5129,6 @@ msgstr ""
 #: release/assets/js/index.js:1
 #, js-format
 msgid "Could not install \"%s\"."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Documentation"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -4962,6 +5873,14 @@ msgid "Marketplace Earning"
 msgstr ""
 
 #: release/assets/js/index.js:1
+msgid "Shipping Tax"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Platform Fee"
+msgstr ""
+
+#: release/assets/js/index.js:1
 msgid "Regenerate Commission"
 msgstr ""
 
@@ -5043,10 +5962,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Approve, decline, or tweak before they go live."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Withdrawals"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -5278,11 +6193,11 @@ msgid "Documentation & Learning"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis odio atque sunt autem exercitationem praesentium ullam deleniti iste laboriosam iure."
+msgid "What's New"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "What's New"
+msgid "Get Support"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -5590,10 +6505,6 @@ msgid "Order #"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "On Hold"
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Back to Orders"
 msgstr ""
 
@@ -5651,10 +6562,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Billing address"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Address"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -6106,6 +7013,62 @@ msgid "Type email addresses and press Enter to add..."
 msgstr ""
 
 #: release/assets/js/index.js:1
+msgid "Printful"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Connect your store with Printful to automate product sync, order fulfillment, and inventory updates."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Client ID"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Connect Printful at admin level to allow stores to access and sell Printful products."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Used to identify your application when connecting with Printful.<br/>Get your API credentials from the Printful Developer settings.<br/><a href=\"https://developers.printful.com/docs/#section/Authentication\" class=\"link-item\" target=\"_blank\">Printful Authentication guide <i class=\"adminfont-external\"></i></a>"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Secret Key"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Secure key used to authenticate Printful connection for all stores."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Keep this key private. It is required to process product sync, orders, and fulfillment via Printful."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "App URL"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "The base URL of your store that Printful uses to identify and communicate with your application."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "This should match the URL registered in your Printful OAuth app settings. In production, use your live store URL (e.g. https://yourstore.com)."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Redirection Domains"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Domains authorized to receive OAuth callbacks from Printful after vendor authentication."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Only requests originating from these domains will be accepted during the OAuth flow. Add your production domain before going live to prevent authentication failures"
+msgstr ""
+
+#: release/assets/js/index.js:1
 msgid "Store Status"
 msgstr ""
 
@@ -6254,18 +7217,6 @@ msgid "Control how your store looks and feels. Set the banner style, logo placem
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Luxe Display"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Signature View"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Dynamic Showcase"
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Where to show sidebar on store page"
 msgstr ""
 
@@ -6354,6 +7305,126 @@ msgid "Low stock threshold"
 msgstr ""
 
 #: release/assets/js/index.js:1
+msgid "INVOICE"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Invoice Details:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Invoice Number:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "INV-2025-"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Order Number:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "ORD-2025-456"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Invoice Date:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "October 9, 2025"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Bill To:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Jane Doe"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "john.smith@email.com"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "456 Oak Avenue"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Springfield"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "IL"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "62701"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "jane.doe@acme.co"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Phone:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Ship To:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "789 Distribution Road"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "United Kingdom"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Unit Price"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Subtotal"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Tax Rate"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Items Subtotal:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "$4,500.00"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Tax Subtotal:"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Shipping (Seller Portion):"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "$0.00"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "$6000.00"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Notes:"
+msgstr ""
+
+#: release/assets/js/index.js:1
 msgid "VAT / Tax number"
 msgstr ""
 
@@ -6431,6 +7502,10 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Payment has been confirmed."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "On Hold"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -6926,10 +8001,6 @@ msgid "United States"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "United Kingdom"
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Canada"
 msgstr ""
 
@@ -7031,10 +8102,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Are you sure you want to delete this abuse report?"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Failed to delete report"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -7802,10 +8869,6 @@ msgid "Product gallery"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Tools"
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Use these tools if your store dashboard is showing outdated or incorrect information."
 msgstr ""
 
@@ -8214,10 +9277,6 @@ msgid "Invoice & Packing slip"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Store Support"
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Customer Queries"
 msgstr ""
 
@@ -8254,11 +9313,11 @@ msgid "Min Max"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Knowledgebase"
+msgid "Elementor"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Elementor"
+msgid "BuddyPress"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -8278,7 +9337,7 @@ msgid "Product Addon"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Shipstation"
+msgid "ShipStation"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -8810,10 +9869,6 @@ msgid "Collect verified bank details to ensure secure and accurate payouts."
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "Transactions"
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Track your earnings, withdrawals, and current balance at a glance."
 msgstr ""
 
@@ -9206,6 +10261,46 @@ msgid "Assign a user as a facilitator who will receive the facilitator fee."
 msgstr ""
 
 #: release/assets/js/index.js:1
+msgid "Facilitator permissions"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Define what financial and commission-related capabilities are available to facilitators."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "View earnings"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Allow facilitators to view their total earnings from assigned stores."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Request withdrawal"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Allow facilitators to request payout of their earnings."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Commission history"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Allow facilitators to access a detailed history of commissions earned."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "View transactions"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Allow facilitators to view all transaction records related to their earnings."
+msgstr ""
+
+#: release/assets/js/index.js:1
 msgid "Commission Notes"
 msgstr ""
 
@@ -9450,6 +10545,50 @@ msgid "Social Verification"
 msgstr ""
 
 #: release/assets/js/index.js:1
+msgid "Unique identifier for your Google OAuth application."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Get this from Google Cloud Console → APIs & Services → Credentials.<br/><a href=\"https://developers.google.com/identity/oauth2/web/guides/get-google-api-clientid\" class=\"link-item\" target=\"_blank\">How to generate Google Client ID <i class=\"adminfont-external\"></i></a>"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Private key used to authenticate your application with Google."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Keep this secure and do not expose it publicly.<br/><a href=\"https://developers.google.com/identity/oauth2/web/guides/get-google-api-clientid\" class=\"link-item\" target=\"_blank\">Google OAuth credentials guide <i class=\"adminfont-external\"></i></a>"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Public identifier for your Twitter (X) application."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Get this from your Twitter Developer Portal → Projects & Apps → Keys and tokens.<br/><a href=\"https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api\" class=\"link-item\" target=\"_blank\">How to get Twitter API keys <i class=\"adminfont-external\"></i></a>"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Private key used to authenticate your application with Twitter (X)."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Keep this secure and do not expose it publicly.<br/><a href=\"https://developer.twitter.com/en/docs/authentication/oauth-1-0a/api-key-and-secret\" class=\"link-item\" target=\"_blank\">Twitter authentication guide <i class=\"adminfont-external\"></i></a>"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Token used for app-only authentication to access Twitter (X) APIs."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Used for secure API requests without user context.<br/><a href=\"https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens\" class=\"link-item\" target=\"_blank\">Learn about Bearer Token <i class=\"adminfont-external\"></i></a>"
+msgstr ""
+
+#: release/assets/js/index.js:1
 msgid "Qty:"
 msgstr ""
 
@@ -9523,10 +10662,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Refund requests will appear here when submitted."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Guest"
 msgstr ""
 
 #: release/assets/js/index.js:1
