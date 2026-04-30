@@ -269,7 +269,7 @@ class Transactions extends \WP_REST_Controller {
         return rest_ensure_response(
             array(
                 'reserve_balance'    => $minimum_wallet_amount,
-                'thresold'           => $payout_threshold,
+                'threshold'           => $payout_threshold,
                 'available_balance'  => $balance,
                 'balance'            => $balance,
                 'locking_day'        => $locking_day,

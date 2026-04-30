@@ -111,7 +111,7 @@ class Dashboard extends \WP_REST_Controller {
                 'icon'       => 'module',
                 'slug'       => '',
                 'submenu'    => array(),
-                'capability' => array( 'create_stores' ),
+                'capability' => array( 'create_stores', 'manage_store_settings' ),
             ),
             'products'      => array(
                 'name'       => __( 'Products', 'multivendorx' ),

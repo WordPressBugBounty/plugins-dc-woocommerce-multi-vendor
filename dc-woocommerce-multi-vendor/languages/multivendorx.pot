@@ -1,14 +1,14 @@
 # Copyright (c) 2026 Multivendorx Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.2\n"
+"Project-Id-Version: MultiVendorX 5.0.3\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-04-27T14:45:41+00:00\n"
+"POT-Creation-Date: 2026-04-30T11:07:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -75,8 +75,8 @@ msgid "Reports"
 msgstr ""
 
 #: classes/Admin.php:124
-#: classes/MultiVendorX.php:322
 #: classes/RestAPI/Controllers/Dashboard.php:235
+#: classes/Tracker.php:51
 #: release/assets/js/index.js:1
 msgid "Settings"
 msgstr ""
@@ -97,8 +97,8 @@ msgstr ""
 
 #: classes/Admin.php:190
 #: classes/Admin.php:198
-#: classes/MultiVendorX.php:326
-#: classes/MultiVendorX.php:348
+#: classes/MultiVendorX.php:261
+#: classes/Tracker.php:62
 #: release/assets/js/index.js:1
 msgid "Upgrade to Pro"
 msgstr ""
@@ -274,38 +274,19 @@ msgstr ""
 msgid "Every minute"
 msgstr ""
 
-#. translators: 1: Opening strong tag, 2: Closing strong tag, 3: Opening WooCommerce link, 4: Closing link, 5: Opening install link, 6: Closing install link.
-#: classes/MultiVendorX.php:258
-#, php-format
-msgid "%1$sMultivendorX is inactive.%2$s The %3$sWooCommerce plugin%4$s must be active for the MultivendorX to work. Please %5$sinstall & activate WooCommerce%6$s"
-msgstr ""
-
-#: classes/MultiVendorX.php:288
-msgid "MultivendorX Update Required"
-msgstr ""
-
-#: classes/MultiVendorX.php:289
-msgid "To ensure all the feature compatibility and accessibility, MultiVendorX Pro minimum v2.0.0 is required."
-msgstr ""
-
-#: classes/MultiVendorX.php:293
-msgid "Update Now"
-msgstr ""
-
-#: classes/MultiVendorX.php:343
+#: classes/MultiVendorX.php:256
 msgid "View WooCommerce documentation"
 msgstr ""
 
-#: classes/MultiVendorX.php:343
+#: classes/MultiVendorX.php:256
 msgid "Docs"
 msgstr ""
 
-#: classes/MultiVendorX.php:344
+#: classes/MultiVendorX.php:257
 msgid "Visit community forums"
 msgstr ""
 
-#: classes/MultiVendorX.php:344
-#: release/assets/js/block/store-engagement-tools/index.js:1
+#: classes/MultiVendorX.php:257
 #: release/assets/js/index.js:1
 msgid "Support"
 msgstr ""
@@ -596,6 +577,58 @@ msgstr ""
 msgid "— No change —"
 msgstr ""
 
+#: classes/Promotions.php:66
+msgid "We appreciate you using MultiVendorX. If it has helped your business, please consider leaving a quick review."
+msgstr ""
+
+#: classes/Promotions.php:68
+msgid "Remind me later"
+msgstr ""
+
+#: classes/Promotions.php:69
+msgid "Review now"
+msgstr ""
+
+#: classes/Promotions.php:93
+msgid "Want to help make <strong>MultiVendorX</strong> even better? Allow anonymous usage tracking and receive a <strong>10% discount coupon</strong> for premium extensions."
+msgstr ""
+
+#: classes/Promotions.php:94
+msgid "What we collect."
+msgstr ""
+
+#: classes/Promotions.php:98
+msgid "We collect non-sensitive diagnostic and usage data, including your site URL, WordPress and PHP versions, active plugins and themes, and your email address to send the discount coupon."
+msgstr ""
+
+#: classes/Promotions.php:102
+msgid "Sure, I'd like to help"
+msgstr ""
+
+#: classes/Promotions.php:103
+msgid "No Thanks"
+msgstr ""
+
+#: classes/Promotions.php:131
+msgid "Coupon data is required."
+msgstr ""
+
+#: classes/Promotions.php:150
+msgid "Unable to create coupon."
+msgstr ""
+
+#: classes/Promotions.php:218
+msgid "MultivendorX Update Required"
+msgstr ""
+
+#: classes/Promotions.php:219
+msgid "To ensure all the feature compatibility and accessibility, MultiVendorX Pro minimum v2.0.0 is required."
+msgstr ""
+
+#: classes/Promotions.php:223
+msgid "Update Now"
+msgstr ""
+
 #: classes/RestAPI/Controllers/Commissions.php:101
 #: classes/RestAPI/Controllers/Commissions.php:284
 #: classes/RestAPI/Controllers/Commissions.php:318
@@ -612,8 +645,8 @@ msgstr ""
 #: classes/RestAPI/Controllers/Status.php:119
 #: classes/RestAPI/Controllers/Stores.php:116
 #: classes/RestAPI/Controllers/Stores.php:484
-#: classes/RestAPI/Controllers/Stores.php:719
-#: classes/RestAPI/Controllers/Stores.php:868
+#: classes/RestAPI/Controllers/Stores.php:721
+#: classes/RestAPI/Controllers/Stores.php:870
 #: classes/RestAPI/Controllers/Tour.php:78
 #: classes/RestAPI/Controllers/Tour.php:124
 #: classes/RestAPI/Controllers/Transactions.php:98
@@ -665,9 +698,9 @@ msgstr ""
 #: classes/RestAPI/Controllers/Status.php:101
 #: classes/RestAPI/Controllers/Status.php:186
 #: classes/RestAPI/Controllers/Stores.php:393
-#: classes/RestAPI/Controllers/Stores.php:702
-#: classes/RestAPI/Controllers/Stores.php:850
-#: classes/RestAPI/Controllers/Stores.php:1276
+#: classes/RestAPI/Controllers/Stores.php:704
+#: classes/RestAPI/Controllers/Stores.php:852
+#: classes/RestAPI/Controllers/Stores.php:1278
 #: classes/RestAPI/Controllers/Tour.php:112
 #: classes/RestAPI/Controllers/Tour.php:157
 #: classes/RestAPI/Controllers/Transactions.php:219
@@ -834,7 +867,7 @@ msgid "Notification(s) updated successfully."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Settings.php:201
-#: classes/RestAPI/Controllers/Stores.php:1268
+#: classes/RestAPI/Controllers/Stores.php:1270
 msgid "Settings Saved"
 msgstr ""
 
@@ -842,11 +875,11 @@ msgstr ""
 msgid "MultiVendorX visitors stats successfully deleted"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:992
+#: classes/RestAPI/Controllers/Stores.php:994
 msgid "New owner ID missing."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1293
+#: classes/RestAPI/Controllers/Stores.php:1295
 #: modules/FollowStore/Rest.php:216
 msgid "Invalid store ID"
 msgstr ""
@@ -860,20 +893,20 @@ msgid "Withdrawal request submitted successfully."
 msgstr ""
 
 #. translators: 1: refund id, 2: date, 3: user
-#: classes/RestAPI/Rest.php:446
+#: classes/RestAPI/Rest.php:450
 #, php-format
 msgid "Refund #%1$s - %2$s by %3$s"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:449
+#: classes/RestAPI/Rest.php:453
 msgid "system"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:604
+#: classes/RestAPI/Rest.php:608
 msgid "Variation SKU is not generated!"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:644
+#: classes/RestAPI/Rest.php:648
 msgid "SKU is not generated!"
 msgstr ""
 
@@ -919,6 +952,78 @@ msgstr ""
 #: classes/Status.php:55
 #: release/assets/js/index.js:1
 msgid "None"
+msgstr ""
+
+#: classes/Tracker.php:58
+msgid "Write a Review"
+msgstr ""
+
+#: classes/Tracker.php:118
+msgid "Support Forum"
+msgstr ""
+
+#: classes/Tracker.php:122
+msgid "Facebook Group"
+msgstr ""
+
+#: classes/Tracker.php:126
+msgid "Book a Call"
+msgstr ""
+
+#: classes/Tracker.php:154
+msgid "We collect non-sensitive diagnostic data and plugin usage information along with your feedback."
+msgstr ""
+
+#: classes/Tracker.php:159
+msgid "Skip & Deactivate"
+msgstr ""
+
+#: classes/Tracker.php:160
+msgid "Submit & Deactivate"
+msgstr ""
+
+#: classes/Tracker.php:203
+msgid "Submitting…"
+msgstr ""
+
+#: classes/Tracker.php:247
+msgid "We're sorry to see you leave 😔"
+msgstr ""
+
+#: classes/Tracker.php:248
+msgid "Thinking about deactivating? We're here to help — contact us anytime."
+msgstr ""
+
+#: classes/Tracker.php:249
+msgid "Would you quickly share your reason for deactivating?"
+msgstr ""
+
+#: classes/Tracker.php:251
+msgid "I no longer need the plugin"
+msgstr ""
+
+#: classes/Tracker.php:253
+msgid "I found a better plugin"
+msgstr ""
+
+#: classes/Tracker.php:254
+msgid "Please share which plugin"
+msgstr ""
+
+#: classes/Tracker.php:256
+msgid "I couldn't get the plugin to work"
+msgstr ""
+
+#: classes/Tracker.php:257
+msgid "It's a temporary deactivation"
+msgstr ""
+
+#: classes/Tracker.php:259
+msgid "Other"
+msgstr ""
+
+#: classes/Tracker.php:260
+msgid "Please share the reason"
 msgstr ""
 
 #: classes/Widgets.php:38
@@ -1425,6 +1530,7 @@ msgid "Request timeline"
 msgstr ""
 
 #: modules/MarketplaceRefund/Frontend.php:616
+#: release/assets/js/index.js:1
 msgid "Refund requested"
 msgstr ""
 
@@ -1993,6 +2099,23 @@ msgstr ""
 
 #: release/assets/js/block/contact-info/index.js:1
 msgid "Send Message"
+msgstr ""
+
+#: release/assets/js/block/follow-store/index.js:1
+msgid "Unfollow Store"
+msgstr ""
+
+#: release/assets/js/block/follow-store/index.js:1
+#: release/assets/js/index.js:1
+msgid "Follow Store"
+msgstr ""
+
+#: release/assets/js/block/follow-store/index.js:1
+msgid "follower"
+msgstr ""
+
+#: release/assets/js/block/follow-store/index.js:1
+msgid "followers"
 msgstr ""
 
 #: release/assets/js/block/marketplace-coupons/index.js:1
@@ -2811,48 +2934,6 @@ msgstr ""
 
 #: release/assets/js/block/store-email/index.js:1
 msgid "store@gmail.com"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Unfollow Store"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-#: release/assets/js/index.js:1
-msgid "Follow Store"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "follower"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "followers"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Button Settings"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Show Follow Button"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Show Follower Count"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Show Live Chat"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-msgid "Show Support"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/index.js:1
-#: release/assets/js/index.js:1
-msgid "Live Chat"
 msgstr ""
 
 #: release/assets/js/block/store-logo/index.js:1
@@ -5724,7 +5805,7 @@ msgid "fee"
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "No pending earning in clearence"
+msgid "No pending earning in clearance"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -6533,6 +6614,22 @@ msgid "Refund Accepted"
 msgstr ""
 
 #: release/assets/js/index.js:1
+msgid "Requested amount"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Supporting images"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Additional details"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Customer's Reason"
+msgstr ""
+
+#: release/assets/js/index.js:1
 msgid "Refund Request Details"
 msgstr ""
 
@@ -6970,6 +7067,62 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Website technical details are displayed to ensure optimal performance and compatibility."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "How will this be delivered?"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Choose how customers receive this product after purchase."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Physical - I pack and post it"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Item is packed and shipped to the customer address."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Customer receives a file - e.g. a PDF, software, or digital artwork."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Digital service - Delivered online"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Service provided remotely - like coaching, consulting, or custom design. No shipping or file download involved."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Something else"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Anything that does not involve posting a package or delivering a file, that doesn't fit the above."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Package dimensions & weight"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Used to calculate accurate shipping rates at checkout."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Weight (kg)"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Shipping classes"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Length"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -7801,6 +7954,42 @@ msgid "Edit and manage individual email templates used across the marketplace."
 msgstr ""
 
 #: release/assets/js/index.js:1
+msgid "Identity Documents"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Required"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Verify Now"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Required Information"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Social Profiles"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Verify via LinkedIn"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Verify via Google"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Verify via Facebook"
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Verify via Twitter"
+msgstr ""
+
+#: release/assets/js/index.js:1
 msgid "Manage your store’s profile image, banner, and video."
 msgstr ""
 
@@ -7814,62 +8003,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Upload Banner"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "How will this be delivered?"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Choose how customers receive this product after purchase."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Physical - I pack and post it"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Item is packed and shipped to the customer address."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Customer receives a file - e.g. a PDF, software, or digital artwork."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Digital service - Delivered online"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Service provided remotely - like coaching, consulting, or custom design. No shipping or file download involved."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Something else"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Anything that does not involve posting a package or delivering a file, that doesn't fit the above."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Package dimensions & weight"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Used to calculate accurate shipping rates at checkout."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Weight (kg)"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Shipping classes"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Length"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -8149,6 +8282,10 @@ msgid "reserve balance"
 msgstr ""
 
 #: release/assets/js/index.js:1
+msgid "No pending earning in clearence"
+msgstr ""
+
+#: release/assets/js/index.js:1
 msgid "Request Withdrawal"
 msgstr ""
 
@@ -8246,6 +8383,10 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Control which features and actions are available to each store role."
+msgstr ""
+
+#: release/assets/js/index.js:1
+msgid "Live Chat"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -8614,42 +8755,6 @@ msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Customer confirm delivery"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Identity Documents"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Required"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Verify Now"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Required Information"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Social Profiles"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Verify via LinkedIn"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Verify via Google"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Verify via Facebook"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Verify via Twitter"
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -10269,27 +10374,11 @@ msgid "Define what financial and commission-related capabilities are available t
 msgstr ""
 
 #: release/assets/js/index.js:1
-msgid "View earnings"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Allow facilitators to view their total earnings from assigned stores."
-msgstr ""
-
-#: release/assets/js/index.js:1
 msgid "Request withdrawal"
 msgstr ""
 
 #: release/assets/js/index.js:1
 msgid "Allow facilitators to request payout of their earnings."
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Commission history"
-msgstr ""
-
-#: release/assets/js/index.js:1
-msgid "Allow facilitators to access a detailed history of commissions earned."
 msgstr ""
 
 #: release/assets/js/index.js:1
@@ -10942,6 +11031,16 @@ msgctxt "block description"
 msgid "Display a contact form with various settings"
 msgstr ""
 
+#: release/assets/js/block/follow-store/block.json
+msgctxt "block title"
+msgid "Follow Store"
+msgstr ""
+
+#: release/assets/js/block/follow-store/block.json
+msgctxt "block description"
+msgid "Enable interactive features that let customers follow stores, ask questions, and connect with sellers in real time."
+msgstr ""
+
 #: release/assets/js/block/marketplace-coupons/block.json
 msgctxt "block title"
 msgid "Classic Store Coupons"
@@ -11081,16 +11180,6 @@ msgstr ""
 #: release/assets/js/block/store-phone/block.json
 msgctxt "block style label"
 msgid "Link Style"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/block.json
-msgctxt "block title"
-msgid "Store engagement tools"
-msgstr ""
-
-#: release/assets/js/block/store-engagement-tools/block.json
-msgctxt "block description"
-msgid "Enable interactive features that let customers follow stores, ask questions, and connect with sellers in real time."
 msgstr ""
 
 #: release/assets/js/block/store-logo/block.json

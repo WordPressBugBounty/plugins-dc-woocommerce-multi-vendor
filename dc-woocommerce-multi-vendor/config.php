@@ -7,10 +7,12 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'MULTIVENDORX_PLUGIN_TOKEN', 'multivendorx' );
+define( 'MULTIVENDORX_PLUGIN_TEXTDOMAIN', 'multivendorx' );
 
-define( 'MULTIVENDORX_PLUGIN_VERSION', '5.0.2' );
+define( 'MULTIVENDORX_PLUGIN_VERSION', '5.0.3' );
 
 define( 'MULTIVENDORX_PRO_SHOP_URL', 'https://multivendorx.com/pricing/' );
 
 define( 'MULTIVENDORX_PLUGIN_SLUG', 'multivendorx' );
+
+define( 'MULTIVENDORX_WORDPRESS_SLUG', 'dc-woocommerce-multi-vendor' );
