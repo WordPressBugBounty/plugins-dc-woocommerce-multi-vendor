@@ -250,7 +250,7 @@ class FrontendScripts {
     /**
 	 * Register admin styles using filters.
 	 *
-	 * Allows style registration through `admin_moowoodle_register_styles` filter.
+	 * Allows style registration through `admin_multivendorx_register_styles` filter.
 	 */
     public static function admin_register_styles() {
 		$version         = MultiVendorX()->version;
@@ -311,6 +311,7 @@ class FrontendScripts {
 
         $pages             = get_pages();
         $woocommerce_pages = array( wc_get_page_id( 'shop' ), wc_get_page_id( 'cart' ), wc_get_page_id( 'checkout' ), wc_get_page_id( 'myaccount' ) );
+        $pages_array = array();
         if ( $pages ) {
             foreach ( $pages as $page ) {
                 if ( ! in_array( $page->ID, $woocommerce_pages, true ) ) {
@@ -382,21 +383,18 @@ class FrontendScripts {
 
         $store_ids = array();
         $all_meta  = array();
-        if ( ! is_admin() ) {
-            $store_ids    = Store::get_store( MultiVendorX()->current_user_id, 'user' );
+        if ( !is_admin() ) {
             $active_store = MultiVendorX()->active_store;
+            $store_ids = Store::get_store( MultiVendorX()->current_user_id, 'user' );
+            if ( empty( $active_store ) && ! empty( $store_ids ) ) {
+                $first_store = reset( $store_ids );
+                $active_store = $first_store['id'];
+                update_user_meta( MultiVendorX()->current_user_id, Utill::USER_SETTINGS_KEYS['active_store'], $first_store['id'] );
+                MultiVendorX()->active_store = $first_store['id'];
+            }
 
             $store    = new Store( $active_store );
             $all_meta = array_merge( $store->get_data(), $store->get_all_meta() );
-
-            if ( empty( $active_store ) && ! empty( $store_ids ) ) {
-                $first_store = reset( $store_ids );
-
-                if ( ! empty( $first_store['id'] ) ) {
-                    update_user_meta( MultiVendorX()->current_user_id, Utill::USER_SETTINGS_KEYS['active_store'], $first_store['id'] );
-                    MultiVendorX()->active_store = $first_store['id'];
-                }
-            }
         }
 
         $order_statuses = wc_get_order_statuses();
@@ -475,7 +473,7 @@ class FrontendScripts {
 									'manage_plan_url' => MULTIVENDORX_PRO_SHOP_URL,
 								)
 							),
-                            'placeholder_url  '      => wc_placeholder_img_src(),
+                            'placeholder_url'      => wc_placeholder_img_src(),
                             'default_user_avatar'    => get_avatar_url( 0 ),
                             'multivendor_plugin'     => Utill::get_active_multivendor(),
                         )
