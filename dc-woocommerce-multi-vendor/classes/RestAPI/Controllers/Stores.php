@@ -73,6 +73,16 @@ class Stores extends \WP_REST_Controller {
                 ),
             )
         );
+
+         register_rest_route(
+            MultiVendorX()->rest_namespace,
+            '/states/(?P<country>[A-Z]{2})',
+            array(
+                'methods'             => \WP_REST_Server::READABLE,
+                'callback'            => array( $this, 'get_states_by_country' ),
+                'permission_callback' => array( $this, 'get_items_permissions_check' ),
+            )
+        );
     }
 
     /**
@@ -198,7 +208,9 @@ class Stores extends \WP_REST_Controller {
                 foreach ( $rejected_stores as $store ) {
                     $store_id     = (int) $store['ID'];
                     $store_object = new Store( $store_id );
-
+                    if ( ! $store->exists() ) {
+                        continue;
+                    }
                     $all_stores[] = array(
                         'key'   => $store_id,
                         'value' => $store_id,
@@ -495,15 +507,15 @@ class Stores extends \WP_REST_Controller {
             $file_data     = $request->get_file_params();
             $current_user  = MultiVendorX()->current_user;
 
-            if ( ! empty( $store_data['store-name'] ) && empty( $store_data['name'] ) ) {
-                $store_data['name'] = $store_data['store-name'];
+            if ( ! empty( $store_data['Name'] ) && empty( $store_data['name'] ) ) {
+                $store_data['name'] = $store_data['Name'];
             }
 
             if ( ! empty( $store_data['Description'] ) && empty( $store_data['description'] ) ) {
                 $store_data['description'] = $store_data['Description'];
             }
 
-            unset( $store_data['store-name'], $store_data['Description'] );
+            unset( $store_data['Name'], $store_data['Description'] );
             $core_fields = array(
                 Utill::STORE_SETTINGS_KEYS['name'],
                 Utill::STORE_SETTINGS_KEYS['slug'],
@@ -777,6 +789,9 @@ class Stores extends \WP_REST_Controller {
             }
 
             $store = new Store( $id );
+            if ( ! $store->exists() ) {
+                return;
+            }
 
             if ( $registrations ) {
                 return rest_ensure_response(
@@ -882,7 +897,9 @@ class Stores extends \WP_REST_Controller {
             if ( ! empty( $ids ) && ! empty( $status ) ) {
                 foreach ( (array) $ids as $store_id ) {
                     $store = new Store( absint( $store_id ) );
-
+                    if ( ! $store->exists() ) {
+                        continue;
+                    }
                     $store->set( Utill::STORE_SETTINGS_KEYS['status'], $status );
                     $store->save();
                 }
@@ -897,6 +914,9 @@ class Stores extends \WP_REST_Controller {
             $data = (array) $request->get_json_params();
 
             $store = new Store( $id );
+            if ( ! $store->exists() ) {
+                return;
+            }
 
             $data = apply_filters( 'multivendorx_before_store_update', $data, $store, $request );
 
@@ -1011,7 +1031,8 @@ class Stores extends \WP_REST_Controller {
             }
 
             // Registration approval / rejection.
-            if ( ! empty( $data['registration_data'] ) || ! empty( $data['core_data'] ) ) {
+            if ( ! empty( $data['registration_data'] ) || ! empty( $data['core_data'] ) || $data['approval_queue'] ) {
+
                 if ( 'approve' === ( $data['status'] ?? '' ) ) {
                     $users = StoreUtil::get_store_users( $id );
                     $user  = get_userdata(
@@ -1073,6 +1094,12 @@ class Stores extends \WP_REST_Controller {
                         $store->update_meta(
                             Utill::STORE_SETTINGS_KEYS['store_reject_note'],
                             maybe_serialize( $old_notes )
+                        );
+                    }
+
+                    if ( ! empty($data['reject_note']) ) {
+                        $store->update_meta(
+                            Utill::STORE_SETTINGS_KEYS['store_reject_note'], maybe_serialize( $data['reject_note'] )
                         );
                     }
 
@@ -1428,5 +1455,28 @@ class Stores extends \WP_REST_Controller {
         $response->header( 'X-WP-Total', (int) $total );
 
         return $response;
+    }
+
+    /**
+     * Get states by country
+     *
+     * @param object $request WP_REST_Request object.
+     */
+    public function get_states_by_country( $request ) {
+        $country_code = $request->get_param( 'country' );
+        $states       = WC()->countries->get_states( $country_code );
+
+        $state_list = array();
+
+        if ( is_array( $states ) ) {
+            foreach ( $states as $code => $name ) {
+                $state_list[] = array(
+                    'label' => $name,
+                    'value' => $code,
+                );
+            }
+        }
+
+        return rest_ensure_response( $state_list );
     }
 }

@@ -54,8 +54,6 @@ class ComposerStaticInit67f175a643d5f81257d6afac1f10045f
         'MultiVendorX\\Elementor\\Tags\\StoreName' => __DIR__ . '/../..' . '/modules/Elementor/Tags/StoreName.php',
         'MultiVendorX\\Elementor\\Tags\\StoreSocial' => __DIR__ . '/../..' . '/modules/Elementor/Tags/StoreSocial.php',
         'MultiVendorX\\Elementor\\WidgetLoader' => __DIR__ . '/../..' . '/modules/Elementor/WidgetLoader.php',
-        'MultiVendorX\\Emails\\MultiVendorXEmails' => __DIR__ . '/../..' . '/classes/Emails/MultiVendorXEmails.php',
-        'MultiVendorX\\Emails\\NewStoreEmail' => __DIR__ . '/../..' . '/classes/Emails/NewStoreEmail.php',
         'MultiVendorX\\FollowStore\\Admin' => __DIR__ . '/../..' . '/modules/FollowStore/Admin.php',
         'MultiVendorX\\FollowStore\\Frontend' => __DIR__ . '/../..' . '/modules/FollowStore/Frontend.php',
         'MultiVendorX\\FollowStore\\Module' => __DIR__ . '/../..' . '/modules/FollowStore/Module.php',

@@ -1,4 +1,4 @@
-:root{--theme-primary:var(--wp--preset--color--primary,
+:root{--theme-primary-color:var(--wp--preset--color--primary,
       var(--ast-global-color-0,
       var(--global-palette1,
       var(--primary-color,
@@ -10,4 +10,4 @@
       var(--ast-global-color-3,
       var(--global-palette3,
       var(--border-color,
-      #dddddd))));--theme-secondary-rgb:80,7,170;--theme-background:color-mix(in srgb, var(--theme-primary) 10%, transparent)}.skeleton{display:inline-block;position:relative;overflow:hidden;background:linear-gradient(90deg,var(--theme-border-color) 25%,var(--theme-background) 37%,var(--theme-border-color) 63%);background-size:400% 100%;animation:skeleton-loading 1.4s ease infinite;font-size:inherit;line-height:inherit}.skeleton-text{height:1em;border-radius:.313rem}.skeleton-rectangular{border-radius:.313rem}.skeleton-circular{border-radius:50%}@keyframes skeleton-loading{0%{background-position:100% 0}100%{background-position:-100% 0}}
+      #dddddd))));--theme-secondary-rgb:80,7,170;--theme-background:color-mix(in srgb, var(--theme-primary-color) 10%, transparent)}.skeleton{display:inline-block;position:relative;overflow:hidden;background:linear-gradient(90deg,var(--theme-border-color) 25%,var(--theme-background) 37%,var(--theme-border-color) 63%);background-size:400% 100%;animation:skeleton-loading 1.4s ease infinite;font-size:inherit;line-height:inherit}.skeleton-text{height:1em;border-radius:.313rem}.skeleton-rectangular{border-radius:.313rem}.skeleton-circular{border-radius:50%}@keyframes skeleton-loading{0%{background-position:100% 0}100%{background-position:-100% 0}}

@@ -38,8 +38,6 @@ return array(
     'MultiVendorX\\Elementor\\Tags\\StoreName' => $baseDir . '/modules/Elementor/Tags/StoreName.php',
     'MultiVendorX\\Elementor\\Tags\\StoreSocial' => $baseDir . '/modules/Elementor/Tags/StoreSocial.php',
     'MultiVendorX\\Elementor\\WidgetLoader' => $baseDir . '/modules/Elementor/WidgetLoader.php',
-    'MultiVendorX\\Emails\\MultiVendorXEmails' => $baseDir . '/classes/Emails/MultiVendorXEmails.php',
-    'MultiVendorX\\Emails\\NewStoreEmail' => $baseDir . '/classes/Emails/NewStoreEmail.php',
     'MultiVendorX\\FollowStore\\Admin' => $baseDir . '/modules/FollowStore/Admin.php',
     'MultiVendorX\\FollowStore\\Frontend' => $baseDir . '/modules/FollowStore/Frontend.php',
     'MultiVendorX\\FollowStore\\Module' => $baseDir . '/modules/FollowStore/Module.php',

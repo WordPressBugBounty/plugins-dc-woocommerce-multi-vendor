@@ -3,7 +3,7 @@
         'name' => 'multivendorx/multivendorx',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'aefb0c16b8d71d4c631d7cacc90d9357be934a8f',
+        'reference' => '61c485d5ebd7fc6fe1e7457cd34ec5ea4de35209',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'multivendorx/multivendorx' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'aefb0c16b8d71d4c631d7cacc90d9357be934a8f',
+            'reference' => '61c485d5ebd7fc6fe1e7457cd34ec5ea4de35209',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

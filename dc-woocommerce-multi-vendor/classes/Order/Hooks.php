@@ -313,6 +313,9 @@ class Hooks {
 
         $store_id = $order ? absint( $order->get_meta( Utill::POST_META_SETTINGS['store_id'], true ) ) : 0;
         $store    = new Store( $store_id );
+        if ( ! $store->exists() ) {
+            return;
+        }
 
         if ( $order->get_parent_id() > 0 ) {
             if ( 'processing' === $new_status ) {
@@ -393,6 +396,9 @@ class Hooks {
         foreach ( $formatted_meta as $key => $meta ) {
             if ( $meta->key === 'multivendorx_sold_by' ) {
                 $formatted_meta[ $key ]->display_key = __( 'Sold by', 'multivendorx' );
+            }
+            if ( $meta->key === 'store_order_item_id' ) {
+                $formatted_meta[ $key ]->display_key = __( 'Item id', 'multivendorx' );
             }
         }
 

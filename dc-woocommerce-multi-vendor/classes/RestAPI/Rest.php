@@ -83,7 +83,9 @@ class Rest {
 
         if ( $store_id > 0 ) {
             $store = new Store( $store_id );
-
+            if ( ! $store->exists() ) {
+                return;
+            }
             $response->data['store_id']   = $store_id;
             $response->data['store_name'] = (string) $store->get( Utill::STORE_SETTINGS_KEYS['name'] );
             $response->data['store_slug'] = (string) $store->get( Utill::STORE_SETTINGS_KEYS['slug'] );
@@ -121,6 +123,13 @@ class Rest {
      * @param object $request REST API request object.
      */
     public function query_shop_order_modify( $args, $request ) {
+        if ( ! empty( $request['meta_value'] ) ) {
+            $args['meta_query'][] = array(
+                'key'   => sanitize_text_field( $request['meta_key'] ),
+                'value' => sanitize_text_field( $request['meta_value'] ),
+            );
+        }
+
         $meta_key      = $request->get_param( 'meta_key' ) ?? '';
         $meta_value    = $request->get_param( 'value' ) ?? '';
         $refund_status = $request->get_param( 'refund_status' ) ?? '';
@@ -172,6 +181,13 @@ class Rest {
      * @return array Modified WP_Query arguments.
      */
     public function query_product_modify( $args, $request ) {
+        if ( ! empty( $request['meta_value'] ) ) {
+            $args['meta_query'][] = array(
+                'key'   => sanitize_text_field( $request['meta_key'] ),
+                'value' => sanitize_text_field( $request['meta_value'] ),
+            );
+        }
+
         $meta_key = $request['meta_key'] ?? '';
 
         if ( Utill::POST_META_SETTINGS['store_id'] !== $meta_key ) {
@@ -359,18 +375,19 @@ class Rest {
 
         if ( $store_id > 0 ) {
             $store      = new Store( $store_id );
-            $phone_meta = $store->get_meta( Utill::STORE_SETTINGS_KEYS['phone'] );
-
-            $formatted_phone = '';
-            if ( ! empty( $phone_meta['country_code'] ) && ! empty( $phone_meta['phone'] ) ) {
-                $formatted_phone = $phone_meta['country_code'] . '-' . $phone_meta['phone'];
+            if ( $store->exists() ) {
+                $phone_meta = $store->get_meta( Utill::STORE_SETTINGS_KEYS['phone'] );
+                $formatted_phone = '';
+                if ( ! empty( $phone_meta['country_code'] ) && ! empty( $phone_meta['phone'] ) ) {
+                    $formatted_phone = $phone_meta['country_code'] . '-' . $phone_meta['phone'];
+                }
+    
+                $response->data['store_id']      = $store_id;
+                $response->data['store_name']    = (string) $store->get( Utill::STORE_SETTINGS_KEYS['name'] );
+                $response->data['store_slug']    = (string) $store->get( Utill::STORE_SETTINGS_KEYS['slug'] );
+                $response->data['store_address'] = (string) $store->get_meta( Utill::STORE_SETTINGS_KEYS['address'] );
+                $response->data['store_phone']   = $formatted_phone;
             }
-
-            $response->data['store_id']      = $store_id;
-            $response->data['store_name']    = (string) $store->get( Utill::STORE_SETTINGS_KEYS['name'] );
-            $response->data['store_slug']    = (string) $store->get( Utill::STORE_SETTINGS_KEYS['slug'] );
-            $response->data['store_address'] = (string) $store->get_meta( Utill::STORE_SETTINGS_KEYS['address'] );
-            $response->data['store_phone']   = $formatted_phone;
         }
         $response->data['paid_status'] = $order->is_paid();
 
@@ -474,6 +491,9 @@ class Rest {
         if ( $store_id ) {
             // Get store information.
             $store      = new Store( $store_id );
+            if ( ! $store->exists() ) {
+                return $response;
+            }
             $store_name = $store->get( Utill::STORE_SETTINGS_KEYS['name'] );
             $store_slug = $store->get( Utill::STORE_SETTINGS_KEYS['slug'] );
 
@@ -674,6 +694,9 @@ class Rest {
 		$store = new Store(
             get_post_meta( $product->get_id(), Utill::POST_META_SETTINGS['store_id'], true )
 		);
+        if ( ! $store->exists() ) {
+            return;
+        }
 
 		if ( isset( $creating ) && true === $creating && 'pending' === $new_status ) {
             MultiVendorX()->notifications->send_notification_helper(
@@ -768,6 +791,9 @@ class Rest {
 
 		$store_id = get_post_meta( $coupon->get_id(), Utill::POST_META_SETTINGS['store_id'], true );
 		$store    = new Store( $store_id );
+        if ( ! $store->exists() ) {
+            return;
+        }
 
 		if ( 'publish' === $new_status && ( 'pending' === $old_status || 'draft' === $old_status ) ) {
 			$followers = $store->meta_data[ Utill::STORE_SETTINGS_KEYS['followers'] ] ?? array();
