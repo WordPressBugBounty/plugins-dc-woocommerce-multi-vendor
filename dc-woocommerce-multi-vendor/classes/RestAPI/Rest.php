@@ -89,6 +89,7 @@ class Rest {
             $response->data['store_id']   = $store_id;
             $response->data['store_name'] = (string) $store->get( Utill::STORE_SETTINGS_KEYS['name'] );
             $response->data['store_slug'] = (string) $store->get( Utill::STORE_SETTINGS_KEYS['slug'] );
+            apply_filters( 'multivendorx_rest_prepare_product_add_store_data', $response, $product, $store );
         }
 
         return $response;
@@ -342,7 +343,10 @@ class Rest {
      * @param string $post_type Post type.
      */
     public function grant_woocommerce_rest_permission( $permission, $context, $object_id, $post_type ) {
-        if ( strpos( $_SERVER['REQUEST_URI'], 'products/categories' ) !== false && !is_user_logged_in() && $_SERVER['REQUEST_METHOD'] === 'GET' ) {
+        $request_method = $_SERVER['REQUEST_METHOD'] ?? '';
+        $request_uri = $_SERVER['REQUEST_URI'] ?? '';
+
+        if ( ! is_user_logged_in() && $request_method === 'GET' && str_contains( $request_uri, '/products' ) !== false ) {
             return true;
         }
 

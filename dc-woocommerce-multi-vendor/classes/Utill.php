@@ -94,6 +94,7 @@ class Utill {
         'developer-tools'               => 'multivendorx_developer_tools_settings',
         'invoices'                      => 'multivendorx_invoices_settings',
         'tax-information'               => 'multivendorx_tax_information_settings',
+        'printful'                       => 'multivendorx_printful_settings',
     );
 
     const MULTIVENDORX_OTHER_SETTINGS = array(
@@ -294,16 +295,6 @@ class Utill {
             // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_print_r
             $extra['Stack'] = $message->getTraceAsString();
             $message        = 'Exception occurred';
-        }
-        // Convert Throwable into structured metadata.
-        if ( $message instanceof \Throwable ) {
-            $type             = 'EXCEPTION';
-            $extra['Message'] = $message->getMessage();
-            $extra['Code']    = $message->getCode();
-            $extra['File']    = $message->getFile();
-            $extra['Line']    = $message->getLine();
-            $extra['Stack']   = $message->getTraceAsString();
-            $message          = 'Throwable occurred';
         }
 
         // Convert WP_Error into structured metadata.

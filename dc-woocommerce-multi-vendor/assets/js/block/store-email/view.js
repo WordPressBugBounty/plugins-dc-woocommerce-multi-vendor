@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".multivendorx-store-email-block").forEach(e=>{const t=StoreInfo?.storeDetails?.storeEmail,o=StoreInfo?.settings_databases_value?.privacy?.store_contact_details?.includes("show_store_email");t&&o?e.textContent=t:e.closest(".wp-block-multivendorx-store-email")?.remove()})});

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".multivendorx-store-description").forEach(e=>{window.StoreInfo?.storeDetails?.storeDescription&&(e.textContent=window.StoreInfo.storeDetails.storeDescription)})});

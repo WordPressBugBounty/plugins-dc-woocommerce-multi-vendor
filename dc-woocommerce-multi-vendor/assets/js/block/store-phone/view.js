@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=window?.StoreInfo?.storeDetails?.storePhone,o=window?.StoreInfo?.settings_databases_value?.privacy?.store_contact_details.includes("show_store_phone");document.querySelectorAll(".multivendorx-store-phone-block").forEach(t=>{const n=t.closest(".wp-block-multivendorx-store-phone");e&&o?t.textContent=e:n?.remove()})});

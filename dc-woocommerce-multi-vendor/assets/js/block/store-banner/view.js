@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=window.StoreInfo?.storeDetails?.storeBanner||"";document.querySelectorAll(".multivendorx-store-banner").forEach(o=>{e&&(o.style.backgroundImage=`url(${e})`,o.style.backgroundSize="cover",o.style.backgroundPosition="center",o.style.backgroundRepeat="no-repeat")})});

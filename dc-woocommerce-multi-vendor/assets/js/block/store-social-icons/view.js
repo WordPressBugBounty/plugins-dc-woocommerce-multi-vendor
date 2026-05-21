@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{if(!window.StoreInfo?.storeDetails)return;const e=document.querySelectorAll(".wp-block-social-link a"),t=["facebook","twitter","instagram","youtube","linkedin","pinterest"];e.forEach((e,o)=>{const n=t[o],i=StoreInfo.storeDetails[n];i&&""!==i.trim()?(e.href=i,e.target="_blank"):e.closest("li").style.display="none"})});
