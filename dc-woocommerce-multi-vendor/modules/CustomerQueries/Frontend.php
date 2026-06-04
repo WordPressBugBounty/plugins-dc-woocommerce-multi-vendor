@@ -35,10 +35,8 @@ class Frontend {
      * @return array Modified scripts array including Q&A script.
      */
     public function register_script( $scripts ) {
-        $base_url = MultiVendorX()->plugin_url . FrontendScripts::get_build_path_name();
-
         $scripts['multivendorx-customer-queries-frontend-script'] = array(
-            'src'  => $base_url . 'modules/CustomerQueries/js/' . MULTIVENDORX_PLUGIN_SLUG . '-frontend.min.js',
+            'src'  => FrontendScripts::get_asset_path() . 'js/modules/CustomerQueries/' . MULTIVENDORX_PLUGIN_SLUG . '-frontend.min.js',
             'deps' => array( 'jquery' ),
         );
 
@@ -67,7 +65,7 @@ class Frontend {
      * @return void
      */
     public function load_scripts() {
-        if (is_product()) {
+        if ( is_product() ) {
             FrontendScripts::load_scripts();
             FrontendScripts::enqueue_script( 'multivendorx-customer-queries-frontend-script' );
             FrontendScripts::localize_scripts( 'multivendorx-customer-queries-frontend-script' );

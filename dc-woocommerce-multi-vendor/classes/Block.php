@@ -60,12 +60,10 @@ class Block {
      * @return array List of blocks with their configuration.
      */
     public function initialize_blocks() {
-        $blocks = array();
+        $blocks     = array();
         $textdomain = 'multivendorx';
 
-        $block_base_path = MultiVendorX()->plugin_path
-            . FrontendScripts::get_build_path_name()
-            . 'js/block/';
+        $block_base_path = FrontendScripts::get_asset_path( 'file' ) . 'js/block/';
 
         $exclude_blocks = array( 'setup-wizard' );
         if ( ! is_dir( $block_base_path ) ) {
@@ -125,7 +123,7 @@ class Block {
         FrontendScripts::enqueue_script( 'multivendorx-vendor-script' );
         foreach ( $this->get_blocks() as $block_script ) {
             $block_name = $block_script['textdomain'] . '/' . $block_script['name'];
-            
+
             if ( has_block( $block_name, $post ) ) {
                 $handle = $block_script['textdomain'] . '-' . $block_script['name'] . '-view-script';
                 // FrontendScripts::enqueue_script( $handle );

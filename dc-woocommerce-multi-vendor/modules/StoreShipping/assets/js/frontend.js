@@ -1,5 +1,7 @@
 /* global jQuery,distanceShippingFrontend,google,mapboxgl */
+
 jQuery(document).ready(function ($) {
+	const { __ } = wp.i18n;
 	var opts = distanceShippingFrontend;
 	if ($('#multivendorx_user_location_lat').length === 0) {
 		return;
@@ -22,7 +24,7 @@ jQuery(document).ready(function ($) {
 		var latlng = new google.maps.LatLng(lat, lng);
 
 		var map = new google.maps.Map(
-			document.getElementById('multivendorx-user-locaton-map'),
+			document.getElementById('multivendorx-user-location-map'),
 			{
 				center: latlng,
 				zoom: parseInt(opts.default_zoom),
@@ -92,7 +94,7 @@ jQuery(document).ready(function ($) {
 			$('#multivendorx_user_location_lng').val() || opts.default_lng;
 
 		var map = new mapboxgl.Map({
-			container: 'multivendorx-user-locaton-map',
+			container: 'multivendorx-user-location-map',
 			style: opts.mapbox_style,
 			center: [lng, lat],
 			zoom: opts.default_zoom,
@@ -146,7 +148,13 @@ jQuery(document).ready(function ($) {
 				success: function (response) {
 					if (response.features && response.features.length) {
 						showAddressSuggestions(response.features, map, marker);
+					} else {
+						removeSuggestions();
 					}
+				},
+				error: function () {
+					removeSuggestions();
+					console.warn('Mapbox geocoding request failed.');
 				},
 			});
 		}
@@ -160,10 +168,8 @@ jQuery(document).ready(function ($) {
 
 			$.each(features, function (index, feature) {
 				var li = $(
-					'<li style="padding: 8px; cursor: pointer; border-bottom: 1px solid #eee;">' +
-					feature.place_name +
-					'</li>'
-				);
+					'<li style="padding: 8px; cursor: pointer; border-bottom: 1px solid #eee;"></li>'
+				).text(feature.place_name);
 				li.on('click', function () {
 					$('#multivendorx_user_location').val(feature.place_name);
 					removeSuggestions();

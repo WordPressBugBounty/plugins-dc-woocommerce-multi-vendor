@@ -36,25 +36,25 @@ class Install {
         $previous_version = get_option( 'multivendorx_version' );
         if ( version_compare( $previous_version, '5.0.2', '<' ) ) {
             $this->create_database_triggers();
-            $previous_settings = get_option( Utill::MULTIVENDORX_SETTINGS['delivery'], [] );
-            $existing_stages = $previous_settings['shipping_stage'] ?? [];
+            $previous_settings = get_option( Utill::MULTIVENDORX_SETTINGS['delivery'], array() );
+            $existing_stages   = $previous_settings['shipping_stage'] ?? array();
 
             $new_stages = array(
-                'delivered' => array(
+                'delivered'        => array(
                     'title'    => 'Delivered',
                     'desc'     => 'Delivery progress stages.',
                     'icon'     => 'delivery',
                     'required' => true,
                     'isCustom' => true,
                 ),
-                'shipped' => array(
+                'shipped'          => array(
                     'title'    => 'Shipped',
                     'desc'     => 'The order has been shipped and handed over to the delivery partner.',
                     'icon'     => 'rejecte',
                     'required' => true,
                     'isCustom' => true,
                 ),
-                'packed' => array(
+                'packed'           => array(
                     'title'    => 'Packed',
                     'desc'     => 'The order has been packed and is ready to be shipped.',
                     'icon'     => 'rejecte',
@@ -70,7 +70,7 @@ class Install {
                 ),
             );
 
-            $previous_settings['shipping_stage'] =  array_merge( $new_stages, $existing_stages );
+            $previous_settings['shipping_stage'] = array_merge( $new_stages, $existing_stages );
             update_option( Utill::MULTIVENDORX_SETTINGS['delivery'], $previous_settings );
         }
 
@@ -79,12 +79,72 @@ class Install {
 
             $table = $wpdb->prefix . Utill::TABLES['store'];
 
-            $wpdb->query("
+            $wpdb->query(
+                "
                 ALTER TABLE {$table}
                 MODIFY name VARCHAR(100) NOT NULL,
                 MODIFY slug VARCHAR(100) NOT NULL
-            ");
+            "
+            );
         }
+
+        if ( version_compare( $previous_version, '5.0.7', '<' ) ) {
+            global $wpdb;
+            $collate          = $wpdb->get_charset_collate();
+
+            $sql_logs= "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}" . Utill::TABLES['activity_logs'] . "` (
+                `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+                `store_id` BIGINT UNSIGNED NOT NULL DEFAULT 0,
+                `message` text NOT NULL,
+                `tag` varchar(50) DEFAULT NULL,
+                `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (`ID`)
+            ) $collate;";
+
+            if ( ! function_exists( 'dbDelta' ) ) {
+                require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+            }
+
+            dbDelta( $sql_logs );
+
+            $previous_settings = get_option( Utill::MULTIVENDORX_SETTINGS['store-identity'], array() );
+            $new_settings = array(
+                'verification_methods' => array(
+                    'address-proof' => array(
+                        'title'       => 'Address proof of business location',
+                        'description' => 'Confirms the store’s physical or operational business address.',
+                    ),
+
+                    'trade-license' => array(
+                        'title'       => 'Trade license or permit',
+                        'description' => 'Validates that the store is authorized to operate and conduct business legally.',
+                    ),
+
+                    'business-registration' => array(
+                        'title'       => 'Business registration certificate',
+                        'description' => 'Confirms the store is legally registered as a business entity.',
+                    ),
+                )
+            );
+            update_option( Utill::MULTIVENDORX_SETTINGS['store-identity'], array_merge( $previous_settings, $new_settings ) );
+
+            $previous_tax_settings = get_option( Utill::MULTIVENDORX_SETTINGS['tax-compliance'], array() );
+            $tax_compliance_settings = array(
+                'bank_documents' => array(
+                    'bank_statement',
+                ),
+
+                'tax_documents' => array(
+                    'vat_certificate',
+                ),
+
+                'business_documents' => array(
+                    'business_registration',
+                ),
+            );
+            update_option( Utill::MULTIVENDORX_SETTINGS['tax-compliance'], array_merge( $previous_tax_settings, $tax_compliance_settings ) );
+        }
+            
     }
 
     public function run_migration() {
@@ -332,6 +392,16 @@ class Install {
             KEY ip (ip)
         ) $collate;";
 
+        $sql_logs= "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}" . Utill::TABLES['activity_logs'] . "` (
+            `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+            `store_id` BIGINT UNSIGNED NOT NULL DEFAULT 0,
+            `message` text NOT NULL,
+            `tag` varchar(50) DEFAULT NULL,
+            `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            PRIMARY KEY (`ID`)
+        ) $collate;";
+
+
         // Include upgrade functions if not loaded.
         if ( ! function_exists( 'dbDelta' ) ) {
             require_once ABSPATH . 'wp-admin/includes/upgrade.php';
@@ -350,6 +420,7 @@ class Install {
         dbDelta( $sql_notifications );
         dbDelta( $sql_system_events );
         dbDelta( $sql_stats );
+        dbDelta( $sql_logs );
     }
 
     /**
@@ -467,6 +538,22 @@ class Install {
             'all_verification_methods' => array(
                 'google-connect' => array(
                     'enable' => true,
+                ),
+            ),
+            'verification_methods' => array(
+                'address-proof' => array(
+                    'title'       => 'Address proof of business location',
+                    'description' => 'Confirms the store’s physical or operational business address.',
+                ),
+
+                'trade-license' => array(
+                    'title'       => 'Trade license or permit',
+                    'description' => 'Validates that the store is authorized to operate and conduct business legally.',
+                ),
+
+                'business-registration' => array(
+                    'title'       => 'Business registration certificate',
+                    'description' => 'Confirms the store is legally registered as a business entity.',
                 ),
             ),
         );
@@ -993,28 +1080,28 @@ class Install {
 
         $delivery_settings = array(
             'shipping_stage' => array(
-                'delivered' => array(
+                'delivered'        => array(
                     'title'    => 'Delivered',
                     'desc'     => 'Delivery progress stages.',
 					'icon'     => 'delivery',
 					'required' => true,
 					'isCustom' => true,
                 ),
-                'shipped'   => array(
+                'shipped'          => array(
                     'title'    => 'Shipped',
                     'desc'     => 'The order has been shipped and handed over to the delivery partner.',
 					'icon'     => 'rejecte',
 					'required' => true,
 					'isCustom' => true,
                 ),
-                'packed'   => array(
+                'packed'           => array(
                     'title'    => 'Packed',
                     'desc'     => 'The order has been packed and is ready to be shipped.',
 					'icon'     => 'rejecte',
 					'required' => true,
 					'isCustom' => true,
                 ),
-                'out-for-delivery'   => array(
+                'out-for-delivery' => array(
                     'title'    => 'Out for delivery',
                     'desc'     => 'The order is on the way and will be delivered soon.',
 					'icon'     => 'rejecte',
@@ -1108,6 +1195,20 @@ class Install {
             ),
         );
 
+        $tax_compliance_settings = array(
+            'bank_documents' => array(
+                'bank_statement',
+            ),
+
+            'tax_documents' => array(
+                'vat_certificate',
+            ),
+
+            'business_documents' => array(
+                'business_registration',
+            ),
+        );
+
         // 6. Save back to DB
         update_option( Utill::MULTIVENDORX_SETTINGS['store-identity'], $settings );
         update_option( Utill::MULTIVENDORX_SETTINGS['delivery'], $delivery_settings );
@@ -1115,6 +1216,7 @@ class Install {
         update_option( Utill::MULTIVENDORX_SETTINGS['product-compliance'], $product_compliance_settings );
         update_option( Utill::MULTIVENDORX_SETTINGS['store-reviews'], $review_settings );
         update_option( Utill::MULTIVENDORX_SETTINGS['compliance'], $compliance_settings );
+        update_option( Utill::MULTIVENDORX_SETTINGS['tax-compliance'], $tax_compliance_settings );
 
         $notifications = new Notifications();
         $notifications->insert_system_events();
@@ -1336,7 +1438,7 @@ class Install {
     public function migrate_old_settings() {
         $previous_capability_settings = get_option( 'mvx_products_capability_tab_settings', array() );
 
-        $store_permissions = get_option( Utill::MULTIVENDORX_SETTINGS['store-permissions'], array() );
+        $store_permissions             = get_option( Utill::MULTIVENDORX_SETTINGS['store-permissions'], array() );
         $store_permissions['products'] = array();
         $store_permissions['coupons']  = array();
         $store_permissions['orders']   = array();
@@ -1414,16 +1516,16 @@ class Install {
             if ( $post && is_object( $post ) ) {
                 $old_shortcode = '[vendor_registration]';
                 $new_shortcode = '[marketplace_registration]';
-    
+
                 $updated_content = str_replace( $old_shortcode, $new_shortcode, $post->post_content ?? '' );
-    
+
                 wp_update_post(
                     array(
                         'ID'           => $previous_general_settings['registration_page']['value'],
                         'post_content' => $updated_content,
                     )
                 );
-    
+
                 delete_option( 'mvx_product_vendor_registration_page_id' );
             }
         }
@@ -1595,7 +1697,7 @@ class Install {
 
         $default_commission = ! empty( $previous_commission_settings['default_commission'] ) && is_array( $previous_commission_settings['default_commission'] )
                                 ? $previous_commission_settings['default_commission']
-                                : [];
+                                : array();
 		if ( ! empty( $previous_commission_settings['commission_type'] ) ) {
 			if ( 'fixed' === $previous_commission_settings['commission_type']['value'] ) {
 				$commission_settings['commission_type']     = 'per_item';
@@ -1706,7 +1808,7 @@ class Install {
             $coupon_settings['admin_coupon_excluded'] = $previous_disbursement_settings['admin_coupon_excluded'];
         }
 
-        $statuses = array();
+        $statuses       = array();
         $order_statuses = $previous_disbursement_settings['order_withdrawl_status'] ?? array();
 		foreach ( $order_statuses as $status ) {
 			if ( 'completed' === $status['value'] || 'processing' === $status['value'] ) {
@@ -1855,9 +1957,9 @@ class Install {
 				// Skip parent title.
 				if ( 'p_title' === $field['type'] ) {
 					$new_form['store_registration_from']['formfieldlist'][] = array(
-						'id'       => $id_counter++,
-						'type'     => 'title',
-						'label'    => $field['label'],
+						'id'    => $id_counter++,
+						'type'  => 'title',
+						'label' => $field['label'],
 					);
 				}
 
@@ -1981,7 +2083,7 @@ class Install {
 
         $store_owner_caps = array_values( array_unique( $store_owner_caps ) );
         $user_permissions = array(
-            'store_owner' => $store_owner_caps
+            'store_owner' => $store_owner_caps,
         );
 
         if ( $role = get_role( 'store_owner' ) ) {
@@ -1995,22 +2097,22 @@ class Install {
         }
 
         $settings_map = array(
-            'user-permissions'   => $user_permissions ?? array(),
-            'refunds'            => $refund_settings ?? array(),
-            'store-permissions'  => $store_permissions ?? array(),
-            'product-preferences'=> $product_settings ?? array(),
-            'onboarding'         => $general_settings ?? array(),
-            'privacy'            => $privacy_settings ?? array(),
-            'overview'           => $marketplace_settings ?? array(),
-            'appearance'         => $appearance_settings ?? array(),
-            'geolocation'        => $map_settings ?? array(),
-            'commissions'        => $commission_settings ?? array(),
-            'coupons-discounts'  => $coupon_settings ?? array(),
-            'policies'           => $policy_settings ?? array(),
-            'store-reviews'      => $review_settings ?? array(),
-            'payouts'            => $disbursement_settings ?? array(),
-            'developer-tools'    => $tool_settings ?? array(),
-            'withdrawal-methods' => $payment_settings ?? array(),
+            'user-permissions'    => $user_permissions ?? array(),
+            'refunds'             => $refund_settings ?? array(),
+            'store-permissions'   => $store_permissions ?? array(),
+            'product-preferences' => $product_settings ?? array(),
+            'onboarding'          => $general_settings ?? array(),
+            'privacy'             => $privacy_settings ?? array(),
+            'overview'            => $marketplace_settings ?? array(),
+            'appearance'          => $appearance_settings ?? array(),
+            'geolocation'         => $map_settings ?? array(),
+            'commissions'         => $commission_settings ?? array(),
+            'coupons-discounts'   => $coupon_settings ?? array(),
+            'policies'            => $policy_settings ?? array(),
+            'store-reviews'       => $review_settings ?? array(),
+            'payouts'             => $disbursement_settings ?? array(),
+            'developer-tools'     => $tool_settings ?? array(),
+            'withdrawal-methods'  => $payment_settings ?? array(),
         );
 
         foreach ( $settings_map as $key => $value ) {

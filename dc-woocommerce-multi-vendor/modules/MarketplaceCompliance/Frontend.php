@@ -35,11 +35,9 @@ class Frontend {
 	 * @return array Modified scripts array
 	 */
     public function register_script( $scripts ) {
-        $base_url = MultiVendorX()->plugin_url . FrontendScripts::get_build_path_name();
-
         $scripts['multivendorx-report-abuse-frontend-script'] = array(
-            'src'  => $base_url . 'modules/MarketplaceCompliance/js/' . MULTIVENDORX_PLUGIN_SLUG . '-frontend.min.js',
-            'deps' => array( 'jquery' ),
+            'src'  => FrontendScripts::get_asset_path() . 'js/modules/MarketplaceCompliance/' . MULTIVENDORX_PLUGIN_SLUG . '-frontend.min.js',
+            'deps' => array( 'jquery','wp-i18n' ),
         );
 
         return $scripts;

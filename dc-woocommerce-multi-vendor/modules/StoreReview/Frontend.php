@@ -49,11 +49,9 @@ class Frontend {
 	 * @return array Modified array with the Store Review frontend script included.
 	 */
     public function register_script( $scripts ) {
-        $base_url = MultiVendorX()->plugin_url . FrontendScripts::get_build_path_name();
-
         $scripts['multivendorx-review-frontend-script'] = array(
-            'src'  => $base_url . 'modules/StoreReview/js/' . MULTIVENDORX_PLUGIN_SLUG . '-frontend.min.js',
-            'deps' => array( 'jquery' ),
+            'src'  => FrontendScripts::get_asset_path() . 'js/modules/StoreReview/' . MULTIVENDORX_PLUGIN_SLUG . '-frontend.min.js',
+            'deps' => array( 'jquery','wp-i18n' ),
         );
 
         return $scripts;
@@ -84,7 +82,7 @@ class Frontend {
      * Enqueue scripts.
      */
     public function enqueue_scripts() {
-        if ( is_product() || Utill::is_store_page()) {
+        if ( is_product() || Utill::is_store_page() ) {
             FrontendScripts::load_scripts();
             FrontendScripts::enqueue_script( 'multivendorx-review-frontend-script' );
             FrontendScripts::localize_scripts( 'multivendorx-review-frontend-script' );

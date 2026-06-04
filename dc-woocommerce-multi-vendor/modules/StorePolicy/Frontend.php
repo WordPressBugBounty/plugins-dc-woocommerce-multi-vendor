@@ -40,10 +40,8 @@ class Frontend {
 	 * @return array Modified scripts array.
 	 */
     public function register_script( $scripts ) {
-        $base_url = MultiVendorX()->plugin_url . FrontendScripts::get_build_path_name();
-
         $scripts['multivendorx-store-policy-frontend-script'] = array(
-            'src'  => $base_url . 'modules/StorePolicy/js/' . MULTIVENDORX_PLUGIN_SLUG . '-frontend.min.js',
+            'src'  => FrontendScripts::get_asset_path() . 'js/modules/StorePolicy/' . MULTIVENDORX_PLUGIN_SLUG . '-frontend.min.js',
             'deps' => array( 'jquery' ),
         );
 
@@ -55,7 +53,7 @@ class Frontend {
      * Load follow store JS scripts
      */
     public function load_scripts() {
-        if ( is_product() || Utill::is_store_page()) {
+        if ( is_product() || Utill::is_store_page() ) {
             FrontendScripts::load_scripts();
             FrontendScripts::enqueue_script( 'multivendorx-store-policy-frontend-script' );
         }

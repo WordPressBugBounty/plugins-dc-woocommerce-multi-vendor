@@ -214,6 +214,7 @@ const PendingRefund: React.FC<object> = () => {
 							{
 								icon: 'close',
 								text: __('Reject', 'multivendorx'),
+								color: 'red',
 								onClick: () => {
 									setViewOrder(row);
 									setPopupOpen(true);
@@ -446,7 +447,7 @@ const PendingRefund: React.FC<object> = () => {
 								}
 								usePlainText={false}
 								tinymceApiKey={
-									appLocalizer.settings_databases_value[
+									appLocalizer.admin_settings[
 										'overview'
 									]['tinymce_api_section'] ?? ''
 								}

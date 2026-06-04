@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit67f175a643d5f81257d6afac1f10045f
 {
     public static $prefixLengthsPsr4 = array (
-        'M' => 
+        'M' =>
         array (
             'MultiVendorX\\' => 13,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'MultiVendorX\\' => 
+        'MultiVendorX\\' =>
         array (
             0 => __DIR__ . '/../..' . '/classes',
             1 => __DIR__ . '/../..' . '/modules',
@@ -47,6 +47,7 @@ class ComposerStaticInit67f175a643d5f81257d6afac1f10045f
         'MultiVendorX\\Elementor\\Admin' => __DIR__ . '/../..' . '/modules/Elementor/Admin.php',
         'MultiVendorX\\Elementor\\Module' => __DIR__ . '/../..' . '/modules/Elementor/Module.php',
         'MultiVendorX\\Elementor\\StoreDocument' => __DIR__ . '/../..' . '/modules/Elementor/StoreDocument.php',
+        'MultiVendorX\\Elementor\\StoreHelper' => __DIR__ . '/../..' . '/modules/Elementor/StoreHelper.php',
         'MultiVendorX\\Elementor\\Tags\\StoreBanner' => __DIR__ . '/../..' . '/modules/Elementor/Tags/StoreBanner.php',
         'MultiVendorX\\Elementor\\Tags\\StoreDummyProducts' => __DIR__ . '/../..' . '/modules/Elementor/Tags/StoreDummyProducts.php',
         'MultiVendorX\\Elementor\\Tags\\StoreInfo' => __DIR__ . '/../..' . '/modules/Elementor/Tags/StoreInfo.php',
@@ -54,11 +55,19 @@ class ComposerStaticInit67f175a643d5f81257d6afac1f10045f
         'MultiVendorX\\Elementor\\Tags\\StoreName' => __DIR__ . '/../..' . '/modules/Elementor/Tags/StoreName.php',
         'MultiVendorX\\Elementor\\Tags\\StoreSocial' => __DIR__ . '/../..' . '/modules/Elementor/Tags/StoreSocial.php',
         'MultiVendorX\\Elementor\\WidgetLoader' => __DIR__ . '/../..' . '/modules/Elementor/WidgetLoader.php',
+        'MultiVendorX\\Elementor\\Widgets\\StoreBanner' => __DIR__ . '/../..' . '/modules/Elementor/Widgets/StoreBanner.php',
+        'MultiVendorX\\Elementor\\Widgets\\StoreDescription' => __DIR__ . '/../..' . '/modules/Elementor/Widgets/StoreDescription.php',
+        'MultiVendorX\\Elementor\\Widgets\\StoreInfo' => __DIR__ . '/../..' . '/modules/Elementor/Widgets/StoreInfo.php',
+        'MultiVendorX\\Elementor\\Widgets\\StoreLogo' => __DIR__ . '/../..' . '/modules/Elementor/Widgets/StoreLogo.php',
+        'MultiVendorX\\Elementor\\Widgets\\StoreName' => __DIR__ . '/../..' . '/modules/Elementor/Widgets/StoreName.php',
+        'MultiVendorX\\Elementor\\Widgets\\StoreSocial' => __DIR__ . '/../..' . '/modules/Elementor/Widgets/StoreSocial.php',
+        'MultiVendorX\\Elementor\\Widgets\\StoreTab' => __DIR__ . '/../..' . '/modules/Elementor/Widgets/StoreTab.php',
         'MultiVendorX\\FollowStore\\Admin' => __DIR__ . '/../..' . '/modules/FollowStore/Admin.php',
         'MultiVendorX\\FollowStore\\Frontend' => __DIR__ . '/../..' . '/modules/FollowStore/Frontend.php',
         'MultiVendorX\\FollowStore\\Module' => __DIR__ . '/../..' . '/modules/FollowStore/Module.php',
         'MultiVendorX\\FollowStore\\Rest' => __DIR__ . '/../..' . '/modules/FollowStore/Rest.php',
         'MultiVendorX\\FollowStore\\Tags\\StoreFollow' => __DIR__ . '/../..' . '/modules/FollowStore/Tags/StoreFollow.php',
+        'MultiVendorX\\FollowStore\\Widgets\\StoreFollow' => __DIR__ . '/../..' . '/modules/FollowStore/Widgets/StoreFollow.php',
         'MultiVendorX\\Frontend' => __DIR__ . '/../..' . '/classes/Frontend.php',
         'MultiVendorX\\FrontendScripts' => __DIR__ . '/../..' . '/classes/FrontendScripts.php',
         'MultiVendorX\\GeoLocation\\Module' => __DIR__ . '/../..' . '/modules/GeoLocation/Module.php',
@@ -148,6 +157,7 @@ class ComposerStaticInit67f175a643d5f81257d6afac1f10045f
         'MultiVendorX\\StoreReview\\Rest' => __DIR__ . '/../..' . '/modules/StoreReview/Rest.php',
         'MultiVendorX\\StoreReview\\Tags\\StoreRating' => __DIR__ . '/../..' . '/modules/StoreReview/Tags/StoreRating.php',
         'MultiVendorX\\StoreReview\\Util' => __DIR__ . '/../..' . '/modules/StoreReview/Util.php',
+        'MultiVendorX\\StoreReview\\Widgets\\StoreRating' => __DIR__ . '/../..' . '/modules/StoreReview/Widgets/StoreRating.php',
         'MultiVendorX\\StoreShipping\\Admin' => __DIR__ . '/../..' . '/modules/StoreShipping/Admin.php',
         'MultiVendorX\\StoreShipping\\Country_Shipping' => __DIR__ . '/../..' . '/modules/StoreShipping/Country_Shipping.php',
         'MultiVendorX\\StoreShipping\\Distance_Shipping' => __DIR__ . '/../..' . '/modules/StoreShipping/Distance_Shipping.php',
