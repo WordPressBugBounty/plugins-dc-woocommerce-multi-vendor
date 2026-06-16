@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.7\n"
+"Project-Id-Version: MultiVendorX 5.0.8\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-04T07:49:36+00:00\n"
+"POT-Creation-Date: 2026-06-16T00:13:05+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -1466,7 +1466,7 @@ msgstr ""
 
 #: modules/MarketplaceRefund/Frontend.php:172
 #: modules/MarketplaceRefund/Frontend.php:180
-#: modules/MarketplaceRefund/Frontend.php:564
+#: modules/MarketplaceRefund/Frontend.php:582
 msgid "Refund reason"
 msgstr ""
 
@@ -1487,98 +1487,98 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:247
-#: modules/MarketplaceRefund/Frontend.php:269
+#: modules/MarketplaceRefund/Frontend.php:265
+#: modules/MarketplaceRefund/Frontend.php:287
 msgid "Refund is not allowed for the current order status."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:248
+#: modules/MarketplaceRefund/Frontend.php:266
 msgid "Your refund period has expired"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:249
+#: modules/MarketplaceRefund/Frontend.php:267
 msgid "*** Your request has been rejected ***"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:250
-#: modules/MarketplaceRefund/Frontend.php:276
+#: modules/MarketplaceRefund/Frontend.php:268
+#: modules/MarketplaceRefund/Frontend.php:294
 msgid "Your request is pending."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:251
+#: modules/MarketplaceRefund/Frontend.php:269
 msgid "*** Your request has been accepted. *** "
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:265
+#: modules/MarketplaceRefund/Frontend.php:283
 msgid "Your refund period has expired."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:273
+#: modules/MarketplaceRefund/Frontend.php:291
 msgid "Sorry!! Your request has been rejected"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:279
+#: modules/MarketplaceRefund/Frontend.php:297
 msgid "Congratulation: *** Your request has been accepted. *** "
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:315
+#: modules/MarketplaceRefund/Frontend.php:333
 msgid "Kindly choose a product"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:320
+#: modules/MarketplaceRefund/Frontend.php:338
 msgid "Kindly choose a refund reason"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:498
+#: modules/MarketplaceRefund/Frontend.php:516
 msgid "Refund request successfully submitted."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:570
+#: modules/MarketplaceRefund/Frontend.php:588
 msgid "Category:"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:572
+#: modules/MarketplaceRefund/Frontend.php:590
 msgid "N/A"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:582
+#: modules/MarketplaceRefund/Frontend.php:600
 msgid "No additional information provided."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:589
+#: modules/MarketplaceRefund/Frontend.php:607
 msgid "Attached images:"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:606
+#: modules/MarketplaceRefund/Frontend.php:624
 msgid "Request timeline"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:617
+#: modules/MarketplaceRefund/Frontend.php:635
 #: assets/js/index.js:1
 msgid "Refund requested"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:628
+#: modules/MarketplaceRefund/Frontend.php:646
 msgid "Under review"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:642
+#: modules/MarketplaceRefund/Frontend.php:660
 msgid "Refund rejected"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:644
+#: modules/MarketplaceRefund/Frontend.php:662
 msgid "Decision pending"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:654
+#: modules/MarketplaceRefund/Frontend.php:672
 msgid "Rejected by admin:"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:659
+#: modules/MarketplaceRefund/Frontend.php:677
 msgid "Rejected by store:"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:674
+#: modules/MarketplaceRefund/Frontend.php:692
 msgid "Refund processed"
 msgstr ""
 
@@ -5537,6 +5537,10 @@ msgid "Compliance Management"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Store Compliance"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Control store access based on verification status. Ensure only compliant stores can operate fully on your marketplace."
 msgstr ""
 
@@ -5589,54 +5593,6 @@ msgid "Temporarily disables product sales and order fulfillment while the review
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Prohibited items check"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Block restricted or banned products to maintain marketplace compliance."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Product images & descriptions"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Approve product reviews before publishing to ensure quality and consistency."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Product authenticity certificates"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Enforce product image and description standards for authenticity and trust."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Product abuse reporting"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Handle product violation or abuse reports effectively to ensure compliance."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Set store as pending"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Moves the store to a pending status, preventing further activity until compliance issues are resolved."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Notify admin only"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Sends a notification to the admin about the compliance issue without restricting the store’s activity."
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "Terms & Conditions"
 msgstr ""
 
@@ -5673,6 +5629,10 @@ msgid "Limits specific store features while still allowing basic access."
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Notify admin only"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Alerts the admin about the compliance issue without restricting the stores activity."
 msgstr ""
 
@@ -5702,6 +5662,50 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Suspends payout processing. Earnings will be released once the store successfully clears the review."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Sends a notification to the admin about the compliance issue without restricting the store’s activity."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product compliance settings."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product Compliance"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Prohibited items check"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Block restricted or banned products to maintain marketplace compliance."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product images & descriptions"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Approve product reviews before publishing to ensure quality and consistency."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product authenticity certificates"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enforce product image and description standards for authenticity and trust."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product Compliance count"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product Compliance Active count"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -5869,31 +5873,23 @@ msgid "Order notes"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Product Compliance"
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "All product listings must follow platform content guidelines and avoid prohibited categories. Branded or regulated products must include authenticity certificates. Optional safety certifications may be uploaded for regulated items."
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Who can report"
+msgid "Prohibited product categories"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Decide if only logged-in customers can submit abuse reports, or if reporting is open to everyone."
+msgid "Add prohibited product category"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "<ul><li>logged-in customers - Only registered and logged-in customers can report products.This helps prevent spam and ensures accountability.</li><li>Anyone - Both logged-in customers and guests can report products. This gives the widest access but may increase the risk of spam submissions.</li></ul>"
+msgid "Define one or more product categories that are not allowed to be listed on your marketplace."
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "logged-in customers"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Anyone"
+msgid "Display on Frontend"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -5913,18 +5909,6 @@ msgid "<b>Note</b>: Users can report products for various issues. When enabling 
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Prohibited product categories"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Add prohibited product category"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Define one or more product categories that are not allowed to be listed on your marketplace."
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "Great!"
 msgstr ""
 
@@ -5938,6 +5922,14 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Require review for food & health products"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Draft Product"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Notify Admin Only"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6006,6 +5998,26 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Set rules and options for product abuse reporting."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Who can report"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Decide if only logged-in customers can submit abuse reports, or if reporting is open to everyone."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<ul><li>logged-in customers - Only registered and logged-in customers can report products.This helps prevent spam and ensures accountability.</li><li>Anyone - Both logged-in customers and guests can report products. This gives the widest access but may increase the risk of spam submissions.</li></ul>"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "logged-in customers"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Anyone"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7889,7 +7901,23 @@ msgid "A clear, descriptive title that helps customers find your product"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Product Images"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "High-quality photos showing your product from multiple angles"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Organize your product to help customers browse your store"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Product Rejected by Admin"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Admin Note"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -8425,6 +8453,10 @@ msgid "Order Status"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "SKU"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Total Revenue"
 msgstr ""
 
@@ -8810,10 +8842,6 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "On Backorder"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "SKU"
 msgstr ""
 
 #: assets/js/index.js:1
