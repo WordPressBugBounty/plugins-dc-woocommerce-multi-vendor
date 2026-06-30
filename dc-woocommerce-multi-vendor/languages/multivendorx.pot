@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.8\n"
+"Project-Id-Version: MultiVendorX 5.0.9\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-16T00:13:05+00:00\n"
+"POT-Creation-Date: 2026-06-30T00:50:43+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -1718,7 +1718,7 @@ msgstr ""
 #. Translators: %s is the rating value out of 5.
 #: modules/StoreReview/Ajax.php:177
 #: modules/StoreReview/Widgets/StoreRating.php:302
-#: templates/store/store-banner-info.php:135
+#: templates/store/store-banner-info.php:140
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/block/marketplace-stores/view.js:1
 #, php-format,js-format
@@ -1727,7 +1727,7 @@ msgstr ""
 
 #: modules/StoreReview/Ajax.php:183
 #: modules/StoreReview/Widgets/StoreRating.php:308
-#: templates/store/store-banner-info.php:140
+#: templates/store/store-banner-info.php:145
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/block/marketplace-stores/view.js:1
 #: assets/js/block/store-quick-info/view.js:1
@@ -2019,7 +2019,7 @@ msgid "Details"
 msgstr ""
 
 #. Translators: label for single/multiple review counts.
-#: templates/store/store-banner-info.php:147
+#: templates/store/store-banner-info.php:152
 #: assets/js/index.js:1
 #: modules/StoreReview/assets/js/frontend.js:60
 msgid "Review"
@@ -6442,6 +6442,26 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Choose whether stores follow a step-by-step guided process through the category hierarchy or freely select multiple categories & subcategories without restrictions."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Shipping classes available to stores"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose which shipping classes store can assign to their products."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<ul><li>Marketplace Shipping Classes Only - Stores can assign shipping classes created by the marketplace administrator.</li><li>Marketplace & Store Shipping Classes - Stores can assign both marketplace shipping classes and shipping classes created for their own store.</li></ul>"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Store Shipping Classes Only"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Marketplace & Store Shipping Classes"
 msgstr ""
 
 #: assets/js/index.js:1
