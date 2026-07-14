@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.9\n"
-"Report-Msgid-Bugs-To: https://multivendorx.com/contact/\n"
+"Project-Id-Version: MultiVendorX 5.0.10\n"
+"Report-Msgid-Bugs-To: https://multivendorx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-30T00:50:43+00:00\n"
+"POT-Creation-Date: 2026-07-14T01:48:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -26,7 +26,7 @@ msgstr ""
 #. Plugin URI of the plugin
 #. Author URI of the plugin
 #: dc_product_vendor.php
-msgid "https://multivendorx.com/"
+msgid "https://multivendorx.com/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx"
 msgstr ""
 
 #. Description of the plugin
@@ -626,8 +626,8 @@ msgstr ""
 #: classes/RestAPI/Controllers/Logs.php:102
 #: classes/RestAPI/Controllers/Migrations.php:69
 #: classes/RestAPI/Controllers/Notifications.php:109
-#: classes/RestAPI/Controllers/Notifications.php:329
-#: classes/RestAPI/Controllers/Notifications.php:464
+#: classes/RestAPI/Controllers/Notifications.php:340
+#: classes/RestAPI/Controllers/Notifications.php:475
 #: classes/RestAPI/Controllers/Settings.php:98
 #: classes/RestAPI/Controllers/Settings.php:220
 #: classes/RestAPI/Controllers/Status.php:80
@@ -635,7 +635,7 @@ msgstr ""
 #: classes/RestAPI/Controllers/Stores.php:126
 #: classes/RestAPI/Controllers/Stores.php:501
 #: classes/RestAPI/Controllers/Stores.php:740
-#: classes/RestAPI/Controllers/Stores.php:894
+#: classes/RestAPI/Controllers/Stores.php:895
 #: classes/RestAPI/Controllers/Tour.php:78
 #: classes/RestAPI/Controllers/Tour.php:124
 #: classes/RestAPI/Controllers/Transactions.php:98
@@ -659,13 +659,13 @@ msgstr ""
 #: modules/Knowledgebase/Rest.php:331
 #: modules/Knowledgebase/Rest.php:408
 #: modules/MarketplaceCompliance/Rest.php:99
-#: modules/MarketplaceCompliance/Rest.php:187
+#: modules/MarketplaceCompliance/Rest.php:191
 #: modules/MarketplaceRefund/Rest.php:100
 #: modules/StoreReview/Rest.php:126
 #: modules/StoreReview/Rest.php:264
-#: modules/StoreReview/Rest.php:315
-#: modules/StoreReview/Rest.php:435
-#: modules/StoreReview/Rest.php:544
+#: modules/StoreReview/Rest.php:313
+#: modules/StoreReview/Rest.php:433
+#: modules/StoreReview/Rest.php:542
 #: modules/StoreShipping/Rest.php:123
 #: modules/StoreShipping/Rest.php:151
 #: modules/StoreShipping/Rest.php:239
@@ -679,17 +679,17 @@ msgstr ""
 #: classes/RestAPI/Controllers/Commissions.php:275
 #: classes/RestAPI/Controllers/Commissions.php:308
 #: classes/RestAPI/Controllers/Commissions.php:346
-#: classes/RestAPI/Controllers/Notifications.php:267
-#: classes/RestAPI/Controllers/Notifications.php:452
-#: classes/RestAPI/Controllers/Notifications.php:482
+#: classes/RestAPI/Controllers/Notifications.php:278
+#: classes/RestAPI/Controllers/Notifications.php:463
+#: classes/RestAPI/Controllers/Notifications.php:493
 #: classes/RestAPI/Controllers/Settings.php:208
-#: classes/RestAPI/Controllers/Settings.php:250
+#: classes/RestAPI/Controllers/Settings.php:254
 #: classes/RestAPI/Controllers/Status.php:101
 #: classes/RestAPI/Controllers/Status.php:186
 #: classes/RestAPI/Controllers/Stores.php:410
 #: classes/RestAPI/Controllers/Stores.php:723
-#: classes/RestAPI/Controllers/Stores.php:876
-#: classes/RestAPI/Controllers/Stores.php:1318
+#: classes/RestAPI/Controllers/Stores.php:877
+#: classes/RestAPI/Controllers/Stores.php:1319
 #: classes/RestAPI/Controllers/Tour.php:112
 #: classes/RestAPI/Controllers/Tour.php:157
 #: classes/RestAPI/Controllers/Transactions.php:219
@@ -706,14 +706,14 @@ msgstr ""
 #: modules/Knowledgebase/Rest.php:199
 #: modules/Knowledgebase/Rest.php:318
 #: modules/Knowledgebase/Rest.php:394
-#: modules/MarketplaceCompliance/Rest.php:174
-#: modules/MarketplaceCompliance/Rest.php:232
+#: modules/MarketplaceCompliance/Rest.php:178
+#: modules/MarketplaceCompliance/Rest.php:236
 #: modules/MarketplaceRefund/Rest.php:272
 #: modules/StoreReview/Rest.php:252
-#: modules/StoreReview/Rest.php:297
-#: modules/StoreReview/Rest.php:421
-#: modules/StoreReview/Rest.php:532
-#: modules/StoreReview/Rest.php:590
+#: modules/StoreReview/Rest.php:295
+#: modules/StoreReview/Rest.php:419
+#: modules/StoreReview/Rest.php:530
+#: modules/StoreReview/Rest.php:588
 #: modules/StoreShipping/Rest.php:139
 #: modules/StoreShipping/Rest.php:227
 #: modules/StoreShipping/Rest.php:269
@@ -853,16 +853,16 @@ msgstr ""
 msgid "No active plugin found."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Notifications.php:396
+#: classes/RestAPI/Controllers/Notifications.php:407
 msgid "Invalid notification data"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Notifications.php:445
+#: classes/RestAPI/Controllers/Notifications.php:456
 msgid "Notification(s) updated successfully."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Settings.php:203
-#: classes/RestAPI/Controllers/Stores.php:1310
+#: classes/RestAPI/Controllers/Stores.php:1311
 msgid "Settings Saved"
 msgstr ""
 
@@ -878,23 +878,23 @@ msgstr ""
 msgid "Store registered successfully and pending for approval."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1023
+#: classes/RestAPI/Controllers/Stores.php:1024
 msgid "New owner ID missing."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1058
+#: classes/RestAPI/Controllers/Stores.php:1059
 msgid "Store registration approved."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1118
+#: classes/RestAPI/Controllers/Stores.php:1119
 msgid "Store registration rejected permanently."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1132
+#: classes/RestAPI/Controllers/Stores.php:1133
 msgid "Store registration rejected."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1335
+#: classes/RestAPI/Controllers/Stores.php:1336
 #: modules/FollowStore/Rest.php:219
 msgid "Invalid store ID"
 msgstr ""
@@ -908,20 +908,20 @@ msgid "Withdrawal request submitted successfully."
 msgstr ""
 
 #. translators: 1: refund id, 2: date, 3: user
-#: classes/RestAPI/Rest.php:471
+#: classes/RestAPI/Rest.php:489
 #, php-format
 msgid "Refund #%1$s - %2$s by %3$s"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:474
+#: classes/RestAPI/Rest.php:492
 msgid "system"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:632
+#: classes/RestAPI/Rest.php:650
 msgid "Variation SKU is not generated!"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:672
+#: classes/RestAPI/Rest.php:690
 msgid "SKU is not generated!"
 msgstr ""
 
@@ -1127,7 +1127,7 @@ msgid "Invalid visibility value"
 msgstr ""
 
 #: modules/CustomerQueries/Rest.php:333
-#: modules/StoreReview/Rest.php:494
+#: modules/StoreReview/Rest.php:492
 msgid "No valid fields to update"
 msgstr ""
 
@@ -1375,15 +1375,15 @@ msgstr ""
 msgid "Report"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Rest.php:202
+#: modules/MarketplaceCompliance/Rest.php:206
 msgid "Invalid report ID"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Rest.php:212
+#: modules/MarketplaceCompliance/Rest.php:216
 msgid "Report not found"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Rest.php:223
+#: modules/MarketplaceCompliance/Rest.php:227
 #: assets/js/index.js:1
 msgid "Failed to delete report"
 msgstr ""
@@ -1693,12 +1693,12 @@ msgid "Policies"
 msgstr ""
 
 #: modules/StoreReview/Ajax.php:66
-#: modules/StoreReview/Rest.php:331
+#: modules/StoreReview/Rest.php:329
 msgid "Missing required fields."
 msgstr ""
 
 #: modules/StoreReview/Ajax.php:70
-#: modules/StoreReview/Rest.php:339
+#: modules/StoreReview/Rest.php:337
 msgid "You have already reviewed this store."
 msgstr ""
 
@@ -1760,30 +1760,29 @@ msgstr ""
 msgid "Leave a Review"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:288
-#: modules/StoreReview/Rest.php:460
-#: modules/StoreReview/Rest.php:569
-msgid "Review not found"
-msgstr ""
-
-#: modules/StoreReview/Rest.php:404
+#: modules/StoreReview/Rest.php:402
 msgid "Review could not be created."
 msgstr ""
 
-#: modules/StoreReview/Rest.php:450
-#: modules/StoreReview/Rest.php:559
+#: modules/StoreReview/Rest.php:448
+#: modules/StoreReview/Rest.php:557
 msgid "Invalid review ID"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:485
+#: modules/StoreReview/Rest.php:458
+#: modules/StoreReview/Rest.php:567
+msgid "Review not found"
+msgstr ""
+
+#: modules/StoreReview/Rest.php:483
 msgid "Invalid status value"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:580
+#: modules/StoreReview/Rest.php:578
 msgid "Failed to delete review"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:601
+#: modules/StoreReview/Rest.php:599
 #: assets/js/index.js:1
 msgid "Guest"
 msgstr ""
@@ -2326,6 +2325,7 @@ msgstr ""
 
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/block/marketplace-stores/view.js:1
+#: assets/js/index.js:1
 msgid "Select Category"
 msgstr ""
 
@@ -3338,6 +3338,10 @@ msgid "Edit"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Failed to load announcement for editing"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "All"
 msgstr ""
 
@@ -3350,11 +3354,19 @@ msgid "Failed to load announcements"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Select Stores"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Created Date"
 msgstr ""
 
 #: assets/js/index.js:1
 msgid "Are you sure"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Are you sure you want to delete this announcement?"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -3410,6 +3422,10 @@ msgid "Select the status of the announcement."
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Failed to perform bulk action."
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Product"
 msgstr ""
 
@@ -3439,6 +3455,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Answer"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Select Status"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -3679,6 +3699,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Failed to fetch review data"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Select Rating"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6089,10 +6113,6 @@ msgid "Keep this secure and do not expose it publicly.<br/><a href=\"https://dev
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "Public identifier for your Twitter (X) application."
 msgstr ""
 
@@ -6553,7 +6573,7 @@ msgid "Control how your store looks and feels. Set the banner style, logo placem
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Choose how the store page displays its banner, logo, and description. </br> <b>Note: </b>Applicable only for non-block themes. For block themes, customize the layout through the Block Editor template settings.</br> <b>Read more: </b> <a class=\"link-item\" href=\"https://multivendorx.com/docs/knowledgebase/configure-store-template-layout-for-block-based-themes/\" >Block theme layout guide</a>"
+msgid "Choose how the store page displays its banner, logo, and description. </br> <b>Note: </b>Applicable only for non-block themes. For block themes, customize the layout through the Block Editor template settings.</br> <b>Read more: </b> <a class=\"link-item\" href=\"https://multivendorx.com/docs/knowledgebase/configure-store-template-layout-for-block-based-themes/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx\" >Block theme layout guide</a>"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7029,7 +7049,7 @@ msgid "Franchise store assignment method"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Define how customer orders are assigned to franchise stores after checkout:<ul><li><strong>Nearest store</strong> - Orders are automatically assigned to the closest eligible franchise store based on the customer’s delivery address and the store’s configured \"location restrictions\".Best suited for physical or region-based fulfillment.</li><li><strong>Manual assignment</strong> - Orders are created without a store assignment and must be manually assigned by the admin from the backend.</li></ul>"
+msgid "Define how orders are matched to a franchise store:<ul><li><strong>Nearest store</strong> - Orders are automatically assigned to the closest eligible franchise store based on the customer’s delivery address and the store’s configured \"location restrictions\". Best suited for physical or region-based fulfillment.</li><li><strong>Manual assignment</strong> - The customer picks their preferred franchise store at checkout from the list of active stores. Any cart item not in stock at the selected store is automatically removed with a notice; the whole order is then assigned to that one store. Best suited when customers have a preferred pickup location or an existing relationship with a specific store.</li></ul>"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7074,6 +7094,30 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Store price override"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Controls whether a franchise store is allowed to set its own Regular/Sale Price for admin-catalog products (a store's own products always keep managing price the normal way). When enabled, the customer always sees and pays the assigned store's price if that store has set one, otherwise the admin price. When disabled, every store uses the admin price - any price a store had previously set is kept on file but ignored, and reappears if this is turned back on later."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Allow quantity splitting"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "When no single store has enough stock for a line item, split its quantity across multiple stores rather than treating it as unfulfillable."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Default low stock threshold"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Marketplace-wide fallback applied to a newly tracked product before its store sets its own default under Inventory Settings."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Default out of stock threshold"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7614,6 +7658,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Payment Method"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose the payment method you want to use for receiving store payouts."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -8409,6 +8457,10 @@ msgid "Expiry Date"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Select Coupon Type"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Percentage Discount"
 msgstr ""
 
@@ -8733,6 +8785,10 @@ msgid "Shipping Tracking"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Shipping Providers"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Enter Tracking Url "
 msgstr ""
 
@@ -8785,6 +8841,14 @@ msgid "Send"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Tracking URL"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Tracking Number"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Total Order Amount"
 msgstr ""
 
@@ -8829,7 +8893,7 @@ msgid "All Languages"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Product Type"
+msgid "Select Product Type"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -8849,7 +8913,7 @@ msgid "External/Affiliate Product"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Stock Status"
+msgid "Select Stock Status"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -8886,6 +8950,46 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Products are created, updated, and managed for your store."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Personal Information"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "First Name"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Last Name"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Display Name"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Website"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Bio"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Change Password"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "New Password"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Confirm Password"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Passwords do not match"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -9655,6 +9759,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Social information"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Failed to save store settings. Please try again."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -11088,6 +11196,10 @@ msgid "Attributes"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Define product attributes such as size, color, or material. These attributes can be used to create product variations and help customers choose the right option."
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Add variants Like size or color"
 msgstr ""
 
@@ -11129,6 +11241,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Used to identify this product in your inventory."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stock Status"
 msgstr ""
 
 #: assets/js/index.js:1
