@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.11\n"
+"Project-Id-Version: MultiVendorX 5.0.12\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-23T13:25:36+00:00\n"
+"POT-Creation-Date: 2026-07-31T13:10:36+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -306,6 +306,10 @@ msgstr ""
 
 #: classes/Notifications/Gateways/Vonage.php:70
 msgid "Invalid API response from Vonage."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:75
+msgid "Store pending approval"
 msgstr ""
 
 #: classes/Order/Admin.php:47
@@ -619,8 +623,8 @@ msgid "Update Now"
 msgstr ""
 
 #: classes/RestAPI/Controllers/Commissions.php:102
-#: classes/RestAPI/Controllers/Commissions.php:298
-#: classes/RestAPI/Controllers/Commissions.php:349
+#: classes/RestAPI/Controllers/Commissions.php:297
+#: classes/RestAPI/Controllers/Commissions.php:348
 #: classes/RestAPI/Controllers/ImportDummyData.php:72
 #: classes/RestAPI/Controllers/Logs.php:66
 #: classes/RestAPI/Controllers/Logs.php:102
@@ -680,14 +684,14 @@ msgstr ""
 msgid "You are not allowed to view this store's commissions."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Commissions.php:284
-#: classes/RestAPI/Controllers/Commissions.php:334
-#: classes/RestAPI/Controllers/Commissions.php:380
+#: classes/RestAPI/Controllers/Commissions.php:283
+#: classes/RestAPI/Controllers/Commissions.php:333
+#: classes/RestAPI/Controllers/Commissions.php:379
 #: classes/RestAPI/Controllers/Notifications.php:278
 #: classes/RestAPI/Controllers/Notifications.php:463
 #: classes/RestAPI/Controllers/Notifications.php:493
 #: classes/RestAPI/Controllers/Settings.php:208
-#: classes/RestAPI/Controllers/Settings.php:254
+#: classes/RestAPI/Controllers/Settings.php:265
 #: classes/RestAPI/Controllers/Status.php:101
 #: classes/RestAPI/Controllers/Status.php:186
 #: classes/RestAPI/Controllers/Stores.php:415
@@ -726,15 +730,15 @@ msgstr ""
 msgid "Unexpected server error"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Commissions.php:313
+#: classes/RestAPI/Controllers/Commissions.php:312
 msgid "Commission not found."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Commissions.php:321
+#: classes/RestAPI/Controllers/Commissions.php:320
 msgid "You are not allowed to view this commission."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Commissions.php:366
+#: classes/RestAPI/Controllers/Commissions.php:365
 msgid "You are not allowed to regenerate commissions."
 msgstr ""
 
@@ -948,20 +952,20 @@ msgid "Withdrawal request submitted successfully."
 msgstr ""
 
 #. translators: 1: refund id, 2: date, 3: user
-#: classes/RestAPI/Rest.php:488
+#: classes/RestAPI/Rest.php:494
 #, php-format
 msgid "Refund #%1$s - %2$s by %3$s"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:491
+#: classes/RestAPI/Rest.php:497
 msgid "system"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:649
+#: classes/RestAPI/Rest.php:655
 msgid "Variation SKU is not generated!"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:689
+#: classes/RestAPI/Rest.php:695
 msgid "SKU is not generated!"
 msgstr ""
 
@@ -7709,6 +7713,10 @@ msgid "Define your store’s policies so customers clearly understand your shipp
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Deactivation"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Enable Deactivation"
 msgstr ""
 
@@ -7834,6 +7842,14 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Failed to load activities"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose customer..."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Select Payment Method"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -8110,6 +8126,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Product gallery"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Add Gallery Image"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -8845,6 +8865,26 @@ msgid "Create Shipment"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Shipment Details:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Provider:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Date:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Tracking URL:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Tracking ID:"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "System Note"
 msgstr ""
 
@@ -8993,6 +9033,10 @@ msgid "Products are created, updated, and managed for your store."
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Auto Draft"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Personal Information"
 msgstr ""
 
@@ -9097,6 +9141,10 @@ msgid "Flat Rate"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Enter cost"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Set the fee customers need to pay when choosing Local Pickup."
 msgstr ""
 
@@ -9142,6 +9190,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Cost of Shipping Class"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enter class cost"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -11252,7 +11304,19 @@ msgid "Option value"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Add another value"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "No variant name"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Select or Upload File"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Use this file"
 msgstr ""
 
 #: assets/js/index.js:1
