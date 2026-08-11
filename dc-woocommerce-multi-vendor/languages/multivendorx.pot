@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.12\n"
+"Project-Id-Version: MultiVendorX 5.0.13\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-31T13:10:36+00:00\n"
+"POT-Creation-Date: 2026-08-11T02:01:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -310,6 +310,341 @@ msgstr ""
 
 #: classes/Notifications/Notifications.php:75
 msgid "Store pending approval"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:76
+msgid "Triggered when a new store application is submitted and placed under admin review."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:114
+msgid "Store rejected"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:115
+msgid "Admin rejected the store application."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:153
+msgid "Store permanently rejected"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:154
+msgid "Permanent rejection of a store application by the admin"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:192
+msgid "Store account created by admin"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:193
+msgid "Admin manually created store account."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:232
+msgid "Store activated"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:233
+msgid "Store activated and ready to start selling."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:271
+msgid "Store under review"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:272
+msgid "Store temporarily placed under admin review."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:309
+msgid "Store suspended"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:310
+msgid "Store temporarily suspended by the admin."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:348
+msgid "Store permanently deactivated"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:349
+msgid "Admin permanently deactivated the store."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:387
+msgid "Store account deactivation request"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:388
+msgid "Store owner requests deactivation of their store account."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:426
+msgid "Store deactivation rejected"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:427
+msgid "Store deactivation request rejected by the admin."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:465
+msgid "New order received"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:466
+msgid "New order received by the store."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:504
+msgid "Order processing"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:505
+msgid "An order status is changed to processing."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:540
+msgid "Order completed"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:541
+msgid "An order is completed successfully."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:578
+msgid "Order cancelled"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:579
+msgid "An order is cancelled by the customer or admin."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:617
+msgid "Order refunded"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:618
+msgid "A refund is issued for an order."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:656
+msgid "Shipment tracking added"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:657
+msgid "Tracking details added for the order shipment."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:699
+msgid "Order delivered"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:700
+msgid "Order marked as delivered."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:740
+#: modules/MarketplaceRefund/Frontend.php:635
+#: assets/js/index.js:1
+msgid "Refund requested"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:741
+msgid "Refund request submitted for the order."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:780
+msgid "Refund accepted"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:781
+msgid "Refund request approved for the order."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:810
+#: modules/MarketplaceRefund/Frontend.php:660
+msgid "Refund rejected"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:811
+msgid "Refund request rejected for the order."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:841
+msgid "New store review"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:842
+msgid "New customer review submitted for the store."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:870
+msgid "Admin replied to review"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:871
+msgid "Marketplace admin replies to a review."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:901
+msgid "Product submitted"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:902
+msgid "Product submitted for admin review."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:931
+msgid "Product approved"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:932
+msgid "Product approved and published."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:961
+msgid "Product rejected"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:962
+msgid "Product rejected after review."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:991
+msgid "Product low stock"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:992
+msgid "Product stock running low."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1022
+msgid "Product out of stock"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1023
+msgid "Product is currently unavailable due to no stock."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1053
+msgid "Product question submitted"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1054
+msgid "Customer submits a question on a product."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1083
+msgid "Store replied to product question"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1084
+msgid "Store owner replies to a product question."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1114
+msgid "Payout received"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1115
+msgid "A payment is received for an order."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1142
+msgid "Payout failed"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1143
+msgid "A payout processing attempt has failed."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1178
+msgid "Withdrawal requested"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1179
+msgid "A withdrawal request is submitted by a store."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1216
+msgid "Withdrawal released"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1217
+msgid "A withdrawal is released successfully."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1242
+msgid "Withdrawl rejected"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1243
+msgid "A withdrawl request is rejected by the admin."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1269
+msgid "Report abuse submitted"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1270
+msgid "A product is reported for abuse by a customer."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1309
+msgid "System announcement"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1310
+msgid "A system-wide announcement is published by the admin."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1347
+msgid "Store followed"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1348
+msgid "Customer started following the store."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1386
+msgid "New product from followed store"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1387
+msgid "New product published by a followed store."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1427
+msgid "New coupon from followed store"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1428
+msgid "New coupon created by a followed store."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1469
+msgid "Store vacation alert"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1470
+msgid "Followed store marked as on vacation."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1509
+msgid "Wholesale buyer approved"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1510
+msgid "User request for wholesale access has been approved."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1548
+msgid "Wholesale buyer rejected"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:1549
+msgid "User request for wholesale access has been rejected."
 msgstr ""
 
 #: classes/Order/Admin.php:47
@@ -637,9 +972,9 @@ msgstr ""
 #: classes/RestAPI/Controllers/Status.php:80
 #: classes/RestAPI/Controllers/Status.php:119
 #: classes/RestAPI/Controllers/Stores.php:126
-#: classes/RestAPI/Controllers/Stores.php:506
-#: classes/RestAPI/Controllers/Stores.php:745
-#: classes/RestAPI/Controllers/Stores.php:911
+#: classes/RestAPI/Controllers/Stores.php:476
+#: classes/RestAPI/Controllers/Stores.php:715
+#: classes/RestAPI/Controllers/Stores.php:881
 #: classes/RestAPI/Controllers/Tour.php:78
 #: classes/RestAPI/Controllers/Tour.php:124
 #: classes/RestAPI/Controllers/Transactions.php:99
@@ -694,10 +1029,10 @@ msgstr ""
 #: classes/RestAPI/Controllers/Settings.php:265
 #: classes/RestAPI/Controllers/Status.php:101
 #: classes/RestAPI/Controllers/Status.php:186
-#: classes/RestAPI/Controllers/Stores.php:415
-#: classes/RestAPI/Controllers/Stores.php:728
-#: classes/RestAPI/Controllers/Stores.php:893
-#: classes/RestAPI/Controllers/Stores.php:1351
+#: classes/RestAPI/Controllers/Stores.php:385
+#: classes/RestAPI/Controllers/Stores.php:698
+#: classes/RestAPI/Controllers/Stores.php:863
+#: classes/RestAPI/Controllers/Stores.php:1321
 #: classes/RestAPI/Controllers/Tour.php:112
 #: classes/RestAPI/Controllers/Tour.php:157
 #: classes/RestAPI/Controllers/Transactions.php:228
@@ -882,7 +1217,7 @@ msgid "Notification(s) updated successfully."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Settings.php:203
-#: classes/RestAPI/Controllers/Stores.php:1343
+#: classes/RestAPI/Controllers/Stores.php:1313
 msgid "Settings Saved"
 msgstr ""
 
@@ -890,43 +1225,43 @@ msgstr ""
 msgid "MultiVendorX visitors stats successfully deleted"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:634
+#: classes/RestAPI/Controllers/Stores.php:604
 msgid "Store registered successfully and approved automatically."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:639
+#: classes/RestAPI/Controllers/Stores.php:609
 msgid "Store registered successfully and pending for approval."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:766
+#: classes/RestAPI/Controllers/Stores.php:736
 msgid "You are not allowed to access this store."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:927
+#: classes/RestAPI/Controllers/Stores.php:897
 msgid "You are not allowed to change the status of these stores."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:953
+#: classes/RestAPI/Controllers/Stores.php:923
 msgid "You are not allowed to update this store."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1056
+#: classes/RestAPI/Controllers/Stores.php:1026
 msgid "New owner ID missing."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1091
+#: classes/RestAPI/Controllers/Stores.php:1061
 msgid "Store registration approved."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1151
+#: classes/RestAPI/Controllers/Stores.php:1121
 msgid "Store registration rejected permanently."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1165
+#: classes/RestAPI/Controllers/Stores.php:1135
 msgid "Store registration rejected."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1368
+#: classes/RestAPI/Controllers/Stores.php:1338
 #: modules/FollowStore/Rest.php:219
 msgid "Invalid store ID"
 msgstr ""
@@ -1239,6 +1574,7 @@ msgstr ""
 #: modules/Elementor/Tags/StoreName.php:37
 #: modules/Elementor/Widgets/StoreName.php:38
 #: assets/js/block/store-name/index.js:1
+#: assets/js/index.js:1
 msgid "Store Name"
 msgstr ""
 
@@ -1597,17 +1933,8 @@ msgstr ""
 msgid "Request timeline"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:635
-#: assets/js/index.js:1
-msgid "Refund requested"
-msgstr ""
-
 #: modules/MarketplaceRefund/Frontend.php:646
 msgid "Under review"
-msgstr ""
-
-#: modules/MarketplaceRefund/Frontend.php:660
-msgid "Refund rejected"
 msgstr ""
 
 #: modules/MarketplaceRefund/Frontend.php:662
@@ -1920,12 +2247,12 @@ msgstr ""
 msgid "This shipping method is fully managed in the <a href=\"%s\" target=\"_blank\">MultiVendorX Shipping Settings</a>."
 msgstr ""
 
-#: modules/StoreShipping/Country_Shipping.php:116
+#: modules/StoreShipping/Country_Shipping.php:298
 #: modules/StoreShipping/Distance_Shipping.php:161
 msgid "Free Shipping"
 msgstr ""
 
-#: modules/StoreShipping/Country_Shipping.php:305
+#: modules/StoreShipping/Country_Shipping.php:312
 #: modules/StoreShipping/Distance_Shipping.php:189
 msgid "Pickup from Store"
 msgstr ""
