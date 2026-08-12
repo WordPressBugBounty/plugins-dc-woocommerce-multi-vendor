@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.13\n"
+"Project-Id-Version: MultiVendorX 5.0.14\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-11T02:01:57+00:00\n"
+"POT-Creation-Date: 2026-08-12T13:13:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -669,27 +669,27 @@ msgid "Regenerate suborders"
 msgstr ""
 
 #: classes/Order/Frontend.php:74
-#: classes/Order/Hooks.php:399
+#: classes/Order/Hooks.php:400
 msgid "Sold by"
 msgstr ""
 
-#: classes/Order/Hooks.php:201
+#: classes/Order/Hooks.php:202
 #: modules/Privacy/Frontend.php:83
 #: modules/Privacy/Frontend.php:106
 msgid "Sold By"
 msgstr ""
 
-#: classes/Order/Hooks.php:245
+#: classes/Order/Hooks.php:246
 msgctxt "Order note"
 msgid "Update via parent order: "
 msgstr ""
 
-#: classes/Order/Hooks.php:294
+#: classes/Order/Hooks.php:295
 msgctxt "Order note"
 msgid "Sync from store's suborders: "
 msgstr ""
 
-#: classes/Order/Hooks.php:402
+#: classes/Order/Hooks.php:403
 msgid "Item id"
 msgstr ""
 
@@ -4221,7 +4221,51 @@ msgid "Marketplace Types"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Set availability rules by date and time slot"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Approve incoming bookings"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Sync bookings to Google Calendar"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Appointments"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Interactive calendar for customers to pick a time"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Built-in rescheduling and cancellation controls"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Recurring billing on fixed or custom cycles"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customers manage active plans from their account"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Automatic renewal and expiry notifications"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Check-in and check-out date management"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Nightly pricing with seasonal rate rules"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Real-time room and property inventory"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4229,7 +4273,43 @@ msgid "Bundle"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Combine multiple products into one purchasable kit"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Bundle-level discounts applied automatically"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stock tracked across all bundled items"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Starting and hidden reserve price controls"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Timed auctions with automatic winner selection"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Commission applied automatically on completed sales"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Rental Pro"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Hourly, daily, or weekly rental durations"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Inventory blocked automatically to prevent double-booking"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Optional security deposit collection"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4237,7 +4317,43 @@ msgid "Product Types"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Best fit for straightforward physical or digital goods"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Standard pricing and stock tracking"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Fastest product type to set up"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Offer size, color, or format options on one listing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Each variation keeps its own price and stock"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customers choose options before checkout"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "External"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Sends buyers to another site to complete checkout"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Useful for affiliate or drop-ship style listings"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "No inventory tracked on your marketplace"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4245,7 +4361,31 @@ msgid "Grouped"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Bundles related simple products under one listing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customers buy items individually or as a set"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Good fit for curated product collections"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Gift Cards"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Sell digital gift cards customers redeem later"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Balance automatically applied at checkout"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Encourages repeat visits from redemption"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4257,7 +4397,31 @@ msgid "Shared Listing"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Multiple stores list the same product independently"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customers compare price and stock across sellers"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Control which store's offer appears first"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Import Export Tools"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Bulk upload or update products via CSV"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Export full catalogs for backup or migration"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Speeds up large catalog changes"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4265,7 +4429,67 @@ msgid "Media Library"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Central library for images and files per store"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Reuse existing media on new listings"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Organized view of everything a store has uploaded"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Set marketplace-wide policy defaults"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stores publish their own policy pages"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Displayed directly on the store profile"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customers follow the stores they like"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Automatic alerts on new products and offers"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Builds repeat traffic for individual stores"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Ratings and written reviews on store pages"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Custom review criteria like delivery experience"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Feedback visible to future shoppers"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Business Hours"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Display opening and closing times per store"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Weekly schedule widget on the store page"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Sets clear expectations on response time"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4273,7 +4497,47 @@ msgid "Vacation"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Pause a store temporarily with a custom notice"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Optionally disable add-to-cart while away"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Schedule vacation dates on a calendar in advance"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Staff Manager"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Add unlimited staff accounts per store"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Role-based access to orders, products, or support"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Dedicated dashboard scoped to staff permissions"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Privacy"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Hide contact details, location, or other store info"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Control what customer data stores can access"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Overrides available per store where needed"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4285,7 +4549,31 @@ msgid "PayPal Marketplace"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Real-time split payments via PayPal"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Store's share released the moment an order completes"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Removes the manual payout step"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Stripe Marketplace"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Instant split payments using Stripe Connect"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Funds routed to stores automatically at checkout"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Reduces manual payout processing"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4293,7 +4581,31 @@ msgid "Shipping Management"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Each store sets its own shipping methods and zones"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Delivery pricing configured independently per store"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "No shared shipping rules required"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Weight Wise Shipping (using Table Rate Shipping)"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Shipping cost scales with weight or order value"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Rules can combine quantity, destination, and price"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Works alongside table rate shipping"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4301,7 +4613,31 @@ msgid "Per Product Shipping"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Set a shipping charge on individual products"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Overrides marketplace-wide shipping defaults"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Useful for oversized or special-handling items"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Printful"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Print-on-demand fulfillment synced automatically"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Orders route to Printful without manual entry"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Shipping and tracking handled by Printful"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4313,7 +4649,43 @@ msgid "Invoice & Packing slip"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Auto-generate invoices and packing slips per order"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Custom branding on invoice templates"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Downloadable and emailed to customers automatically"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Live Chat"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Real-time messaging between customers and stores"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Optional integrations with WhatsApp or Messenger"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Chat history saved for later reference"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Ticketing system for customer issues"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stores track and resolve requests from one queue"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Support history stays tied to each order"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4321,7 +4693,31 @@ msgid "Customer Queries"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Shoppers post public questions on product pages"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stores answer directly to build buyer confidence"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Answers stay visible to future visitors"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Marketplace Refund"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customers submit refund requests with photo evidence"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stores approve, reject, or auto-process claims"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Refund eligibility rules by order status"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4333,7 +4729,31 @@ msgid "Store Analytics"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Google Analytics integration at the store level"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Sales, order, and revenue reports per store"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "SEO-friendly rich results in search listings"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Search & Discovery"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Per-product SEO titles, meta text, and keywords"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Yoast or Rank Math integration for stores"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Open Graph settings for better social sharing"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4345,7 +4765,31 @@ msgid "Intelligence"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Generate product titles and descriptions with AI"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose between OpenAI, Gemini, or OpenRouter"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Speeds up new listing creation for stores"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Marketplace Compliance"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Verified and featured store badges build trust"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Identity, address, and social profile verification"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Automated checks against marketplace requirements"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4353,7 +4797,31 @@ msgid "Marketplace Membership"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Free, one-time, or recurring membership plans"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Gate features and categories by plan tier"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Automatic renewals and access control at expiry"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Facilitator"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Assign facilitators to share commission on a sale"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Automatic payout splits between participants"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Facilitators track wallet balance and history"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4361,7 +4829,31 @@ msgid "Marketplace Fee"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Fixed, percentage, or combined platform fee models"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Charge at checkout or deduct from vendor earnings"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Applied automatically to every order or store"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Franchises"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Franchise-style ordering across multiple locations"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Admin-controlled product assignment by store"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Automatic routing based on customer location"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4369,7 +4861,31 @@ msgid "Payment Gateway Charge"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Decide who absorbs payment processing fees"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Split gateway costs between admin and vendor"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Applied automatically at checkout"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Product Advertising"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Paid promotional slots to boost product visibility"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Control placement duration and featured status"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Mix of free and paid promotion options"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4377,11 +4893,47 @@ msgid "Wholesale"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Separate wholesale pricing for approved buyers"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Custom application form for wholesale access"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Approve buyers automatically or manually"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Store Inventory"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Low-stock and out-of-stock alerts per product"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Configurable stock thresholds trigger warnings"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Waitlist customers for restocked items"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Min Max"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Set minimum and maximum order quantities"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Cap total order value per checkout"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Rules apply per-product or store-wide"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4393,6 +4945,30 @@ msgid "Announcement"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Broadcast marketplace-wide notices to all stores"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Built-in taskboard for tracking store to-dos"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Direct messaging channel between admin and stores"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Central library of guides and tutorials for stores"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Reduces support tickets with self-serve docs"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Update articles anytime from the dashboard"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Integration"
 msgstr ""
 
@@ -4401,7 +4977,31 @@ msgid "Elementor"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Design custom store pages visually"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "No coding needed for store page layouts"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Works alongside existing Elementor templates"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "BuddyPress"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Store and customer profile pages"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Connections and messaging between marketplace users"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Adds a social layer on top of stores"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4409,7 +5009,31 @@ msgid "WPML"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Products pages in multiple languages"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Language switcher"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Works with WooCommerce Multilingual"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Advance Custom field"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Admin-defined custom fields for product listings"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stores fill in extra structured details"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Built on Advanced Custom Fields"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4417,7 +5041,31 @@ msgid "WP Affiliate"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Affiliate links tracked per product or store"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Commission payouts for referred sales"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose who absorbs affiliate commission cost"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Product Addon"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Optional extras like gift wrap or engraving"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Priced separately and added at checkout"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Configured per product by the store"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4425,7 +5073,31 @@ msgid "ShipStation"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Sync orders to ShipStation for fulfillment"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Print shipping labels in bulk"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Automatic tracking updates back to the order"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Geo Location"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Store locations shown on an interactive map"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customers search and filter by distance"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Works with Google Maps or Mapbox"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -5896,7 +6568,7 @@ msgid "Account SID"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "<ul> Send SMS notifications using Twilio.<br> Get your <strong>Account SID</strong> and <strong>Auth Token</strong> from your Twilio dashboard: <a href=\"https://www.twilio.com/console\" target=\"_blank\">Twilio Console</a>.<br> <strong>Important:</strong> Make sure the Account SID and Token you enter here match your Twilio account details exactly.<br> Follow Twilio’s setup instructions to complete the SMS gateway configuration. </ul>"
+msgid "Send SMS notifications using Twilio.<br> Get your <strong>Account SID</strong> and <strong>Auth Token</strong> from your Twilio dashboard: <a href=\"https://www.twilio.com/console\" target=\"_blank\">Twilio Console</a>.<br> <strong>Important:</strong> Make sure the Account SID and Token you enter here match your Twilio account details exactly.<br> Follow Twilio’s setup instructions to complete the SMS gateway configuration."
 msgstr ""
 
 #: assets/js/index.js:1
