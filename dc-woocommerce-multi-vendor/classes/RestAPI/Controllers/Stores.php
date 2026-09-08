@@ -91,7 +91,7 @@ class Stores extends \WP_REST_Controller {
      * @param object $request Request data.
      */
     public function get_items_permissions_check( $request ) {
-        return Utill::current_user_has_capability( array( 'manage_options','edit_stores' ) );
+        return Utill::current_user_has_capability( array( 'manage_options', 'edit_stores' ) );
     }
 
     /**
@@ -133,8 +133,8 @@ class Stores extends \WP_REST_Controller {
         }
 
         try {
-            $permission = Utill::current_user_has_capability( array( 'manage_options','edit_stores' ) );
-            $flag_map = array(
+            $permission = Utill::current_user_has_capability( array( 'manage_options', 'edit_stores' ) );
+            $flag_map   = array(
                 'visitorMap'         => 'get_visitor_map_data',
                 'store_registration' => 'get_store_registration_data',
                 'slug'               => 'check_store_slug',
@@ -143,7 +143,7 @@ class Stores extends \WP_REST_Controller {
                 'options'            => 'get_stores_dropdown',
                 'status'             => 'get_pending_stores',
             );
-            $flag_map = apply_filters( 'multivendorx_rest_store_handlers', $flag_map );
+            $flag_map   = apply_filters( 'multivendorx_rest_store_handlers', $flag_map );
             if ( $permission ) {
                 foreach ( $flag_map as $param => $method ) {
                     if ( ! $request->get_param( $param ) ) {
@@ -348,6 +348,14 @@ class Stores extends \WP_REST_Controller {
             $store_data['status']      = 'active';
 
             if ( ! empty( $store_data['id'] ) ) {
+                if ( ! StoreUtil::current_user_can_manage_store( (int) $store_data['id'] ) ) {
+                    return new \WP_Error(
+                        'rest_forbidden',
+                        __( 'You are not allowed to update this store.', 'multivendorx' ),
+                        array( 'status' => 403 )
+                    );
+                }
+
                 $store = new Store( (int) $store_data['id'] );
                 unset( $store_data['id'], $store_data['status'] );
 
@@ -602,7 +610,7 @@ class Stores extends \WP_REST_Controller {
 
             $primary_owner_id   = StoreUtil::get_primary_owner( $id );
             $owner              = get_userdata( $primary_owner_id );
-            $primary_owner_info         = array(
+            $primary_owner_info = array(
                 'id'           => $owner->ID,
                 'display_name' => $owner->display_name,
                 'user_email'   => $owner->user_email,
@@ -627,9 +635,10 @@ class Stores extends \WP_REST_Controller {
             }
 
             if ( $registrations ) {
-                return rest_ensure_response( array(
-                        'registration' => StoreUtil::get_store_registration_form( $store->get_id() ),
-                        'activities' => MultiVendorX()->util->get_activity_logs( $store->get_id() )
+                return rest_ensure_response(
+                    array(
+						'registration' => StoreUtil::get_store_registration_form( $store->get_id() ),
+						'activities'   => MultiVendorX()->util->get_activity_logs( $store->get_id() ),
                     )
                 );
             }
@@ -1557,8 +1566,8 @@ class Stores extends \WP_REST_Controller {
             );
 
             if ( ! empty( $store_ids ) ) {
-                $args['ID'] = $store_ids;
-                $args['nearest_store_ids'] = $store_ids;        
+                $args['ID']                = $store_ids;
+                $args['nearest_store_ids'] = $store_ids;
                 // Keep nearest-first order from radius query.
                 unset( $args['order_by'], $args['order'] );
             }

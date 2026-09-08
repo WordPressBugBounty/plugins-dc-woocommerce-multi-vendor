@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.15\n"
+"Project-Id-Version: MultiVendorX 5.0.16\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-26T01:06:02+00:00\n"
+"POT-Creation-Date: 2026-09-08T01:04:19+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -973,16 +973,16 @@ msgstr ""
 #: classes/RestAPI/Controllers/Logs.php:102
 #: classes/RestAPI/Controllers/Migrations.php:69
 #: classes/RestAPI/Controllers/Notifications.php:92
-#: classes/RestAPI/Controllers/Notifications.php:323
-#: classes/RestAPI/Controllers/Notifications.php:458
+#: classes/RestAPI/Controllers/Notifications.php:322
+#: classes/RestAPI/Controllers/Notifications.php:457
 #: classes/RestAPI/Controllers/Settings.php:98
-#: classes/RestAPI/Controllers/Settings.php:220
+#: classes/RestAPI/Controllers/Settings.php:231
 #: classes/RestAPI/Controllers/Status.php:72
 #: classes/RestAPI/Controllers/Status.php:111
 #: classes/RestAPI/Controllers/Stores.php:128
 #: classes/RestAPI/Controllers/Stores.php:316
-#: classes/RestAPI/Controllers/Stores.php:555
-#: classes/RestAPI/Controllers/Stores.php:721
+#: classes/RestAPI/Controllers/Stores.php:563
+#: classes/RestAPI/Controllers/Stores.php:730
 #: classes/RestAPI/Controllers/Tour.php:70
 #: classes/RestAPI/Controllers/Tour.php:116
 #: classes/RestAPI/Controllers/Transactions.php:91
@@ -1008,11 +1008,11 @@ msgstr ""
 #: modules/MarketplaceCompliance/Rest.php:90
 #: modules/MarketplaceCompliance/Rest.php:182
 #: modules/MarketplaceRefund/Rest.php:100
-#: modules/StoreReview/Rest.php:117
-#: modules/StoreReview/Rest.php:255
-#: modules/StoreReview/Rest.php:304
-#: modules/StoreReview/Rest.php:424
-#: modules/StoreReview/Rest.php:533
+#: modules/StoreReview/Rest.php:128
+#: modules/StoreReview/Rest.php:274
+#: modules/StoreReview/Rest.php:333
+#: modules/StoreReview/Rest.php:454
+#: modules/StoreReview/Rest.php:571
 #: modules/StoreShipping/Rest.php:115
 #: modules/StoreShipping/Rest.php:143
 #: modules/StoreShipping/Rest.php:231
@@ -1030,17 +1030,17 @@ msgstr ""
 #: classes/RestAPI/Controllers/Commissions.php:273
 #: classes/RestAPI/Controllers/Commissions.php:323
 #: classes/RestAPI/Controllers/Commissions.php:369
-#: classes/RestAPI/Controllers/Notifications.php:261
-#: classes/RestAPI/Controllers/Notifications.php:446
-#: classes/RestAPI/Controllers/Notifications.php:476
-#: classes/RestAPI/Controllers/Settings.php:208
-#: classes/RestAPI/Controllers/Settings.php:265
+#: classes/RestAPI/Controllers/Notifications.php:260
+#: classes/RestAPI/Controllers/Notifications.php:445
+#: classes/RestAPI/Controllers/Notifications.php:475
+#: classes/RestAPI/Controllers/Settings.php:219
+#: classes/RestAPI/Controllers/Settings.php:276
 #: classes/RestAPI/Controllers/Status.php:93
 #: classes/RestAPI/Controllers/Status.php:178
 #: classes/RestAPI/Controllers/Stores.php:225
-#: classes/RestAPI/Controllers/Stores.php:538
-#: classes/RestAPI/Controllers/Stores.php:703
-#: classes/RestAPI/Controllers/Stores.php:1161
+#: classes/RestAPI/Controllers/Stores.php:546
+#: classes/RestAPI/Controllers/Stores.php:712
+#: classes/RestAPI/Controllers/Stores.php:1170
 #: classes/RestAPI/Controllers/Tour.php:104
 #: classes/RestAPI/Controllers/Tour.php:149
 #: classes/RestAPI/Controllers/Transactions.php:220
@@ -1060,11 +1060,11 @@ msgstr ""
 #: modules/MarketplaceCompliance/Rest.php:169
 #: modules/MarketplaceCompliance/Rest.php:227
 #: modules/MarketplaceRefund/Rest.php:272
-#: modules/StoreReview/Rest.php:243
-#: modules/StoreReview/Rest.php:286
-#: modules/StoreReview/Rest.php:410
-#: modules/StoreReview/Rest.php:521
-#: modules/StoreReview/Rest.php:579
+#: modules/StoreReview/Rest.php:262
+#: modules/StoreReview/Rest.php:314
+#: modules/StoreReview/Rest.php:440
+#: modules/StoreReview/Rest.php:559
+#: modules/StoreReview/Rest.php:617
 #: modules/StoreShipping/Rest.php:131
 #: modules/StoreShipping/Rest.php:219
 #: modules/StoreShipping/Rest.php:261
@@ -1216,16 +1216,20 @@ msgstr ""
 msgid "No active plugin found."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Notifications.php:390
+#: classes/RestAPI/Controllers/Notifications.php:389
 msgid "Invalid notification data"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Notifications.php:439
+#: classes/RestAPI/Controllers/Notifications.php:438
 msgid "Notification(s) updated successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Settings.php:203
-#: classes/RestAPI/Controllers/Stores.php:1153
+#: classes/RestAPI/Controllers/Settings.php:151
+msgid "You are not allowed to change role permissions."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Settings.php:214
+#: classes/RestAPI/Controllers/Stores.php:1162
 msgid "Settings Saved"
 msgstr ""
 
@@ -1233,43 +1237,44 @@ msgstr ""
 msgid "MultiVendorX visitors stats successfully deleted"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:444
-msgid "Store registered successfully and approved automatically."
-msgstr ""
-
-#: classes/RestAPI/Controllers/Stores.php:449
-msgid "Store registered successfully and pending for approval."
-msgstr ""
-
-#: classes/RestAPI/Controllers/Stores.php:576
-msgid "You are not allowed to access this store."
-msgstr ""
-
-#: classes/RestAPI/Controllers/Stores.php:737
-msgid "You are not allowed to change the status of these stores."
-msgstr ""
-
-#: classes/RestAPI/Controllers/Stores.php:763
+#: classes/RestAPI/Controllers/Stores.php:354
+#: classes/RestAPI/Controllers/Stores.php:772
 msgid "You are not allowed to update this store."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:866
+#: classes/RestAPI/Controllers/Stores.php:452
+msgid "Store registered successfully and approved automatically."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Stores.php:457
+msgid "Store registered successfully and pending for approval."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Stores.php:584
+msgid "You are not allowed to access this store."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Stores.php:746
+msgid "You are not allowed to change the status of these stores."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Stores.php:875
 msgid "New owner ID missing."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:901
+#: classes/RestAPI/Controllers/Stores.php:910
 msgid "Store registration approved."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:961
+#: classes/RestAPI/Controllers/Stores.php:970
 msgid "Store registration rejected permanently."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:975
+#: classes/RestAPI/Controllers/Stores.php:984
 msgid "Store registration rejected."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1178
+#: classes/RestAPI/Controllers/Stores.php:1187
 #: modules/FollowStore/Rest.php:221
 msgid "Invalid store ID"
 msgstr ""
@@ -1295,20 +1300,20 @@ msgid "Withdrawal request submitted successfully."
 msgstr ""
 
 #. translators: 1: refund id, 2: date, 3: user
-#: classes/RestAPI/Rest.php:494
+#: classes/RestAPI/Rest.php:495
 #, php-format
 msgid "Refund #%1$s - %2$s by %3$s"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:497
+#: classes/RestAPI/Rest.php:498
 msgid "system"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:655
+#: classes/RestAPI/Rest.php:656
 msgid "Variation SKU is not generated!"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:695
+#: classes/RestAPI/Rest.php:696
 msgid "SKU is not generated!"
 msgstr ""
 
@@ -1514,7 +1519,7 @@ msgid "Invalid visibility value"
 msgstr ""
 
 #: modules/CustomerQueries/Rest.php:333
-#: modules/StoreReview/Rest.php:483
+#: modules/StoreReview/Rest.php:521
 msgid "No valid fields to update"
 msgstr ""
 
@@ -2072,12 +2077,12 @@ msgid "Policies"
 msgstr ""
 
 #: modules/StoreReview/Ajax.php:66
-#: modules/StoreReview/Rest.php:320
+#: modules/StoreReview/Rest.php:349
 msgid "Missing required fields."
 msgstr ""
 
 #: modules/StoreReview/Ajax.php:70
-#: modules/StoreReview/Rest.php:328
+#: modules/StoreReview/Rest.php:357
 msgid "You have already reviewed this store."
 msgstr ""
 
@@ -2139,29 +2144,37 @@ msgstr ""
 msgid "Leave a Review"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:393
+#: modules/StoreReview/Rest.php:304
+msgid "You are not allowed to view this review."
+msgstr ""
+
+#: modules/StoreReview/Rest.php:423
 msgid "Review could not be created."
 msgstr ""
 
-#: modules/StoreReview/Rest.php:439
-#: modules/StoreReview/Rest.php:548
+#: modules/StoreReview/Rest.php:469
+#: modules/StoreReview/Rest.php:586
 msgid "Invalid review ID"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:449
-#: modules/StoreReview/Rest.php:558
+#: modules/StoreReview/Rest.php:479
+#: modules/StoreReview/Rest.php:596
 msgid "Review not found"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:474
+#: modules/StoreReview/Rest.php:487
+msgid "You are not allowed to manage this review."
+msgstr ""
+
+#: modules/StoreReview/Rest.php:512
 msgid "Invalid status value"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:569
+#: modules/StoreReview/Rest.php:607
 msgid "Failed to delete review"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:590
+#: modules/StoreReview/Rest.php:629
 #: assets/js/index.js:1
 msgid "Guest"
 msgstr ""
@@ -2255,12 +2268,12 @@ msgstr ""
 msgid "This shipping method is fully managed in the <a href=\"%s\" target=\"_blank\">MultiVendorX Shipping Settings</a>."
 msgstr ""
 
-#: modules/StoreShipping/Country_Shipping.php:298
+#: modules/StoreShipping/Country_Shipping.php:317
 #: modules/StoreShipping/Distance_Shipping.php:161
 msgid "Free Shipping"
 msgstr ""
 
-#: modules/StoreShipping/Country_Shipping.php:312
+#: modules/StoreShipping/Country_Shipping.php:340
 #: modules/StoreShipping/Distance_Shipping.php:189
 msgid "Pickup from Store"
 msgstr ""
