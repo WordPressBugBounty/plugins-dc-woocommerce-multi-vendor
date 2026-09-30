@@ -115,7 +115,6 @@ class ComposerStaticInit67f175a643d5f81257d6afac1f10045f
         'MultiVendorX\\Payments\\CustomPayment' => __DIR__ . '/../..' . '/classes/Payments/CustomPayment.php',
         'MultiVendorX\\Payments\\Disbursement' => __DIR__ . '/../..' . '/classes/Payments/Disbursement.php',
         'MultiVendorX\\Payments\\PaymentProcessor' => __DIR__ . '/../..' . '/classes/Payments/PaymentProcessor.php',
-        'MultiVendorX\\Payments\\PaymentScheduler' => __DIR__ . '/../..' . '/classes/Payments/PaymentScheduler.php',
         'MultiVendorX\\Payments\\Payments' => __DIR__ . '/../..' . '/classes/Payments/Payments.php',
         'MultiVendorX\\Payments\\PaypalPayout' => __DIR__ . '/../..' . '/classes/Payments/PaypalPayout.php',
         'MultiVendorX\\Payments\\StripeConnect' => __DIR__ . '/../..' . '/classes/Payments/StripeConnect.php',

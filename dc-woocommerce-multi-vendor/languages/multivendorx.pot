@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.18\n"
+"Project-Id-Version: MultiVendorX 5.0.19\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-28T21:03:55+00:00\n"
+"POT-Creation-Date: 2026-09-30T11:44:26+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -16,7 +16,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #. Author of the plugin
 #: dc_product_vendor.php
-#: classes/FrontendScripts.php:402
+#: classes/FrontendScripts.php:410
 #: classes/Pattern.php:46
 #: classes/Status.php:43
 #: modules/Elementor/WidgetLoader.php:106
@@ -34,141 +34,145 @@ msgstr ""
 msgid "An AI-powered WooCommerce multivendor marketplace solution to build, manage, and scale your platform."
 msgstr ""
 
-#: classes/Admin.php:84
+#: classes/Admin.php:86
 #: classes/RestAPI/Controllers/Dashboard.php:112
 #: assets/js/index.js:1
 msgid "Dashboard"
 msgstr ""
 
-#: classes/Admin.php:89
+#: classes/Admin.php:91
 #: assets/js/index.js:1
 msgid "Stores"
 msgstr ""
 
-#: classes/Admin.php:94
+#: classes/Admin.php:96
 #: classes/RestAPI/Controllers/Dashboard.php:151
 #: assets/js/index.js:1
 msgid "Commissions"
 msgstr ""
 
-#: classes/Admin.php:99
+#: classes/Admin.php:101
 msgid "Transaction History"
 msgstr ""
 
-#: classes/Admin.php:104
+#: classes/Admin.php:106
 #: assets/js/index.js:1
 msgid "Approval Queue"
 msgstr ""
 
-#: classes/Admin.php:109
+#: classes/Admin.php:111
 #: assets/js/index.js:1
 msgid "Compliance"
 msgstr ""
 
-#: classes/Admin.php:114
+#: classes/Admin.php:116
 msgid "Customers"
 msgstr ""
 
-#: classes/Admin.php:119
+#: classes/Admin.php:121
 #: assets/js/index.js:1
 msgid "Reports"
 msgstr ""
 
-#: classes/Admin.php:124
+#: classes/Admin.php:126
 #: classes/RestAPI/Controllers/Dashboard.php:237
-#: classes/Tracker.php:54
+#: classes/Tracker.php:137
 #: assets/js/index.js:1
 msgid "Settings"
 msgstr ""
 
-#: classes/Admin.php:129
+#: classes/Admin.php:131
 #: assets/js/index.js:1
 msgid "Modules"
 msgstr ""
 
-#: classes/Admin.php:134
+#: classes/Admin.php:136
 msgid "Status & Tools"
 msgstr ""
 
-#: classes/Admin.php:139
+#: classes/Admin.php:141
 #: assets/js/index.js:1
 msgid "Help & Support"
 msgstr ""
 
-#: classes/Admin.php:190
-#: classes/Admin.php:198
+#: classes/Admin.php:192
+#: classes/Admin.php:193
 #: classes/MultiVendorX.php:260
-#: classes/Tracker.php:65
+#: classes/Tracker.php:148
 #: assets/js/index.js:1
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: classes/Admin.php:304
-#: classes/Admin.php:532
-#: classes/Admin.php:625
+#: classes/Admin.php:325
+#: classes/Admin.php:559
+#: classes/Admin.php:652
 #: classes/Product.php:56
-#: modules/Privacy/Frontend.php:50
-#: templates/store/shared-listing-single-product-tab.php:21
+#: modules/Privacy/Frontend.php:52
+#: templates/store/shared-listing-single-product-tab.php:25
 #: assets/js/index.js:1
 msgid "Store"
 msgstr ""
 
-#: classes/Admin.php:325
-#: classes/Admin.php:549
+#: classes/Admin.php:346
+#: classes/Admin.php:576
 #: classes/Product.php:177
 msgid "Assign Store"
 msgstr ""
 
-#: classes/Admin.php:330
-#: classes/Admin.php:554
+#: classes/Admin.php:351
+#: classes/Admin.php:581
 msgid "Search for a store…"
 msgstr ""
 
-#: classes/Admin.php:348
+#: classes/Admin.php:369
 msgid "Marketplace commission (fixed)"
 msgstr ""
 
-#: classes/Admin.php:350
+#: classes/Admin.php:371
 msgid "Fixed commission."
 msgstr ""
 
-#: classes/Admin.php:362
+#: classes/Admin.php:383
 msgid "Marketplace commission (%)"
 msgstr ""
 
-#: classes/Admin.php:364
+#: classes/Admin.php:385
 msgid "Percentage commission."
 msgstr ""
 
-#: classes/Admin.php:415
-#: classes/Admin.php:463
+#: classes/Admin.php:436
+#: classes/Admin.php:484
 msgid "Commission Fixed"
 msgstr ""
 
-#: classes/Admin.php:417
+#: classes/Admin.php:438
 msgid "Fixed Commission."
 msgstr ""
 
-#: classes/Admin.php:425
-#: classes/Admin.php:459
-#: classes/Admin.php:479
+#: classes/Admin.php:446
+#: classes/Admin.php:480
+#: classes/Admin.php:500
 msgid "Commission Percentage"
 msgstr ""
 
-#: classes/Admin.php:427
+#: classes/Admin.php:448
 msgid "Percentage Commission."
 msgstr ""
 
-#: classes/Admin.php:484
+#: classes/Admin.php:505
 msgid "Commission Fixed per transaction"
 msgstr ""
 
-#: classes/Admin.php:599
+#: classes/Admin.php:535
+msgid "You are not allowed to search stores."
+msgstr ""
+
+#: classes/Admin.php:626
 msgid "COD Order Payment"
 msgstr ""
 
-#: classes/Admin.php:621
-#: templates/store/shared-listing-single-product-tab.php:44
+#: classes/Admin.php:648
+#: templates/store/shared-listing-single-product-tab.php:48
 #: assets/js/index.js:1
 msgid "Admin"
 msgstr ""
@@ -185,76 +189,76 @@ msgstr ""
 msgid "Once Monthly"
 msgstr ""
 
-#: classes/Frontend.php:234
+#: classes/Frontend.php:254
 msgid "This product cannot be purchased at the moment."
 msgstr ""
 
-#: classes/Frontend.php:266
+#: classes/Frontend.php:286
 msgid "Checkout blocked: your cart contains products from a restricted store."
 msgstr ""
 
-#: classes/Frontend.php:326
-#: classes/Frontend.php:341
+#: classes/Frontend.php:346
+#: classes/Frontend.php:361
 msgid "Your cart has products from various stores. They’ll be processed and shipped individually, so expect more than one delivery."
 msgstr ""
 
 #. translators: %s: Current user display name
-#: classes/Frontend.php:623
+#: classes/Frontend.php:677
 #, php-format
 msgid " %s you're one step away from setting up your store. Fill in your business information below to get started."
 msgstr ""
 
-#: classes/Frontend.php:632
+#: classes/Frontend.php:686
 msgid "Step 1 of 2"
 msgstr ""
 
-#: classes/Frontend.php:633
+#: classes/Frontend.php:687
 msgid "Create your account"
 msgstr ""
 
-#: classes/Frontend.php:634
+#: classes/Frontend.php:688
 msgid "Start by setting up a free account. If you already have one, just sign in."
 msgstr ""
 
-#: classes/Frontend.php:636
+#: classes/Frontend.php:690
 msgid "Already have an account"
 msgstr ""
 
-#: classes/Frontend.php:637
+#: classes/Frontend.php:691
 msgid "New here? Sign up"
 msgstr ""
 
-#: classes/Frontend.php:704
+#: classes/Frontend.php:787
 msgid "Manage your store"
 msgstr ""
 
-#: classes/Frontend.php:706
+#: classes/Frontend.php:789
 msgid "To view orders, manage products, and access your full store settings, visit your store dashboard."
 msgstr ""
 
-#: classes/Frontend.php:709
+#: classes/Frontend.php:792
 msgid "Go to store dashboard"
 msgstr ""
 
-#: classes/FrontendScripts.php:445
+#: classes/FrontendScripts.php:453
 msgid "Select an item..."
 msgstr ""
 
-#: classes/FrontendScripts.php:507
-#: classes/FrontendScripts.php:523
+#: classes/FrontendScripts.php:515
+#: classes/FrontendScripts.php:531
 msgid "This field is required"
 msgstr ""
 
-#: classes/FrontendScripts.php:508
-#: classes/FrontendScripts.php:524
+#: classes/FrontendScripts.php:516
+#: classes/FrontendScripts.php:532
 msgid "Invalid email format"
 msgstr ""
 
-#: classes/Migration/Cron.php:42
+#: classes/Migration/Cron.php:51
 msgid "Every 5 Minutes"
 msgstr ""
 
-#: classes/Migration/Cron.php:46
+#: classes/Migration/Cron.php:55
 msgid "Every minute"
 msgstr ""
 
@@ -275,36 +279,36 @@ msgstr ""
 msgid "Support"
 msgstr ""
 
-#: classes/Notifications/Gateways/Clickatell.php:31
+#: classes/Notifications/Gateways/Clickatell.php:33
 #: assets/js/index.js:1
 msgid "Clickatell"
 msgstr ""
 
-#: classes/Notifications/Gateways/Clickatell.php:75
-#: classes/Notifications/Gateways/Vonage.php:77
+#: classes/Notifications/Gateways/Clickatell.php:77
+#: classes/Notifications/Gateways/Vonage.php:79
 msgid "Unknown error"
 msgstr ""
 
-#: classes/Notifications/Gateways/Clickatell.php:81
-#: classes/Notifications/Gateways/Clickatell.php:87
+#: classes/Notifications/Gateways/Clickatell.php:83
+#: classes/Notifications/Gateways/Clickatell.php:89
 msgid "Bad Request"
 msgstr ""
 
-#: classes/Notifications/Gateways/Plivo.php:31
+#: classes/Notifications/Gateways/Plivo.php:33
 #: assets/js/index.js:1
 msgid "Plivo"
 msgstr ""
 
-#: classes/Notifications/Gateways/Twilio.php:31
+#: classes/Notifications/Gateways/Twilio.php:33
 #: assets/js/index.js:1
 msgid "Twilio"
 msgstr ""
 
-#: classes/Notifications/Gateways/Vonage.php:31
+#: classes/Notifications/Gateways/Vonage.php:33
 msgid "Vonage (nexmo)"
 msgstr ""
 
-#: classes/Notifications/Gateways/Vonage.php:70
+#: classes/Notifications/Gateways/Vonage.php:72
 msgid "Invalid API response from Vonage."
 msgstr ""
 
@@ -445,7 +449,7 @@ msgid "Order marked as delivered."
 msgstr ""
 
 #: classes/Notifications/Notifications.php:740
-#: modules/MarketplaceRefund/Frontend.php:635
+#: modules/MarketplaceRefund/Frontend.php:648
 #: assets/js/index.js:1
 msgid "Refund requested"
 msgstr ""
@@ -463,7 +467,7 @@ msgid "Refund request approved for the order."
 msgstr ""
 
 #: classes/Notifications/Notifications.php:810
-#: modules/MarketplaceRefund/Frontend.php:660
+#: modules/MarketplaceRefund/Frontend.php:673
 msgid "Refund rejected"
 msgstr ""
 
@@ -676,14 +680,14 @@ msgstr ""
 msgid "Regenerate suborders"
 msgstr ""
 
-#: classes/Order/Frontend.php:74
-#: classes/Order/Hooks.php:400
+#: classes/Order/Frontend.php:79
+#: classes/Order/Hooks.php:407
 msgid "Sold by"
 msgstr ""
 
 #: classes/Order/Hooks.php:202
-#: modules/Privacy/Frontend.php:83
-#: modules/Privacy/Frontend.php:106
+#: modules/Privacy/Frontend.php:85
+#: modules/Privacy/Frontend.php:108
 msgid "Sold By"
 msgstr ""
 
@@ -697,15 +701,15 @@ msgctxt "Order note"
 msgid "Sync from store's suborders: "
 msgstr ""
 
-#: classes/Order/Hooks.php:403
+#: classes/Order/Hooks.php:410
 msgid "Item id"
 msgstr ""
 
-#: classes/Patterns/store-template.php:12
+#: classes/Patterns/store-template.php:14
 msgid "Basic Store Template"
 msgstr ""
 
-#: classes/Patterns/store-template.php:13
+#: classes/Patterns/store-template.php:15
 msgid "A simple starter layout for a store page."
 msgstr ""
 
@@ -897,15 +901,15 @@ msgstr ""
 msgid "Disconnect"
 msgstr ""
 
-#: classes/Payments/StripeConnect.php:196
+#: classes/Payments/StripeConnect.php:198
 msgid "Connect with Stripe"
 msgstr ""
 
-#: classes/Payments/StripeConnect.php:197
+#: classes/Payments/StripeConnect.php:199
 msgid "Connect"
 msgstr ""
 
-#: classes/Payments/StripeConnect.php:211
+#: classes/Payments/StripeConnect.php:215
 msgid "Stripe Connect"
 msgstr ""
 
@@ -913,111 +917,111 @@ msgstr ""
 msgid "— No change —"
 msgstr ""
 
-#: classes/Promotions.php:66
+#: classes/Promotions.php:113
 msgid "We appreciate you using MultiVendorX. If it has helped your business, please consider leaving a quick review."
 msgstr ""
 
-#: classes/Promotions.php:68
+#: classes/Promotions.php:115
 msgid "Remind me later"
 msgstr ""
 
-#: classes/Promotions.php:69
+#: classes/Promotions.php:116
 msgid "Review now"
 msgstr ""
 
-#: classes/Promotions.php:97
+#: classes/Promotions.php:147
 msgid "Want to help make <strong>MultiVendorX</strong> even better? Allow anonymous usage tracking and receive a <strong>10% discount coupon</strong> for premium extensions."
 msgstr ""
 
-#: classes/Promotions.php:98
+#: classes/Promotions.php:148
 msgid "What we collect."
 msgstr ""
 
-#: classes/Promotions.php:102
+#: classes/Promotions.php:152
 msgid "We collect non-sensitive diagnostic and usage data, including your site URL, WordPress and PHP versions, active plugins and themes, and your email address to send the discount coupon."
 msgstr ""
 
-#: classes/Promotions.php:106
+#: classes/Promotions.php:156
 msgid "Sure, I'd like to help"
 msgstr ""
 
-#: classes/Promotions.php:107
+#: classes/Promotions.php:157
 msgid "No Thanks"
 msgstr ""
 
-#: classes/Promotions.php:138
+#: classes/Promotions.php:194
 msgid "Coupon data is required."
 msgstr ""
 
-#: classes/Promotions.php:157
+#: classes/Promotions.php:213
 msgid "Unable to create coupon."
 msgstr ""
 
-#: classes/Promotions.php:225
+#: classes/Promotions.php:263
 msgid "MultivendorX Update Required"
 msgstr ""
 
-#: classes/Promotions.php:226
+#: classes/Promotions.php:264
 msgid "To ensure all the feature compatibility and accessibility, MultiVendorX Pro minimum v2.0.0 is required."
 msgstr ""
 
-#: classes/Promotions.php:230
+#: classes/Promotions.php:268
 msgid "Update Now"
 msgstr ""
 
 #: classes/RestAPI/Controllers/Commissions.php:92
 #: classes/RestAPI/Controllers/Commissions.php:287
 #: classes/RestAPI/Controllers/Commissions.php:338
-#: classes/RestAPI/Controllers/ImportDummyData.php:74
+#: classes/RestAPI/Controllers/ImportDummyData.php:87
 #: classes/RestAPI/Controllers/Logs.php:66
 #: classes/RestAPI/Controllers/Logs.php:102
-#: classes/RestAPI/Controllers/Migrations.php:69
+#: classes/RestAPI/Controllers/Migrations.php:78
 #: classes/RestAPI/Controllers/Notifications.php:102
-#: classes/RestAPI/Controllers/Notifications.php:361
-#: classes/RestAPI/Controllers/Notifications.php:496
-#: classes/RestAPI/Controllers/Settings.php:98
-#: classes/RestAPI/Controllers/Settings.php:231
+#: classes/RestAPI/Controllers/Notifications.php:370
+#: classes/RestAPI/Controllers/Notifications.php:505
+#: classes/RestAPI/Controllers/Settings.php:113
+#: classes/RestAPI/Controllers/Settings.php:246
 #: classes/RestAPI/Controllers/Status.php:72
 #: classes/RestAPI/Controllers/Status.php:111
 #: classes/RestAPI/Controllers/Stores.php:128
 #: classes/RestAPI/Controllers/Stores.php:316
-#: classes/RestAPI/Controllers/Stores.php:563
-#: classes/RestAPI/Controllers/Stores.php:730
-#: classes/RestAPI/Controllers/Tour.php:70
-#: classes/RestAPI/Controllers/Tour.php:116
+#: classes/RestAPI/Controllers/Stores.php:584
+#: classes/RestAPI/Controllers/Stores.php:777
+#: classes/RestAPI/Controllers/Tour.php:71
+#: classes/RestAPI/Controllers/Tour.php:133
 #: classes/RestAPI/Controllers/Transactions.php:91
 #: classes/RestAPI/Controllers/Transactions.php:236
 #: classes/RestAPI/Controllers/Transactions.php:305
 #: modules/Announcement/Rest.php:119
-#: modules/Announcement/Rest.php:249
-#: modules/Announcement/Rest.php:306
-#: modules/Announcement/Rest.php:450
-#: modules/Announcement/Rest.php:550
+#: modules/Announcement/Rest.php:256
+#: modules/Announcement/Rest.php:321
+#: modules/Announcement/Rest.php:465
+#: modules/Announcement/Rest.php:565
 #: modules/CustomerQueries/Rest.php:114
-#: modules/CustomerQueries/Rest.php:245
-#: modules/CustomerQueries/Rest.php:273
-#: modules/CustomerQueries/Rest.php:401
-#: modules/FollowStore/Rest.php:106
-#: modules/FollowStore/Rest.php:197
-#: modules/FollowStore/Rest.php:255
+#: modules/CustomerQueries/Rest.php:258
+#: modules/CustomerQueries/Rest.php:294
+#: modules/CustomerQueries/Rest.php:422
+#: modules/FollowStore/Rest.php:107
+#: modules/FollowStore/Rest.php:207
+#: modules/FollowStore/Rest.php:268
 #: modules/Knowledgebase/Rest.php:114
 #: modules/Knowledgebase/Rest.php:205
 #: modules/Knowledgebase/Rest.php:233
 #: modules/Knowledgebase/Rest.php:323
 #: modules/Knowledgebase/Rest.php:400
 #: modules/MarketplaceCompliance/Rest.php:91
-#: modules/MarketplaceCompliance/Rest.php:183
-#: modules/MarketplaceRefund/Rest.php:99
+#: modules/MarketplaceCompliance/Rest.php:200
+#: modules/MarketplaceRefund/Rest.php:93
 #: modules/StoreReview/Rest.php:128
 #: modules/StoreReview/Rest.php:274
 #: modules/StoreReview/Rest.php:333
-#: modules/StoreReview/Rest.php:454
-#: modules/StoreReview/Rest.php:571
+#: modules/StoreReview/Rest.php:419
+#: modules/StoreReview/Rest.php:536
 #: modules/StoreShipping/Rest.php:116
-#: modules/StoreShipping/Rest.php:144
-#: modules/StoreShipping/Rest.php:239
-#: modules/StoreShipping/Rest.php:280
-#: modules/StoreShipping/Rest.php:362
+#: modules/StoreShipping/Rest.php:151
+#: modules/StoreShipping/Rest.php:246
+#: modules/StoreShipping/Rest.php:295
+#: modules/StoreShipping/Rest.php:377
 #: modules/WPML/Rest.php:83
 #: modules/WPML/Rest.php:174
 msgid "Invalid nonce"
@@ -1030,46 +1034,46 @@ msgstr ""
 #: classes/RestAPI/Controllers/Commissions.php:273
 #: classes/RestAPI/Controllers/Commissions.php:323
 #: classes/RestAPI/Controllers/Commissions.php:369
-#: classes/RestAPI/Controllers/Notifications.php:297
-#: classes/RestAPI/Controllers/Notifications.php:484
-#: classes/RestAPI/Controllers/Notifications.php:514
-#: classes/RestAPI/Controllers/Settings.php:219
-#: classes/RestAPI/Controllers/Settings.php:276
+#: classes/RestAPI/Controllers/Notifications.php:306
+#: classes/RestAPI/Controllers/Notifications.php:493
+#: classes/RestAPI/Controllers/Notifications.php:523
+#: classes/RestAPI/Controllers/Settings.php:234
+#: classes/RestAPI/Controllers/Settings.php:291
 #: classes/RestAPI/Controllers/Status.php:93
 #: classes/RestAPI/Controllers/Status.php:178
 #: classes/RestAPI/Controllers/Stores.php:225
-#: classes/RestAPI/Controllers/Stores.php:546
-#: classes/RestAPI/Controllers/Stores.php:712
-#: classes/RestAPI/Controllers/Stores.php:1170
-#: classes/RestAPI/Controllers/Tour.php:104
-#: classes/RestAPI/Controllers/Tour.php:149
+#: classes/RestAPI/Controllers/Stores.php:567
+#: classes/RestAPI/Controllers/Stores.php:733
+#: classes/RestAPI/Controllers/Stores.php:1235
+#: classes/RestAPI/Controllers/Tour.php:121
+#: classes/RestAPI/Controllers/Tour.php:182
 #: classes/RestAPI/Controllers/Transactions.php:220
-#: modules/Announcement/Rest.php:232
-#: modules/Announcement/Rest.php:290
-#: modules/Announcement/Rest.php:432
-#: modules/Announcement/Rest.php:529
-#: modules/Announcement/Rest.php:615
-#: modules/CustomerQueries/Rest.php:231
-#: modules/CustomerQueries/Rest.php:384
-#: modules/FollowStore/Rest.php:181
-#: modules/FollowStore/Rest.php:239
-#: modules/FollowStore/Rest.php:351
+#: modules/Announcement/Rest.php:239
+#: modules/Announcement/Rest.php:305
+#: modules/Announcement/Rest.php:447
+#: modules/Announcement/Rest.php:544
+#: modules/Announcement/Rest.php:630
+#: modules/CustomerQueries/Rest.php:244
+#: modules/CustomerQueries/Rest.php:405
+#: modules/FollowStore/Rest.php:191
+#: modules/FollowStore/Rest.php:252
+#: modules/FollowStore/Rest.php:364
 #: modules/Knowledgebase/Rest.php:191
 #: modules/Knowledgebase/Rest.php:310
 #: modules/Knowledgebase/Rest.php:386
-#: modules/MarketplaceCompliance/Rest.php:170
-#: modules/MarketplaceCompliance/Rest.php:234
-#: modules/MarketplaceRefund/Rest.php:283
+#: modules/MarketplaceCompliance/Rest.php:187
+#: modules/MarketplaceCompliance/Rest.php:251
+#: modules/MarketplaceRefund/Rest.php:277
 #: modules/StoreReview/Rest.php:262
 #: modules/StoreReview/Rest.php:314
-#: modules/StoreReview/Rest.php:440
-#: modules/StoreReview/Rest.php:559
-#: modules/StoreReview/Rest.php:617
-#: modules/StoreShipping/Rest.php:132
-#: modules/StoreShipping/Rest.php:227
-#: modules/StoreShipping/Rest.php:268
-#: modules/StoreShipping/Rest.php:350
-#: modules/StoreShipping/Rest.php:412
+#: modules/StoreReview/Rest.php:405
+#: modules/StoreReview/Rest.php:524
+#: modules/StoreReview/Rest.php:582
+#: modules/StoreShipping/Rest.php:139
+#: modules/StoreShipping/Rest.php:234
+#: modules/StoreShipping/Rest.php:283
+#: modules/StoreShipping/Rest.php:365
+#: modules/StoreShipping/Rest.php:427
 msgid "Unexpected server error"
 msgstr ""
 
@@ -1086,7 +1090,7 @@ msgid "You are not allowed to regenerate commissions."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Dashboard.php:119
-#: classes/Store/StoreUtil.php:135
+#: classes/Store/StoreUtil.php:138
 #: modules/Elementor/Widgets/StoreTab.php:117
 #: assets/js/block/marketplace-products/index.js:1
 #: assets/js/block/marketplace-products/view.js:1
@@ -1175,66 +1179,70 @@ msgstr ""
 msgid "Tools"
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:192
+#: classes/RestAPI/Controllers/ImportDummyData.php:205
 msgid "Store owners imported successfully."
 msgstr ""
 
 #. translators: %s is a comma-separated list of XML filenames being checked.
-#: classes/RestAPI/Controllers/ImportDummyData.php:216
+#: classes/RestAPI/Controllers/ImportDummyData.php:229
 #, php-format
 msgid "%s XML file not found."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:229
+#: classes/RestAPI/Controllers/ImportDummyData.php:242
 msgid "Invalid XML structure."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:323
-#: classes/RestAPI/Controllers/Migrations.php:116
+#: classes/RestAPI/Controllers/ImportDummyData.php:336
+#: classes/RestAPI/Controllers/Migrations.php:136
 msgid "Stores imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:504
-#: classes/RestAPI/Controllers/Migrations.php:144
+#: classes/RestAPI/Controllers/ImportDummyData.php:517
+#: classes/RestAPI/Controllers/Migrations.php:170
 msgid "Products imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:601
+#: classes/RestAPI/Controllers/ImportDummyData.php:614
 msgid "Commissions imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:705
+#: classes/RestAPI/Controllers/ImportDummyData.php:718
 msgid "Orders imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/ImportDummyData.php:801
+#: classes/RestAPI/Controllers/ImportDummyData.php:814
 msgid "Reviews imported successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Migrations.php:101
-#: classes/RestAPI/Controllers/Migrations.php:129
+#: classes/RestAPI/Controllers/Migrations.php:121
+#: classes/RestAPI/Controllers/Migrations.php:155
 msgid "No active plugin found."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Notifications.php:124
-#: classes/RestAPI/Controllers/Notifications.php:238
+#: classes/RestAPI/Controllers/Notifications.php:247
 msgid "You are not allowed to view this store's notifications."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Notifications.php:428
+#: classes/RestAPI/Controllers/Notifications.php:168
+msgid "You are not allowed to view notification event settings."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Notifications.php:437
 msgid "Invalid notification data"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Notifications.php:477
+#: classes/RestAPI/Controllers/Notifications.php:486
 msgid "Notification(s) updated successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Settings.php:151
+#: classes/RestAPI/Controllers/Settings.php:166
 msgid "You are not allowed to change role permissions."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Settings.php:214
-#: classes/RestAPI/Controllers/Stores.php:1162
+#: classes/RestAPI/Controllers/Settings.php:229
+#: classes/RestAPI/Controllers/Stores.php:1227
 msgid "Settings Saved"
 msgstr ""
 
@@ -1243,45 +1251,77 @@ msgid "MultiVendorX visitors stats successfully deleted"
 msgstr ""
 
 #: classes/RestAPI/Controllers/Stores.php:354
-#: classes/RestAPI/Controllers/Stores.php:772
+msgid "You are not allowed to create stores this way."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Stores.php:370
+#: classes/RestAPI/Controllers/Stores.php:819
 msgid "You are not allowed to update this store."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:452
+#: classes/RestAPI/Controllers/Stores.php:473
 msgid "Store registered successfully and approved automatically."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:457
+#: classes/RestAPI/Controllers/Stores.php:478
 msgid "Store registered successfully and pending for approval."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:584
+#: classes/RestAPI/Controllers/Stores.php:605
 msgid "You are not allowed to access this store."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:746
+#: classes/RestAPI/Controllers/Stores.php:793
 msgid "You are not allowed to change the status of these stores."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:875
+#: classes/RestAPI/Controllers/Stores.php:838
+msgid "You are not allowed to perform this action on the store."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Stores.php:934
 msgid "New owner ID missing."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:910
+#: classes/RestAPI/Controllers/Stores.php:969
 msgid "Store registration approved."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:970
+#: classes/RestAPI/Controllers/Stores.php:1030
 msgid "Store registration rejected permanently."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:984
+#: classes/RestAPI/Controllers/Stores.php:1044
 msgid "Store registration rejected."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1187
-#: modules/FollowStore/Rest.php:216
+#: classes/RestAPI/Controllers/Stores.php:1252
+#: modules/FollowStore/Rest.php:226
 msgid "Invalid store ID"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Tour.php:88
+msgid "You are not allowed to view this store's tour status."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Tour.php:105
+msgid "You are not allowed to view the admin tour status."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Tour.php:151
+msgid "You are not allowed to update this store's tour status."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Tour.php:168
+msgid "You are not allowed to update the admin tour status."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Tracking.php:75
+msgid "Invalid order."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Tracking.php:84
+msgid "You are not allowed to add tracking to this order."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Transactions.php:121
@@ -1292,33 +1332,45 @@ msgstr ""
 msgid "You are not allowed to view this store's balance."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Transactions.php:324
+#: classes/RestAPI/Controllers/Transactions.php:325
+msgid "You are not allowed to approve or release this store's withdrawal."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Transactions.php:333
 msgid "You are not allowed to manage this store's transactions."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Transactions.php:387
+#: classes/RestAPI/Controllers/Transactions.php:394
+msgid "Requested amount is invalid or exceeds your available balance."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Transactions.php:406
 msgid "You already have a pending withdrawal request."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Transactions.php:426
+#: classes/RestAPI/Controllers/Transactions.php:445
 msgid "Withdrawal request submitted successfully."
 msgstr ""
 
+#: classes/RestAPI/Rest.php:535
+msgid "You can only manage items that belong to your store."
+msgstr ""
+
 #. translators: 1: refund id, 2: date, 3: user
-#: classes/RestAPI/Rest.php:451
+#: classes/RestAPI/Rest.php:743
 #, php-format
 msgid "Refund #%1$s - %2$s by %3$s"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:454
+#: classes/RestAPI/Rest.php:746
 msgid "system"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:619
+#: classes/RestAPI/Rest.php:911
 msgid "Variation SKU is not generated!"
 msgstr ""
 
-#: classes/RestAPI/Rest.php:659
+#: classes/RestAPI/Rest.php:951
 msgid "SKU is not generated!"
 msgstr ""
 
@@ -1366,77 +1418,77 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: classes/Tracker.php:61
+#: classes/Tracker.php:144
 #: modules/StoreReview/assets/js/frontend.js:256
 msgid "Write a Review"
 msgstr ""
 
-#: classes/Tracker.php:121
+#: classes/Tracker.php:216
 msgid "Support Forum"
 msgstr ""
 
-#: classes/Tracker.php:125
+#: classes/Tracker.php:220
 msgid "Facebook Group"
 msgstr ""
 
-#: classes/Tracker.php:129
+#: classes/Tracker.php:224
 msgid "Book a Call"
 msgstr ""
 
-#: classes/Tracker.php:158
+#: classes/Tracker.php:253
 msgid "We collect non-sensitive diagnostic data and plugin usage information along with your feedback."
 msgstr ""
 
-#: classes/Tracker.php:163
+#: classes/Tracker.php:258
 msgid "Skip & Deactivate"
 msgstr ""
 
-#: classes/Tracker.php:164
+#: classes/Tracker.php:259
 msgid "Submit & Deactivate"
 msgstr ""
 
-#: classes/Tracker.php:207
+#: classes/Tracker.php:307
 msgid "Submitting…"
 msgstr ""
 
-#: classes/Tracker.php:251
+#: classes/Tracker.php:344
 msgid "We're sorry to see you leave 😔"
 msgstr ""
 
-#: classes/Tracker.php:252
+#: classes/Tracker.php:345
 msgid "Thinking about deactivating? We're here to help — contact us anytime."
 msgstr ""
 
-#: classes/Tracker.php:253
+#: classes/Tracker.php:346
 msgid "Would you quickly share your reason for deactivating?"
 msgstr ""
 
-#: classes/Tracker.php:255
+#: classes/Tracker.php:348
 msgid "I no longer need the plugin"
 msgstr ""
 
-#: classes/Tracker.php:257
+#: classes/Tracker.php:350
 msgid "I found a better plugin"
 msgstr ""
 
-#: classes/Tracker.php:258
+#: classes/Tracker.php:351
 msgid "Please share which plugin"
 msgstr ""
 
-#: classes/Tracker.php:260
+#: classes/Tracker.php:353
 msgid "I couldn't get the plugin to work"
 msgstr ""
 
-#: classes/Tracker.php:261
+#: classes/Tracker.php:354
 msgid "It's a temporary deactivation"
 msgstr ""
 
-#: classes/Tracker.php:263
-#: modules/MarketplaceCompliance/Ajax.php:112
+#: classes/Tracker.php:356
+#: modules/MarketplaceCompliance/Ajax.php:122
 msgid "Other"
 msgstr ""
 
-#: classes/Tracker.php:264
+#: classes/Tracker.php:357
 msgid "Please share the reason"
 msgstr ""
 
@@ -1448,91 +1500,103 @@ msgstr ""
 msgid "Widgets for MultiVendorX store pages only."
 msgstr ""
 
-#: modules/Announcement/Frontend.php:35
+#: modules/Announcement/Frontend.php:37
 #: assets/js/index.js:1
 msgid "Announcements"
 msgstr ""
 
-#: modules/Announcement/Rest.php:267
-#: modules/Announcement/Rest.php:569
+#: modules/Announcement/Rest.php:274
+#: modules/Announcement/Rest.php:584
 msgid "Invalid announcement ID"
 msgstr ""
 
-#: modules/Announcement/Rest.php:279
-#: modules/Announcement/Rest.php:478
-#: modules/Announcement/Rest.php:582
+#: modules/Announcement/Rest.php:286
+#: modules/Announcement/Rest.php:493
+#: modules/Announcement/Rest.php:597
 msgid "Announcement not found"
 msgstr ""
 
-#: modules/Announcement/Rest.php:595
+#: modules/Announcement/Rest.php:294
+msgid "You are not allowed to view this announcement."
+msgstr ""
+
+#: modules/Announcement/Rest.php:610
 msgid "Failed to delete announcement"
 msgstr ""
 
-#: modules/Announcement/Rest.php:607
+#: modules/Announcement/Rest.php:622
 msgid "Announcement deleted successfully"
 msgstr ""
 
-#: modules/BuddyPress/Functions.php:32
+#: modules/BuddyPress/Functions.php:34
 msgid "Shop"
 msgstr ""
 
-#: modules/BuddyPress/Functions.php:59
+#: modules/BuddyPress/Functions.php:61
 msgid "Browse all products listed by this seller across their stores. Each section below represents a different store they manage."
 msgstr ""
 
-#: modules/BuddyPress/Functions.php:64
+#: modules/BuddyPress/Functions.php:66
 msgid "No user found."
 msgstr ""
 
-#: modules/BuddyPress/Functions.php:72
+#: modules/BuddyPress/Functions.php:74
 msgid "No stores found for this user."
 msgstr ""
 
 #. translators: %s: Store name.
-#: modules/BuddyPress/Functions.php:105
+#: modules/BuddyPress/Functions.php:107
 #, php-format
 msgid "Products from %s"
 msgstr ""
 
-#: modules/BuddyPress/Functions.php:146
+#: modules/BuddyPress/Functions.php:148
 msgid "No products available in this store yet."
 msgstr ""
 
 #. translators: %d: Number of answered questions for this product
-#: modules/CustomerQueries/Frontend.php:104
+#: modules/CustomerQueries/Frontend.php:105
 #, php-format
 msgid "Customer Queries (%d)"
 msgstr ""
 
-#: modules/CustomerQueries/Rest.php:252
+#: modules/CustomerQueries/Rest.php:146
+msgid "You are not allowed to view this store's customer questions."
+msgstr ""
+
+#: modules/CustomerQueries/Rest.php:265
 msgid "Invalid ID"
 msgstr ""
 
-#: modules/CustomerQueries/Rest.php:257
-#: modules/CustomerQueries/Rest.php:298
-#: modules/CustomerQueries/Rest.php:421
+#: modules/CustomerQueries/Rest.php:270
+#: modules/CustomerQueries/Rest.php:319
+#: modules/CustomerQueries/Rest.php:442
 msgid "Question not found"
 msgstr ""
 
-#: modules/CustomerQueries/Rest.php:288
-#: modules/CustomerQueries/Rest.php:411
+#: modules/CustomerQueries/Rest.php:276
+msgid "You are not allowed to view this question."
+msgstr ""
+
+#: modules/CustomerQueries/Rest.php:309
+#: modules/CustomerQueries/Rest.php:432
 msgid "Invalid question ID"
 msgstr ""
 
-#: modules/CustomerQueries/Rest.php:306
+#: modules/CustomerQueries/Rest.php:327
 msgid "You cannot manage this question."
 msgstr ""
 
-#: modules/CustomerQueries/Rest.php:332
+#: modules/CustomerQueries/Rest.php:353
 msgid "Invalid visibility value"
 msgstr ""
 
-#: modules/CustomerQueries/Rest.php:341
-#: modules/StoreReview/Rest.php:521
+#: modules/CustomerQueries/Rest.php:362
+#: modules/StoreReview/Rest.php:486
 msgid "No valid fields to update"
 msgstr ""
 
-#: modules/CustomerQueries/Rest.php:432
+#: modules/CustomerQueries/Rest.php:453
 msgid "Failed to delete question"
 msgstr ""
 
@@ -1544,63 +1608,63 @@ msgstr ""
 msgid "Store Pages"
 msgstr ""
 
-#: modules/Elementor/StoreHelper.php:22
+#: modules/Elementor/StoreHelper.php:24
 msgid "Demo Store"
 msgstr ""
 
-#: modules/Elementor/StoreHelper.php:23
+#: modules/Elementor/StoreHelper.php:25
 msgid "This is a sample store description shown only in Elementor editor preview."
 msgstr ""
 
-#: modules/Elementor/Tags/StoreBanner.php:58
+#: modules/Elementor/Tags/StoreBanner.php:60
 #: modules/Elementor/Widgets/StoreBanner.php:39
 msgid "Store Banner"
 msgstr ""
 
-#: modules/Elementor/Tags/StoreBanner.php:114
-#: modules/Elementor/Tags/StoreLogo.php:105
+#: modules/Elementor/Tags/StoreBanner.php:116
+#: modules/Elementor/Tags/StoreLogo.php:107
 msgid "Fallback"
 msgstr ""
 
-#: modules/Elementor/Tags/StoreDummyProducts.php:48
+#: modules/Elementor/Tags/StoreDummyProducts.php:50
 msgid "Store Dummy Products"
 msgstr ""
 
-#: modules/Elementor/Tags/StoreInfo.php:39
+#: modules/Elementor/Tags/StoreInfo.php:41
 #: modules/Elementor/Widgets/StoreInfo.php:43
 msgid "Store Info"
 msgstr ""
 
-#: modules/Elementor/Tags/StoreInfo.php:73
+#: modules/Elementor/Tags/StoreInfo.php:75
 #: assets/js/index.js:1
 msgid "Address"
 msgstr ""
 
-#: modules/Elementor/Tags/StoreInfo.php:83
-#: modules/MarketplaceCompliance/Frontend.php:121
+#: modules/Elementor/Tags/StoreInfo.php:85
+#: modules/MarketplaceCompliance/Frontend.php:122
 #: assets/js/block/contact-info/index.js:1
 #: assets/js/index.js:1
 msgid "Email"
 msgstr ""
 
-#: modules/Elementor/Tags/StoreInfo.php:93
+#: modules/Elementor/Tags/StoreInfo.php:95
 msgid "Phone No."
 msgstr ""
 
-#: modules/Elementor/Tags/StoreLogo.php:49
+#: modules/Elementor/Tags/StoreLogo.php:51
 #: modules/Elementor/Widgets/StoreLogo.php:37
 #: modules/Elementor/Widgets/StoreLogo.php:78
 msgid "Store Logo"
 msgstr ""
 
-#: modules/Elementor/Tags/StoreName.php:37
+#: modules/Elementor/Tags/StoreName.php:39
 #: modules/Elementor/Widgets/StoreName.php:38
 #: assets/js/block/store-name/index.js:1
 #: assets/js/index.js:1
 msgid "Store Name"
 msgstr ""
 
-#: modules/Elementor/Tags/StoreSocial.php:48
+#: modules/Elementor/Tags/StoreSocial.php:50
 #: modules/Elementor/Widgets/StoreSocial.php:33
 msgid "Store Social"
 msgstr ""
@@ -1670,15 +1734,15 @@ msgid "Store Tabs"
 msgstr ""
 
 #: modules/Elementor/Widgets/StoreTab.php:118
-#: modules/StorePolicy/Admin.php:37
-#: modules/StorePolicy/Frontend.php:106
+#: modules/StorePolicy/Admin.php:40
+#: modules/StorePolicy/Frontend.php:107
 #: assets/js/block/store-tabs/index.js:1
 #: assets/js/index.js:1
 msgid "Policy"
 msgstr ""
 
 #: modules/Elementor/Widgets/StoreTab.php:119
-#: modules/StoreReview/Frontend.php:128
+#: modules/StoreReview/Frontend.php:127
 #: assets/js/block/store-quick-info/view.js:1
 #: assets/js/block/store-tabs/index.js:1
 #: assets/js/index.js:1
@@ -1686,34 +1750,38 @@ msgstr ""
 msgid "Reviews"
 msgstr ""
 
-#: modules/FollowStore/Rest.php:273
+#: modules/FollowStore/Rest.php:129
+msgid "You are not allowed to view this store's followers."
+msgstr ""
+
+#: modules/FollowStore/Rest.php:286
 msgid "Invalid data."
 msgstr ""
 
-#: modules/FollowStore/Tags/StoreFollow.php:50
+#: modules/FollowStore/Tags/StoreFollow.php:52
 #: modules/FollowStore/Widgets/StoreFollow.php:42
 msgid "Store Follow Button"
 msgstr ""
 
-#: modules/FollowStore/Tags/StoreFollow.php:92
+#: modules/FollowStore/Tags/StoreFollow.php:94
 #: modules/FollowStore/Widgets/StoreFollow.php:114
 #: modules/FollowStore/assets/js/frontend.js:36
 #: modules/FollowStore/assets/js/frontend.js:94
 msgid "Unfollow"
 msgstr ""
 
-#: modules/FollowStore/Tags/StoreFollow.php:93
+#: modules/FollowStore/Tags/StoreFollow.php:95
 #: modules/FollowStore/Widgets/StoreFollow.php:115
 #: modules/FollowStore/assets/js/frontend.js:37
 #: modules/FollowStore/assets/js/frontend.js:95
 msgid "Follow"
 msgstr ""
 
-#: modules/FollowStore/Tags/StoreFollow.php:97
+#: modules/FollowStore/Tags/StoreFollow.php:99
 msgid "You must log in to follow."
 msgstr ""
 
-#: modules/FollowStore/Tags/StoreFollow.php:99
+#: modules/FollowStore/Tags/StoreFollow.php:101
 msgid "Follow."
 msgstr ""
 
@@ -1724,15 +1792,15 @@ msgid_plural "%d Followers"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/Intelligence/Rest.php:45
+#: modules/Intelligence/Rest.php:57
 msgid "Invalid nonce."
 msgstr ""
 
-#: modules/Intelligence/Rest.php:59
+#: modules/Intelligence/Rest.php:71
 msgid "Server error."
 msgstr ""
 
-#: modules/Knowledgebase/Frontend.php:31
+#: modules/Knowledgebase/Frontend.php:33
 #: assets/js/index.js:1
 msgid "Knowledgebase"
 msgstr ""
@@ -1751,376 +1819,380 @@ msgstr ""
 msgid "Knowledge Base article deleted successfully"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Frontend.php:96
+#: modules/MarketplaceCompliance/Frontend.php:97
 msgid "Report Abuse"
 msgstr ""
 
 #. translators: %s: Product name for abuse report
-#: modules/MarketplaceCompliance/Frontend.php:107
+#: modules/MarketplaceCompliance/Frontend.php:108
 #, php-format
 msgid "Report abuse for \"%s\""
 msgstr ""
 
-#: modules/MarketplaceCompliance/Frontend.php:116
+#: modules/MarketplaceCompliance/Frontend.php:117
 #: assets/js/block/contact-info/index.js:1
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/index.js:1
 msgid "Name"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Frontend.php:135
+#: modules/MarketplaceCompliance/Frontend.php:136
 #: assets/js/block/contact-info/index.js:1
 msgid "Message"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Frontend.php:142
+#: modules/MarketplaceCompliance/Frontend.php:143
 msgid "Report"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Rest.php:198
-msgid "Invalid report ID"
-msgstr ""
-
-#: modules/MarketplaceCompliance/Rest.php:208
-msgid "Report not found"
+#: modules/MarketplaceCompliance/Rest.php:119
+msgid "You are not allowed to view this store's reports."
 msgstr ""
 
 #: modules/MarketplaceCompliance/Rest.php:215
-msgid "You are not allowed to delete this report."
+msgid "Invalid report ID"
 msgstr ""
 
 #: modules/MarketplaceCompliance/Rest.php:225
+msgid "Report not found"
+msgstr ""
+
+#: modules/MarketplaceCompliance/Rest.php:232
+msgid "You are not allowed to delete this report."
+msgstr ""
+
+#: modules/MarketplaceCompliance/Rest.php:242
 #: assets/js/index.js:1
 msgid "Failed to delete report"
 msgstr ""
 
-#: modules/MarketplaceRefund/Admin.php:38
-#: modules/MarketplaceRefund/Admin.php:86
+#: modules/MarketplaceRefund/Admin.php:40
+#: modules/MarketplaceRefund/Admin.php:88
 msgctxt "Order status"
 msgid "Refund Requested"
 msgstr ""
 
 #. translators: %s: Number of orders with the "Refund Requested" status.
-#: modules/MarketplaceRefund/Admin.php:44
+#: modules/MarketplaceRefund/Admin.php:46
 #, php-format
 msgid "Refund Requested (%s)"
 msgid_plural "Refund Requested (%s)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/MarketplaceRefund/Admin.php:50
-#: modules/MarketplaceRefund/Admin.php:87
+#: modules/MarketplaceRefund/Admin.php:52
+#: modules/MarketplaceRefund/Admin.php:89
 msgctxt "Order status"
 msgid "Refund Accepted"
 msgstr ""
 
 #. translators: %s: Number of orders with the "Refund Accepted" status.
-#: modules/MarketplaceRefund/Admin.php:56
+#: modules/MarketplaceRefund/Admin.php:58
 #, php-format
 msgid "Refund Accepted (%s)"
 msgid_plural "Refund Accepted (%s)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/MarketplaceRefund/Admin.php:62
-#: modules/MarketplaceRefund/Admin.php:88
+#: modules/MarketplaceRefund/Admin.php:64
+#: modules/MarketplaceRefund/Admin.php:90
 msgctxt "Order status"
 msgid "Refund Rejected"
 msgstr ""
 
 #. translators: %s: Number of orders with the "Refund Rejected" status.
-#: modules/MarketplaceRefund/Admin.php:68
+#: modules/MarketplaceRefund/Admin.php:70
 #, php-format
 msgid "Refund Rejected (%s)"
 msgid_plural "Refund Rejected (%s)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/MarketplaceRefund/Admin.php:129
+#: modules/MarketplaceRefund/Admin.php:131
 msgid "accepted"
 msgstr ""
 
-#: modules/MarketplaceRefund/Admin.php:131
+#: modules/MarketplaceRefund/Admin.php:133
 msgid "rejected"
 msgstr ""
 
-#: modules/MarketplaceRefund/Admin.php:134
-#: modules/MarketplaceRefund/Admin.php:148
+#: modules/MarketplaceRefund/Admin.php:136
+#: modules/MarketplaceRefund/Admin.php:150
 msgid "Site admin "
 msgstr ""
 
-#: modules/MarketplaceRefund/Admin.php:134
-#: modules/MarketplaceRefund/Admin.php:148
+#: modules/MarketplaceRefund/Admin.php:136
+#: modules/MarketplaceRefund/Admin.php:150
 msgid " refund request for order #"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:97
+#: modules/MarketplaceRefund/Frontend.php:105
 msgid "Request a refund"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:121
+#: modules/MarketplaceRefund/Frontend.php:129
 msgid "Choose the product(s) you want a refund for"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:149
+#: modules/MarketplaceRefund/Frontend.php:157
 msgid "Please mention your reason for refund"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:168
+#: modules/MarketplaceRefund/Frontend.php:176
 msgid "Others reason"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:172
 #: modules/MarketplaceRefund/Frontend.php:180
-#: modules/MarketplaceRefund/Frontend.php:582
+#: modules/MarketplaceRefund/Frontend.php:188
+#: modules/MarketplaceRefund/Frontend.php:595
 msgid "Refund reason"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:189
+#: modules/MarketplaceRefund/Frontend.php:197
 msgid "Provide additional information"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:194
+#: modules/MarketplaceRefund/Frontend.php:202
 msgid "Upload an image of the product"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:198
+#: modules/MarketplaceRefund/Frontend.php:206
 msgid "You can select multiple images."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:203
+#: modules/MarketplaceRefund/Frontend.php:211
 #: assets/js/index.js:1
 msgid "Submit"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:265
-#: modules/MarketplaceRefund/Frontend.php:287
+#: modules/MarketplaceRefund/Frontend.php:273
+#: modules/MarketplaceRefund/Frontend.php:295
 msgid "Refund is not allowed for the current order status."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:266
+#: modules/MarketplaceRefund/Frontend.php:274
 msgid "Your refund period has expired"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:267
+#: modules/MarketplaceRefund/Frontend.php:275
 msgid "*** Your request has been rejected ***"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:268
-#: modules/MarketplaceRefund/Frontend.php:294
+#: modules/MarketplaceRefund/Frontend.php:276
+#: modules/MarketplaceRefund/Frontend.php:302
 msgid "Your request is pending."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:269
+#: modules/MarketplaceRefund/Frontend.php:277
 msgid "*** Your request has been accepted. *** "
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:283
+#: modules/MarketplaceRefund/Frontend.php:291
 msgid "Your refund period has expired."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:291
+#: modules/MarketplaceRefund/Frontend.php:299
 msgid "Sorry!! Your request has been rejected"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:297
+#: modules/MarketplaceRefund/Frontend.php:305
 msgid "Congratulation: *** Your request has been accepted. *** "
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:333
+#: modules/MarketplaceRefund/Frontend.php:341
 msgid "Kindly choose a product"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:338
+#: modules/MarketplaceRefund/Frontend.php:346
 msgid "Kindly choose a refund reason"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:516
+#: modules/MarketplaceRefund/Frontend.php:523
 msgid "Refund request successfully submitted."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:588
+#: modules/MarketplaceRefund/Frontend.php:601
 msgid "Category:"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:590
+#: modules/MarketplaceRefund/Frontend.php:603
 msgid "N/A"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:600
+#: modules/MarketplaceRefund/Frontend.php:613
 msgid "No additional information provided."
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:607
+#: modules/MarketplaceRefund/Frontend.php:620
 msgid "Attached images:"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:624
+#: modules/MarketplaceRefund/Frontend.php:637
 msgid "Request timeline"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:646
+#: modules/MarketplaceRefund/Frontend.php:659
 msgid "Under review"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:662
+#: modules/MarketplaceRefund/Frontend.php:675
 msgid "Decision pending"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:672
+#: modules/MarketplaceRefund/Frontend.php:685
 msgid "Rejected by admin:"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:677
+#: modules/MarketplaceRefund/Frontend.php:690
 msgid "Rejected by store:"
 msgstr ""
 
-#: modules/MarketplaceRefund/Frontend.php:692
+#: modules/MarketplaceRefund/Frontend.php:705
 msgid "Refund processed"
 msgstr ""
 
-#: modules/MarketplaceRefund/Rest.php:131
+#: modules/MarketplaceRefund/Rest.php:125
 msgid "You cannot view refunds for this store."
 msgstr ""
 
-#: modules/MinMax/Admin.php:50
+#: modules/MinMax/Admin.php:52
 msgid "Minimum quantity to order"
 msgstr ""
 
-#: modules/MinMax/Admin.php:62
+#: modules/MinMax/Admin.php:64
 msgid "Maximum quantity to order"
 msgstr ""
 
-#: modules/MinMax/Admin.php:76
+#: modules/MinMax/Admin.php:78
 msgid "Minimum amount to order"
 msgstr ""
 
-#: modules/MinMax/Admin.php:89
+#: modules/MinMax/Admin.php:91
 msgid "Maximum amount to order"
 msgstr ""
 
-#: modules/MinMax/Frontend.php:121
-#: modules/MinMax/Frontend.php:126
+#: modules/MinMax/Frontend.php:123
+#: modules/MinMax/Frontend.php:128
 msgid "Minimum product "
 msgstr ""
 
-#: modules/MinMax/Frontend.php:131
+#: modules/MinMax/Frontend.php:133
 msgid "Minimum order quantity required is "
 msgstr ""
 
-#: modules/MinMax/Frontend.php:136
+#: modules/MinMax/Frontend.php:138
 msgid "Minimum order amount required is "
 msgstr ""
 
-#: modules/MinMax/Frontend.php:143
-#: modules/MinMax/Frontend.php:148
+#: modules/MinMax/Frontend.php:145
+#: modules/MinMax/Frontend.php:150
 msgid "Maximum product "
 msgstr ""
 
-#: modules/MinMax/Frontend.php:153
+#: modules/MinMax/Frontend.php:155
 msgid "Maximum order quantity required is "
 msgstr ""
 
-#: modules/MinMax/Frontend.php:158
+#: modules/MinMax/Frontend.php:160
 msgid "Maximum order amount required is "
 msgstr ""
 
-#: modules/MinMax/Frontend.php:187
+#: modules/MinMax/Frontend.php:189
 msgid "Min Qty: "
 msgstr ""
 
-#: modules/MinMax/Frontend.php:190
+#: modules/MinMax/Frontend.php:192
 msgid "Min Amount: "
 msgstr ""
 
 #. translators: %d: minimum quantity required
-#: modules/MinMax/Frontend.php:215
+#: modules/MinMax/Frontend.php:217
 #, php-format
 msgid "Minimum quantity required is %d"
 msgstr ""
 
-#: modules/SharedListing/Frontend.php:278
+#: modules/SharedListing/Frontend.php:286
 msgid "More Offers"
 msgstr ""
 
-#: modules/SharedListing/Frontend.php:344
+#: modules/SharedListing/Frontend.php:353
 msgid "More Stores"
 msgstr ""
 
-#: modules/StorePolicy/Admin.php:59
-#: modules/StorePolicy/Admin.php:124
-#: modules/StorePolicy/Admin.php:141
+#: modules/StorePolicy/Admin.php:62
+#: modules/StorePolicy/Admin.php:127
+#: modules/StorePolicy/Admin.php:144
 msgid "Cancellation Policy"
 msgstr ""
 
-#: modules/StorePolicy/Admin.php:76
-#: templates/store/store-policy.php:22
-#: templates/store/store-single-product-policy-tab.php:25
+#: modules/StorePolicy/Admin.php:79
+#: templates/store/store-policy.php:26
+#: templates/store/store-single-product-policy-tab.php:29
 #: assets/js/index.js:1
 msgid "Shipping Policy"
 msgstr ""
 
-#: modules/StorePolicy/Admin.php:77
+#: modules/StorePolicy/Admin.php:80
 msgid "Shipping Policy."
 msgstr ""
 
-#: modules/StorePolicy/Admin.php:91
-#: modules/StorePolicy/Admin.php:108
-#: templates/store/store-policy.php:23
-#: templates/store/store-single-product-policy-tab.php:30
+#: modules/StorePolicy/Admin.php:94
+#: modules/StorePolicy/Admin.php:111
+#: templates/store/store-policy.php:27
+#: templates/store/store-single-product-policy-tab.php:34
 #: assets/js/index.js:1
 msgid "Refund Policy"
 msgstr ""
 
-#: modules/StorePolicy/Admin.php:109
+#: modules/StorePolicy/Admin.php:112
 msgid "Refund Policy."
 msgstr ""
 
-#: modules/StorePolicy/Admin.php:142
+#: modules/StorePolicy/Admin.php:145
 msgid "Cancellation Policy."
 msgstr ""
 
-#: modules/StorePolicy/Frontend.php:136
+#: modules/StorePolicy/Frontend.php:137
 #: assets/js/index.js:1
 msgid "Policies"
 msgstr ""
 
-#: modules/StoreReview/Ajax.php:66
+#: modules/StoreReview/Ajax.php:53
 #: modules/StoreReview/Rest.php:349
 msgid "Missing required fields."
 msgstr ""
 
-#: modules/StoreReview/Ajax.php:70
+#: modules/StoreReview/Ajax.php:58
+msgid "Invalid store."
+msgstr ""
+
+#: modules/StoreReview/Ajax.php:62
 #: modules/StoreReview/Rest.php:357
 msgid "You have already reviewed this store."
 msgstr ""
 
-#: modules/StoreReview/Ajax.php:88
-msgid "Invalid file upload data."
-msgstr ""
-
-#: modules/StoreReview/Ajax.php:139
+#: modules/StoreReview/Ajax.php:89
 msgid "Review submitted successfully!"
 msgstr ""
 
-#: modules/StoreReview/Ajax.php:155
+#: modules/StoreReview/Ajax.php:107
 msgid "Anonymous"
 msgstr ""
 
 #. translators: %s: rating value
 #. Translators: %s is the rating value out of 5.
-#: modules/StoreReview/Ajax.php:177
+#: modules/StoreReview/Ajax.php:125
 #: modules/StoreReview/Widgets/StoreRating.php:302
-#: templates/store/store-banner-info.php:140
+#: templates/store/store-banner-info.php:144
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/block/marketplace-stores/view.js:1
 #, php-format,js-format
 msgid "Rated %s out of 5"
 msgstr ""
 
-#: modules/StoreReview/Ajax.php:183
+#: modules/StoreReview/Ajax.php:131
 #: modules/StoreReview/Widgets/StoreRating.php:308
-#: templates/store/store-banner-info.php:145
+#: templates/store/store-banner-info.php:149
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/block/marketplace-stores/view.js:1
 #: assets/js/block/store-quick-info/view.js:1
@@ -2131,25 +2203,25 @@ msgid "out of 5"
 msgstr ""
 
 #. translators: %s: time difference
-#: modules/StoreReview/Ajax.php:194
+#: modules/StoreReview/Ajax.php:142
 #, php-format
 msgid "%s ago"
 msgstr ""
 
-#: modules/StoreReview/Ajax.php:214
+#: modules/StoreReview/Ajax.php:162
 #: assets/js/block/store-review/view.js:1
 msgid "Review Image"
 msgstr ""
 
-#: modules/StoreReview/Ajax.php:224
+#: modules/StoreReview/Ajax.php:172
 msgid "Store's reply:"
 msgstr ""
 
-#: modules/StoreReview/Ajax.php:237
+#: modules/StoreReview/Ajax.php:185
 msgid "No reviews yet — they'll show up here once received."
 msgstr ""
 
-#: modules/StoreReview/Frontend.php:180
+#: modules/StoreReview/Frontend.php:179
 msgid "Leave a Review"
 msgstr ""
 
@@ -2157,38 +2229,38 @@ msgstr ""
 msgid "You are not allowed to view this review."
 msgstr ""
 
-#: modules/StoreReview/Rest.php:423
+#: modules/StoreReview/Rest.php:388
 msgid "Review could not be created."
 msgstr ""
 
-#: modules/StoreReview/Rest.php:469
-#: modules/StoreReview/Rest.php:586
+#: modules/StoreReview/Rest.php:434
+#: modules/StoreReview/Rest.php:551
 msgid "Invalid review ID"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:479
-#: modules/StoreReview/Rest.php:596
+#: modules/StoreReview/Rest.php:444
+#: modules/StoreReview/Rest.php:561
 msgid "Review not found"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:487
+#: modules/StoreReview/Rest.php:452
 msgid "You are not allowed to manage this review."
 msgstr ""
 
-#: modules/StoreReview/Rest.php:512
+#: modules/StoreReview/Rest.php:477
 msgid "Invalid status value"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:607
+#: modules/StoreReview/Rest.php:572
 msgid "Failed to delete review"
 msgstr ""
 
-#: modules/StoreReview/Rest.php:629
+#: modules/StoreReview/Rest.php:594
 #: assets/js/index.js:1
 msgid "Guest"
 msgstr ""
 
-#: modules/StoreReview/Tags/StoreRating.php:46
+#: modules/StoreReview/Tags/StoreRating.php:48
 #: modules/StoreReview/Widgets/StoreRating.php:37
 msgid "Store Rating"
 msgstr ""
@@ -2291,67 +2363,72 @@ msgstr ""
 msgid "Some cart item(s) are not deliverable to your location."
 msgstr ""
 
-#: modules/StoreShipping/Frontend.php:130
+#: modules/StoreShipping/Frontend.php:132
 msgid "Shipping by Country"
 msgstr ""
 
-#: modules/StoreShipping/Frontend.php:148
+#: modules/StoreShipping/Frontend.php:150
 msgid "Shipping by Distance"
 msgstr ""
 
-#: modules/StoreShipping/Frontend.php:166
+#: modules/StoreShipping/Frontend.php:168
 msgid "Shipping by Zone"
 msgstr ""
 
-#: modules/StoreShipping/Frontend.php:197
+#: modules/StoreShipping/Frontend.php:199
 msgid "Delivery Location"
 msgstr ""
 
-#: modules/StoreShipping/Frontend.php:198
+#: modules/StoreShipping/Frontend.php:200
 msgctxt "placeholder"
 msgid "Insert your address .."
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:158
-#: modules/StoreShipping/Rest.php:294
-#: modules/StoreShipping/Rest.php:376
+#: modules/StoreShipping/Rest.php:130
+#: modules/StoreShipping/Rest.php:272
+msgid "You are not allowed to view this store's shipping settings."
+msgstr ""
+
+#: modules/StoreShipping/Rest.php:165
+#: modules/StoreShipping/Rest.php:309
+#: modules/StoreShipping/Rest.php:391
 msgid "You are not allowed to manage this store."
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:170
+#: modules/StoreShipping/Rest.php:177
 msgid "Shipping method is required"
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:179
+#: modules/StoreShipping/Rest.php:186
 msgid "Zone ID is required"
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:188
+#: modules/StoreShipping/Rest.php:195
 msgid "Store ID is required"
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:218
+#: modules/StoreShipping/Rest.php:225
 msgid "Shipping method settings saved successfully"
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:257
+#: modules/StoreShipping/Rest.php:264
 msgid "store_id, method_id and zone_id are required"
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:306
-#: modules/StoreShipping/Rest.php:387
+#: modules/StoreShipping/Rest.php:321
+#: modules/StoreShipping/Rest.php:402
 msgid "Missing required parameters"
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:327
+#: modules/StoreShipping/Rest.php:342
 msgid "Failed to save shipping method"
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:343
+#: modules/StoreShipping/Rest.php:358
 msgid "Shipping method saved successfully"
 msgstr ""
 
-#: modules/StoreShipping/Rest.php:406
+#: modules/StoreShipping/Rest.php:421
 msgid "Shipping method deleted successfully"
 msgstr ""
 
@@ -2364,7 +2441,7 @@ msgid "Shipping method not found"
 msgstr ""
 
 #: modules/StoreShipping/Zone_Shipping.php:53
-#: modules/StoreShipping/Zone_Shipping.php:211
+#: modules/StoreShipping/Zone_Shipping.php:205
 #: assets/js/index.js:1
 msgid "Store Shipping"
 msgstr ""
@@ -2373,23 +2450,23 @@ msgstr ""
 msgid "Charge varying rates based on user defined conditions"
 msgstr ""
 
-#: modules/StoreShipping/Zone_Shipping.php:208
+#: modules/StoreShipping/Zone_Shipping.php:202
 msgid "Method title"
 msgstr ""
 
-#: modules/StoreShipping/Zone_Shipping.php:210
+#: modules/StoreShipping/Zone_Shipping.php:204
 msgid "This controls the title which the user sees during checkout."
 msgstr ""
 
-#: modules/StoreShipping/Zone_Shipping.php:215
+#: modules/StoreShipping/Zone_Shipping.php:209
 msgid "Tax status"
 msgstr ""
 
-#: modules/StoreShipping/Zone_Shipping.php:220
+#: modules/StoreShipping/Zone_Shipping.php:214
 msgid "Taxable"
 msgstr ""
 
-#: modules/StoreShipping/Zone_Shipping.php:221
+#: modules/StoreShipping/Zone_Shipping.php:215
 msgctxt "Tax status"
 msgid "None"
 msgstr ""
@@ -2418,18 +2495,18 @@ msgstr ""
 msgid "No store template found. Please create a Store Page template in Elementor."
 msgstr ""
 
-#: templates/store/shared-listing-single-product-tab.php:22
+#: templates/store/shared-listing-single-product-tab.php:26
 #: assets/js/index.js:1
 msgid "Price"
 msgstr ""
 
-#: templates/store/shared-listing-single-product-tab.php:67
+#: templates/store/shared-listing-single-product-tab.php:71
 #: assets/js/index.js:1
 msgid "Details"
 msgstr ""
 
 #. Translators: label for single/multiple review counts.
-#: templates/store/store-banner-info.php:152
+#: templates/store/store-banner-info.php:156
 #: assets/js/index.js:1
 #: modules/StoreReview/assets/js/frontend.js:60
 msgid "Review"
@@ -2437,18 +2514,18 @@ msgid_plural "Reviews"
 msgstr[0] ""
 msgstr[1] ""
 
-#: templates/store/store-policy.php:17
+#: templates/store/store-policy.php:21
 msgid "No policy found."
 msgstr ""
 
-#: templates/store/store-policy.php:21
-#: templates/store/store-single-product-policy-tab.php:20
+#: templates/store/store-policy.php:25
+#: templates/store/store-single-product-policy-tab.php:24
 #: assets/js/index.js:1
 msgid "Store Policy"
 msgstr ""
 
-#: templates/store/store-policy.php:24
-#: templates/store/store-single-product-policy-tab.php:35
+#: templates/store/store-policy.php:28
+#: templates/store/store-single-product-policy-tab.php:39
 #: assets/js/index.js:1
 msgid "Cancellation / Return / Exchange Policy"
 msgstr ""
@@ -2487,48 +2564,48 @@ msgstr ""
 msgid "Submit Review"
 msgstr ""
 
-#: templates/store/store-single-product-customer-queries-tab.php:19
+#: templates/store/store-single-product-customer-queries-tab.php:23
 msgid "Questions about this product"
 msgstr ""
 
-#: templates/store/store-single-product-customer-queries-tab.php:24
+#: templates/store/store-single-product-customer-queries-tab.php:28
 msgid "Have a question? Search for an answer."
 msgstr ""
 
-#: templates/store/store-single-product-customer-queries-tab.php:39
+#: templates/store/store-single-product-customer-queries-tab.php:43
 msgid "Have not discovered the information you seek"
 msgstr ""
 
-#: templates/store/store-single-product-customer-queries-tab.php:45
+#: templates/store/store-single-product-customer-queries-tab.php:49
 #: modules/CustomerQueries/assets/js/frontend.js:57
 #: modules/CustomerQueries/assets/js/frontend.js:63
 msgid "Ask now"
 msgstr ""
 
-#: templates/store/store-single-product-customer-queries-tab.php:51
+#: templates/store/store-single-product-customer-queries-tab.php:55
 msgid "Your question has been submitted successfully. It will appear once answered."
 msgstr ""
 
-#: templates/store/store-single-product-customer-queries-tab.php:57
+#: templates/store/store-single-product-customer-queries-tab.php:61
 msgid "Can’t find your answer?"
 msgstr ""
 
-#: templates/store/store-single-product-customer-queries-tab.php:59
+#: templates/store/store-single-product-customer-queries-tab.php:63
 msgid "Log in"
 msgstr ""
 
-#: templates/store/store-single-product-customer-queries-tab.php:60
+#: templates/store/store-single-product-customer-queries-tab.php:64
 msgid "to share your question with us."
 msgstr ""
 
 #. translators: %1$s is the vendor/owner name, %2$s is the clickable store name link.
-#: templates/store/store-single-product-tab.php:39
+#: templates/store/store-single-product-tab.php:43
 #, php-format
 msgid "Meet our shop %1$s"
 msgstr ""
 
 #. translators: %1$s is the store/vendor name.
-#: templates/store/store-single-product-tab.php:106
+#: templates/store/store-single-product-tab.php:110
 #, php-format
 msgid "More Products from %1$s"
 msgstr ""

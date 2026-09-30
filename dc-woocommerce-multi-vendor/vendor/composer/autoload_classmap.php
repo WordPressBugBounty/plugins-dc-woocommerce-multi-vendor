@@ -99,7 +99,6 @@ return array(
     'MultiVendorX\\Payments\\CustomPayment' => $baseDir . '/classes/Payments/CustomPayment.php',
     'MultiVendorX\\Payments\\Disbursement' => $baseDir . '/classes/Payments/Disbursement.php',
     'MultiVendorX\\Payments\\PaymentProcessor' => $baseDir . '/classes/Payments/PaymentProcessor.php',
-    'MultiVendorX\\Payments\\PaymentScheduler' => $baseDir . '/classes/Payments/PaymentScheduler.php',
     'MultiVendorX\\Payments\\Payments' => $baseDir . '/classes/Payments/Payments.php',
     'MultiVendorX\\Payments\\PaypalPayout' => $baseDir . '/classes/Payments/PaypalPayout.php',
     'MultiVendorX\\Payments\\StripeConnect' => $baseDir . '/classes/Payments/StripeConnect.php',
