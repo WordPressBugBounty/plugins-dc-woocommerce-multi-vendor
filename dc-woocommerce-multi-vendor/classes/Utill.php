@@ -96,6 +96,7 @@ class Utill {
         'invoices'                      => 'multivendorx_invoices_settings',
         'tax-information'               => 'multivendorx_tax_information_settings',
         'printful'                      => 'multivendorx_printful_settings',
+        'email-template-customizer'     => 'multivendorx_email_template_customizer_settings'
     );
 
     const MULTIVENDORX_OTHER_SETTINGS = array(
@@ -353,6 +354,20 @@ class Utill {
             MultiVendorX()->log_file,
             $existing . $log_entry
         );
+    }
+
+    /**
+     * Object-injection-safe replacement for maybe_unserialize().
+     *
+     * @param mixed $data Raw or already-decoded value.
+     * @return mixed
+     */
+    public static function safe_unserialize( $data ) {
+        if ( is_serialized( $data ) ) {
+            return @unserialize( trim( $data ), array( 'allowed_classes' => false ) ); // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.serialize_unserialize, WordPress.PHP.NoSilencedErrors.Discouraged
+        }
+
+        return $data;
     }
 
     /**

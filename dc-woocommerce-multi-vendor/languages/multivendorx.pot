@@ -1,14 +1,14 @@
 # Copyright (c) 2026 MultiVendorX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: MultiVendorX 5.0.20\n"
+"Project-Id-Version: MultiVendorX 5.0.21\n"
 "Report-Msgid-Bugs-To: https://multivendorx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=multivendorx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-12T18:04:18+00:00\n"
+"POT-Creation-Date: 2026-10-29T01:18:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: multivendorx\n"
@@ -37,17 +37,20 @@ msgstr ""
 #: classes/Admin.php:86
 #: classes/RestAPI/Controllers/Dashboard.php:112
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Dashboard"
 msgstr ""
 
 #: classes/Admin.php:91
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stores"
 msgstr ""
 
 #: classes/Admin.php:96
 #: classes/RestAPI/Controllers/Dashboard.php:151
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commissions"
 msgstr ""
 
@@ -56,12 +59,12 @@ msgid "Transaction History"
 msgstr ""
 
 #: classes/Admin.php:106
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Approval Queue"
 msgstr ""
 
 #: classes/Admin.php:111
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Compliance"
 msgstr ""
 
@@ -70,7 +73,7 @@ msgid "Customers"
 msgstr ""
 
 #: classes/Admin.php:121
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reports"
 msgstr ""
 
@@ -78,100 +81,97 @@ msgstr ""
 #: classes/RestAPI/Controllers/Dashboard.php:237
 #: classes/Tracker.php:137
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Settings"
 msgstr ""
 
 #: classes/Admin.php:131
-#: assets/js/index.js:1
-msgid "Modules"
-msgstr ""
-
-#: classes/Admin.php:136
 msgid "Status & Tools"
 msgstr ""
 
-#: classes/Admin.php:141
-#: assets/js/index.js:1
+#: classes/Admin.php:136
+#: assets/js/index.js:5
 msgid "Help & Support"
 msgstr ""
 
-#: classes/Admin.php:192
-#: classes/Admin.php:193
-#: classes/MultiVendorX.php:260
+#: classes/Admin.php:187
+#: classes/Admin.php:188
+#: classes/MultiVendorX.php:261
 #: classes/Tracker.php:148
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: classes/Admin.php:325
-#: classes/Admin.php:559
-#: classes/Admin.php:652
+#: classes/Admin.php:320
+#: classes/Admin.php:554
+#: classes/Admin.php:647
 #: classes/Product.php:56
 #: modules/Privacy/Frontend.php:52
 #: templates/store/shared-listing-single-product-tab.php:25
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store"
 msgstr ""
 
-#: classes/Admin.php:346
-#: classes/Admin.php:576
+#: classes/Admin.php:341
+#: classes/Admin.php:571
 #: classes/Product.php:177
 msgid "Assign Store"
 msgstr ""
 
-#: classes/Admin.php:351
-#: classes/Admin.php:581
+#: classes/Admin.php:346
+#: classes/Admin.php:576
 msgid "Search for a store…"
 msgstr ""
 
-#: classes/Admin.php:369
+#: classes/Admin.php:364
 msgid "Marketplace commission (fixed)"
 msgstr ""
 
-#: classes/Admin.php:371
+#: classes/Admin.php:366
 msgid "Fixed commission."
 msgstr ""
 
-#: classes/Admin.php:383
+#: classes/Admin.php:378
 msgid "Marketplace commission (%)"
 msgstr ""
 
-#: classes/Admin.php:385
+#: classes/Admin.php:380
 msgid "Percentage commission."
 msgstr ""
 
-#: classes/Admin.php:436
-#: classes/Admin.php:484
+#: classes/Admin.php:431
+#: classes/Admin.php:479
 msgid "Commission Fixed"
 msgstr ""
 
-#: classes/Admin.php:438
+#: classes/Admin.php:433
 msgid "Fixed Commission."
 msgstr ""
 
-#: classes/Admin.php:446
-#: classes/Admin.php:480
-#: classes/Admin.php:500
+#: classes/Admin.php:441
+#: classes/Admin.php:475
+#: classes/Admin.php:495
 msgid "Commission Percentage"
 msgstr ""
 
-#: classes/Admin.php:448
+#: classes/Admin.php:443
 msgid "Percentage Commission."
 msgstr ""
 
-#: classes/Admin.php:505
+#: classes/Admin.php:500
 msgid "Commission Fixed per transaction"
 msgstr ""
 
-#: classes/Admin.php:535
+#: classes/Admin.php:530
 msgid "You are not allowed to search stores."
 msgstr ""
 
-#: classes/Admin.php:626
+#: classes/Admin.php:621
 msgid "COD Order Payment"
 msgstr ""
 
-#: classes/Admin.php:648
+#: classes/Admin.php:643
 #: templates/store/shared-listing-single-product-tab.php:48
 #: assets/js/index.js:1
 msgid "Admin"
@@ -254,6 +254,44 @@ msgstr ""
 msgid "Invalid email format"
 msgstr ""
 
+#: classes/Integrations/VuloMailMigration.php:232
+msgid "VuloMail could not be downloaded or installed."
+msgstr ""
+
+#: classes/Integrations/VuloMailMigration.php:251
+msgid "VuloMail did not load after activation."
+msgstr ""
+
+#: classes/Integrations/VuloMailMigration.php:366
+msgid "Migrated from MultiVendorX"
+msgstr ""
+
+#: classes/Integrations/VuloMailMigration.php:397
+msgid "MultiVendorX has installed VuloMail, the companion plugin used to deliver marketplace email and SMS notifications. Set up an SMS gateway and/or email connection inside VuloMail to start sending."
+msgstr ""
+
+#: classes/Integrations/VuloMailMigration.php:398
+msgid "MultiVendorX has installed VuloMail and migrated your admin notification settings to it. SMS notifications now deliver through VuloMail; email notifications will too once you add an email connection inside VuloMail (MultiVendorX never had its own SMTP credentials to migrate)."
+msgstr ""
+
+#: classes/Integrations/VuloMailMigration.php:409
+msgid "Unknown error."
+msgstr ""
+
+#. translators: %s: error message.
+#: classes/Integrations/VuloMailMigration.php:420
+#, php-format
+msgid "MultiVendorX could not automatically install/configure VuloMail: %s"
+msgstr ""
+
+#: classes/Integrations/VuloMailMigration.php:425
+msgid "Retry"
+msgstr ""
+
+#: classes/Integrations/VuloMailMigration.php:438
+msgid "You are not allowed to do this."
+msgstr ""
+
 #: classes/Migration/Cron.php:51
 msgid "Every 5 Minutes"
 msgstr ""
@@ -262,401 +300,384 @@ msgstr ""
 msgid "Every minute"
 msgstr ""
 
-#: classes/MultiVendorX.php:255
+#: classes/MultiVendorX.php:256
 msgid "View WooCommerce documentation"
 msgstr ""
 
-#: classes/MultiVendorX.php:255
+#: classes/MultiVendorX.php:256
 msgid "Docs"
 msgstr ""
 
-#: classes/MultiVendorX.php:256
+#: classes/MultiVendorX.php:257
 msgid "Visit community forums"
 msgstr ""
 
-#: classes/MultiVendorX.php:256
-#: assets/js/index.js:1
+#: classes/MultiVendorX.php:257
+#: assets/js/index.js:5
 msgid "Support"
 msgstr ""
 
-#: classes/Notifications/Gateways/Clickatell.php:33
-#: assets/js/index.js:1
-msgid "Clickatell"
-msgstr ""
-
-#: classes/Notifications/Gateways/Clickatell.php:77
-#: classes/Notifications/Gateways/Vonage.php:79
-msgid "Unknown error"
-msgstr ""
-
-#: classes/Notifications/Gateways/Clickatell.php:83
-#: classes/Notifications/Gateways/Clickatell.php:89
-msgid "Bad Request"
-msgstr ""
-
-#: classes/Notifications/Gateways/Plivo.php:33
-#: assets/js/index.js:1
-msgid "Plivo"
-msgstr ""
-
-#: classes/Notifications/Gateways/Twilio.php:33
-#: assets/js/index.js:1
-msgid "Twilio"
-msgstr ""
-
-#: classes/Notifications/Gateways/Vonage.php:33
-msgid "Vonage (nexmo)"
-msgstr ""
-
-#: classes/Notifications/Gateways/Vonage.php:72
-msgid "Invalid API response from Vonage."
-msgstr ""
-
-#: classes/Notifications/Notifications.php:75
+#: classes/Notifications/Notifications.php:150
 msgid "Store pending approval"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:76
+#: classes/Notifications/Notifications.php:151
 msgid "Triggered when a new store application is submitted and placed under admin review."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:114
+#: classes/Notifications/Notifications.php:189
 msgid "Store rejected"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:115
+#: classes/Notifications/Notifications.php:190
 msgid "Admin rejected the store application."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:153
+#: classes/Notifications/Notifications.php:228
 msgid "Store permanently rejected"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:154
+#: classes/Notifications/Notifications.php:229
 msgid "Permanent rejection of a store application by the admin"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:192
+#: classes/Notifications/Notifications.php:267
 msgid "Store account created by admin"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:193
+#: classes/Notifications/Notifications.php:268
 msgid "Admin manually created store account."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:232
+#: classes/Notifications/Notifications.php:307
 msgid "Store activated"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:233
+#: classes/Notifications/Notifications.php:308
 msgid "Store activated and ready to start selling."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:271
+#: classes/Notifications/Notifications.php:346
 msgid "Store under review"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:272
+#: classes/Notifications/Notifications.php:347
 msgid "Store temporarily placed under admin review."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:309
+#: classes/Notifications/Notifications.php:384
 msgid "Store suspended"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:310
+#: classes/Notifications/Notifications.php:385
 msgid "Store temporarily suspended by the admin."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:348
+#: classes/Notifications/Notifications.php:423
 msgid "Store permanently deactivated"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:349
+#: classes/Notifications/Notifications.php:424
 msgid "Admin permanently deactivated the store."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:387
+#: classes/Notifications/Notifications.php:462
 msgid "Store account deactivation request"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:388
+#: classes/Notifications/Notifications.php:463
 msgid "Store owner requests deactivation of their store account."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:426
+#: classes/Notifications/Notifications.php:501
 msgid "Store deactivation rejected"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:427
+#: classes/Notifications/Notifications.php:502
 msgid "Store deactivation request rejected by the admin."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:465
+#: classes/Notifications/Notifications.php:540
 msgid "New order received"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:466
+#: classes/Notifications/Notifications.php:541
 msgid "New order received by the store."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:504
+#: classes/Notifications/Notifications.php:579
 msgid "Order processing"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:505
+#: classes/Notifications/Notifications.php:580
 msgid "An order status is changed to processing."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:540
+#: classes/Notifications/Notifications.php:615
 msgid "Order completed"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:541
+#: classes/Notifications/Notifications.php:616
 msgid "An order is completed successfully."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:578
+#: classes/Notifications/Notifications.php:653
 msgid "Order cancelled"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:579
+#: classes/Notifications/Notifications.php:654
 msgid "An order is cancelled by the customer or admin."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:617
+#: classes/Notifications/Notifications.php:692
 msgid "Order refunded"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:618
+#: classes/Notifications/Notifications.php:693
 msgid "A refund is issued for an order."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:656
+#: classes/Notifications/Notifications.php:731
 msgid "Shipment tracking added"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:657
+#: classes/Notifications/Notifications.php:732
 msgid "Tracking details added for the order shipment."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:699
+#: classes/Notifications/Notifications.php:774
 msgid "Order delivered"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:700
+#: classes/Notifications/Notifications.php:775
 msgid "Order marked as delivered."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:740
+#: classes/Notifications/Notifications.php:815
 #: modules/MarketplaceRefund/Frontend.php:648
 #: assets/js/index.js:1
 msgid "Refund requested"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:741
+#: classes/Notifications/Notifications.php:816
 msgid "Refund request submitted for the order."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:780
+#: classes/Notifications/Notifications.php:855
 msgid "Refund accepted"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:781
+#: classes/Notifications/Notifications.php:856
 msgid "Refund request approved for the order."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:810
+#: classes/Notifications/Notifications.php:885
 #: modules/MarketplaceRefund/Frontend.php:673
 msgid "Refund rejected"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:811
+#: classes/Notifications/Notifications.php:886
 msgid "Refund request rejected for the order."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:841
+#: classes/Notifications/Notifications.php:916
 msgid "New store review"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:842
+#: classes/Notifications/Notifications.php:917
 msgid "New customer review submitted for the store."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:870
+#: classes/Notifications/Notifications.php:945
 msgid "Admin replied to review"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:871
+#: classes/Notifications/Notifications.php:946
 msgid "Marketplace admin replies to a review."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:901
+#: classes/Notifications/Notifications.php:976
 msgid "Product submitted"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:902
+#: classes/Notifications/Notifications.php:977
 msgid "Product submitted for admin review."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:931
+#: classes/Notifications/Notifications.php:1006
 msgid "Product approved"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:932
+#: classes/Notifications/Notifications.php:1007
 msgid "Product approved and published."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:961
+#: classes/Notifications/Notifications.php:1036
 msgid "Product rejected"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:962
+#: classes/Notifications/Notifications.php:1037
 msgid "Product rejected after review."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:991
+#: classes/Notifications/Notifications.php:1066
 msgid "Product low stock"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:992
+#: classes/Notifications/Notifications.php:1067
 msgid "Product stock running low."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1022
+#: classes/Notifications/Notifications.php:1097
 msgid "Product out of stock"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1023
+#: classes/Notifications/Notifications.php:1098
 msgid "Product is currently unavailable due to no stock."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1053
+#: classes/Notifications/Notifications.php:1128
 msgid "Product question submitted"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1054
+#: classes/Notifications/Notifications.php:1129
 msgid "Customer submits a question on a product."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1083
+#: classes/Notifications/Notifications.php:1158
 msgid "Store replied to product question"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1084
+#: classes/Notifications/Notifications.php:1159
 msgid "Store owner replies to a product question."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1114
+#: classes/Notifications/Notifications.php:1189
 msgid "Payout received"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1115
+#: classes/Notifications/Notifications.php:1190
 msgid "A payment is received for an order."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1142
+#: classes/Notifications/Notifications.php:1217
 msgid "Payout failed"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1143
+#: classes/Notifications/Notifications.php:1218
 msgid "A payout processing attempt has failed."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1178
+#: classes/Notifications/Notifications.php:1253
 msgid "Withdrawal requested"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1179
+#: classes/Notifications/Notifications.php:1254
 msgid "A withdrawal request is submitted by a store."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1216
+#: classes/Notifications/Notifications.php:1291
 msgid "Withdrawal released"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1217
+#: classes/Notifications/Notifications.php:1292
 msgid "A withdrawal is released successfully."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1242
+#: classes/Notifications/Notifications.php:1317
 msgid "Withdrawl rejected"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1243
+#: classes/Notifications/Notifications.php:1318
 msgid "A withdrawl request is rejected by the admin."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1269
+#: classes/Notifications/Notifications.php:1344
 msgid "Report abuse submitted"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1270
+#: classes/Notifications/Notifications.php:1345
 msgid "A product is reported for abuse by a customer."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1309
+#: classes/Notifications/Notifications.php:1384
 msgid "System announcement"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1310
+#: classes/Notifications/Notifications.php:1385
 msgid "A system-wide announcement is published by the admin."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1347
+#: classes/Notifications/Notifications.php:1422
 msgid "Store followed"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1348
+#: classes/Notifications/Notifications.php:1423
 msgid "Customer started following the store."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1386
+#: classes/Notifications/Notifications.php:1461
 msgid "New product from followed store"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1387
+#: classes/Notifications/Notifications.php:1462
 msgid "New product published by a followed store."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1427
+#: classes/Notifications/Notifications.php:1502
 msgid "New coupon from followed store"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1428
+#: classes/Notifications/Notifications.php:1503
 msgid "New coupon created by a followed store."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1469
+#: classes/Notifications/Notifications.php:1544
 msgid "Store vacation alert"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1470
+#: classes/Notifications/Notifications.php:1545
 msgid "Followed store marked as on vacation."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1509
+#: classes/Notifications/Notifications.php:1584
 msgid "Wholesale buyer approved"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1510
+#: classes/Notifications/Notifications.php:1585
 msgid "User request for wholesale access has been approved."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1548
+#: classes/Notifications/Notifications.php:1623
 msgid "Wholesale buyer rejected"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1549
+#: classes/Notifications/Notifications.php:1624
 msgid "User request for wholesale access has been rejected."
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1586
+#: classes/Notifications/Notifications.php:1661
 msgid "Store replied to support ticket"
 msgstr ""
 
-#: classes/Notifications/Notifications.php:1587
+#: classes/Notifications/Notifications.php:1662
 msgid "Store owner replies to a support ticket."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:2123
+msgid "MultiVendorX could not send an SMS notification because VuloMail has no SMS gateway connected yet."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:2125
+msgid "Set up SMS in VuloMail"
+msgstr ""
+
+#: classes/Notifications/Notifications.php:2127
+msgid "MultiVendorX could not send an SMS notification because VuloMail, the plugin it relies on for SMS delivery, isn't installed."
+msgstr ""
+
+#: classes/Notifications/Notifications.php:2129
+msgid "Install VuloMail"
 msgstr ""
 
 #: classes/Order/Admin.php:47
@@ -713,52 +734,56 @@ msgstr ""
 msgid "A simple starter layout for a store page."
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:57
+#: classes/Payments/BankTransfer.php:56
+msgid "Add custom field"
+msgstr ""
+
+#: classes/Payments/BankTransfer.php:58
 msgid "Bank details required from the store"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:61
+#: classes/Payments/BankTransfer.php:62
 msgid "Bank name"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:66
+#: classes/Payments/BankTransfer.php:68
 msgid "Account holder Name"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:71
+#: classes/Payments/BankTransfer.php:74
 msgid "Account number"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:76
+#: classes/Payments/BankTransfer.php:80
 msgid "ABA routing number"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:81
+#: classes/Payments/BankTransfer.php:86
 msgid "Destination currency"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:86
+#: classes/Payments/BankTransfer.php:92
 msgid "Bank address"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:91
+#: classes/Payments/BankTransfer.php:98
 msgid "IBAN"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:113
+#: classes/Payments/BankTransfer.php:121
 msgid "Account type"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:117
+#: classes/Payments/BankTransfer.php:125
 msgid "Current"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:122
+#: classes/Payments/BankTransfer.php:130
 msgid "Savings"
 msgstr ""
 
-#: classes/Payments/BankTransfer.php:189
-#: assets/js/index.js:1
+#: classes/Payments/BankTransfer.php:212
+#: assets/js/index.js:5
 msgid "Bank Transfer"
 msgstr ""
 
@@ -973,8 +998,9 @@ msgstr ""
 #: classes/RestAPI/Controllers/Commissions.php:287
 #: classes/RestAPI/Controllers/Commissions.php:338
 #: classes/RestAPI/Controllers/ImportDummyData.php:87
-#: classes/RestAPI/Controllers/Logs.php:66
-#: classes/RestAPI/Controllers/Logs.php:102
+#: classes/RestAPI/Controllers/Logs.php:78
+#: classes/RestAPI/Controllers/Logs.php:101
+#: classes/RestAPI/Controllers/Logs.php:137
 #: classes/RestAPI/Controllers/Migrations.php:78
 #: classes/RestAPI/Controllers/Notifications.php:102
 #: classes/RestAPI/Controllers/Notifications.php:370
@@ -985,8 +1011,8 @@ msgstr ""
 #: classes/RestAPI/Controllers/Status.php:111
 #: classes/RestAPI/Controllers/Stores.php:128
 #: classes/RestAPI/Controllers/Stores.php:316
-#: classes/RestAPI/Controllers/Stores.php:584
-#: classes/RestAPI/Controllers/Stores.php:777
+#: classes/RestAPI/Controllers/Stores.php:590
+#: classes/RestAPI/Controllers/Stores.php:783
 #: classes/RestAPI/Controllers/Tour.php:71
 #: classes/RestAPI/Controllers/Tour.php:133
 #: classes/RestAPI/Controllers/Transactions.php:91
@@ -1042,9 +1068,9 @@ msgstr ""
 #: classes/RestAPI/Controllers/Status.php:93
 #: classes/RestAPI/Controllers/Status.php:178
 #: classes/RestAPI/Controllers/Stores.php:225
-#: classes/RestAPI/Controllers/Stores.php:567
-#: classes/RestAPI/Controllers/Stores.php:733
-#: classes/RestAPI/Controllers/Stores.php:1238
+#: classes/RestAPI/Controllers/Stores.php:573
+#: classes/RestAPI/Controllers/Stores.php:739
+#: classes/RestAPI/Controllers/Stores.php:1244
 #: classes/RestAPI/Controllers/Tour.php:121
 #: classes/RestAPI/Controllers/Tour.php:182
 #: classes/RestAPI/Controllers/Transactions.php:220
@@ -1090,7 +1116,7 @@ msgid "You are not allowed to regenerate commissions."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Dashboard.php:119
-#: classes/Store/StoreUtil.php:138
+#: classes/Store/StoreUtil.php:151
 #: modules/Elementor/Widgets/StoreTab.php:117
 #: assets/js/block/marketplace-products/index.js:1
 #: assets/js/block/marketplace-products/view.js:1
@@ -1101,6 +1127,7 @@ msgstr ""
 #: assets/js/block/store-quick-info/view.js:1
 #: assets/js/block/store-tabs/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Products"
 msgstr ""
 
@@ -1108,6 +1135,7 @@ msgstr ""
 #: assets/js/block/marketplace-coupons/index.js:1
 #: assets/js/block/marketplace-coupons/view.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Coupons"
 msgstr ""
 
@@ -1120,11 +1148,13 @@ msgstr ""
 #: classes/RestAPI/Controllers/Dashboard.php:138
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Orders"
 msgstr ""
 
 #: classes/RestAPI/Controllers/Dashboard.php:144
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refund"
 msgstr ""
 
@@ -1133,12 +1163,13 @@ msgid "Wallet"
 msgstr ""
 
 #: classes/RestAPI/Controllers/Dashboard.php:166
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Transactions"
 msgstr ""
 
 #: classes/RestAPI/Controllers/Dashboard.php:172
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Withdrawals"
 msgstr ""
 
@@ -1171,11 +1202,12 @@ msgstr ""
 
 #: classes/RestAPI/Controllers/Dashboard.php:222
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Documentation"
 msgstr ""
 
 #: classes/RestAPI/Controllers/Dashboard.php:229
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Tools"
 msgstr ""
 
@@ -1242,7 +1274,7 @@ msgid "You are not allowed to change role permissions."
 msgstr ""
 
 #: classes/RestAPI/Controllers/Settings.php:228
-#: classes/RestAPI/Controllers/Stores.php:1230
+#: classes/RestAPI/Controllers/Stores.php:1236
 msgid "Settings Saved"
 msgstr ""
 
@@ -1250,52 +1282,47 @@ msgstr ""
 msgid "MultiVendorX visitors stats successfully deleted"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:354
-msgid "You are not allowed to create stores this way."
-msgstr ""
-
-#: classes/RestAPI/Controllers/Stores.php:370
-#: classes/RestAPI/Controllers/Stores.php:819
-msgid "You are not allowed to update this store."
-msgstr ""
-
-#: classes/RestAPI/Controllers/Stores.php:473
+#: classes/RestAPI/Controllers/Stores.php:457
 msgid "Store registered successfully and approved automatically."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:478
+#: classes/RestAPI/Controllers/Stores.php:467
 msgid "Store registered successfully and pending for approval."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:605
+#: classes/RestAPI/Controllers/Stores.php:611
 msgid "You are not allowed to access this store."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:793
+#: classes/RestAPI/Controllers/Stores.php:799
 msgid "You are not allowed to change the status of these stores."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:841
+#: classes/RestAPI/Controllers/Stores.php:825
+msgid "You are not allowed to update this store."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Stores.php:847
 msgid "You are not allowed to perform this action on the store."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:937
+#: classes/RestAPI/Controllers/Stores.php:943
 msgid "New owner ID missing."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:972
+#: classes/RestAPI/Controllers/Stores.php:978
 msgid "Store registration approved."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1033
+#: classes/RestAPI/Controllers/Stores.php:1039
 msgid "Store registration rejected permanently."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1047
+#: classes/RestAPI/Controllers/Stores.php:1053
 msgid "Store registration rejected."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Stores.php:1255
+#: classes/RestAPI/Controllers/Stores.php:1261
 #: modules/FollowStore/Rest.php:226
 msgid "Invalid store ID"
 msgstr ""
@@ -1375,7 +1402,7 @@ msgid "SKU is not generated!"
 msgstr ""
 
 #: classes/Roles.php:62
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Owner"
 msgstr ""
 
@@ -1388,7 +1415,7 @@ msgid "Product Manager"
 msgstr ""
 
 #: classes/Roles.php:65
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Customer Support"
 msgstr ""
 
@@ -1405,7 +1432,7 @@ msgid "Plugin subscription plan"
 msgstr ""
 
 #: classes/Status.php:51
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Free"
 msgstr ""
 
@@ -1502,6 +1529,7 @@ msgstr ""
 
 #: modules/Announcement/Frontend.php:37
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Announcements"
 msgstr ""
 
@@ -1637,13 +1665,15 @@ msgstr ""
 
 #: modules/Elementor/Tags/StoreInfo.php:75
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Address"
 msgstr ""
 
 #: modules/Elementor/Tags/StoreInfo.php:85
-#: modules/MarketplaceCompliance/Frontend.php:122
+#: modules/MarketplaceCompliance/Frontend.php:118
 #: assets/js/block/contact-info/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Email"
 msgstr ""
 
@@ -1660,7 +1690,7 @@ msgstr ""
 #: modules/Elementor/Tags/StoreName.php:39
 #: modules/Elementor/Widgets/StoreName.php:38
 #: assets/js/block/store-name/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Name"
 msgstr ""
 
@@ -1674,7 +1704,7 @@ msgid "MultiVendorX Store Widgets"
 msgstr ""
 
 #: modules/Elementor/Widgets/StoreBanner.php:72
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Banner"
 msgstr ""
 
@@ -1737,7 +1767,7 @@ msgstr ""
 #: modules/StorePolicy/Admin.php:40
 #: modules/StorePolicy/Frontend.php:107
 #: assets/js/block/store-tabs/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Policy"
 msgstr ""
 
@@ -1745,7 +1775,7 @@ msgstr ""
 #: modules/StoreReview/Frontend.php:127
 #: assets/js/block/store-quick-info/view.js:1
 #: assets/js/block/store-tabs/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 #: modules/StoreReview/assets/js/frontend.js:60
 msgid "Reviews"
 msgstr ""
@@ -1819,29 +1849,30 @@ msgstr ""
 msgid "Knowledge Base article deleted successfully"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Frontend.php:97
+#: modules/MarketplaceCompliance/Frontend.php:93
 msgid "Report Abuse"
 msgstr ""
 
 #. translators: %s: Product name for abuse report
-#: modules/MarketplaceCompliance/Frontend.php:108
+#: modules/MarketplaceCompliance/Frontend.php:104
 #, php-format
 msgid "Report abuse for \"%s\""
 msgstr ""
 
-#: modules/MarketplaceCompliance/Frontend.php:117
+#: modules/MarketplaceCompliance/Frontend.php:113
 #: assets/js/block/contact-info/index.js:1
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Name"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Frontend.php:136
+#: modules/MarketplaceCompliance/Frontend.php:132
 #: assets/js/block/contact-info/index.js:1
 msgid "Message"
 msgstr ""
 
-#: modules/MarketplaceCompliance/Frontend.php:143
+#: modules/MarketplaceCompliance/Frontend.php:139
 msgid "Report"
 msgstr ""
 
@@ -1961,7 +1992,7 @@ msgid "You can select multiple images."
 msgstr ""
 
 #: modules/MarketplaceRefund/Frontend.php:211
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Submit"
 msgstr ""
 
@@ -2111,11 +2142,11 @@ msgstr ""
 msgid "Minimum quantity required is %d"
 msgstr ""
 
-#: modules/SharedListing/Frontend.php:286
+#: modules/SharedListing/Frontend.php:288
 msgid "More Offers"
 msgstr ""
 
-#: modules/SharedListing/Frontend.php:353
+#: modules/SharedListing/Frontend.php:355
 msgid "More Stores"
 msgstr ""
 
@@ -2128,7 +2159,7 @@ msgstr ""
 #: modules/StorePolicy/Admin.php:79
 #: templates/store/store-policy.php:26
 #: templates/store/store-single-product-policy-tab.php:29
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping Policy"
 msgstr ""
 
@@ -2140,7 +2171,7 @@ msgstr ""
 #: modules/StorePolicy/Admin.php:111
 #: templates/store/store-policy.php:27
 #: templates/store/store-single-product-policy-tab.php:34
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refund Policy"
 msgstr ""
 
@@ -2267,12 +2298,14 @@ msgstr ""
 
 #: modules/StoreReview/Widgets/StoreRating.php:73
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Content"
 msgstr ""
 
 #: modules/StoreReview/Widgets/StoreRating.php:81
 #: assets/js/block/store-quick-info/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 #: modules/StoreReview/assets/js/frontend.js:46
 msgid "Rating"
 msgstr ""
@@ -2323,7 +2356,7 @@ msgstr ""
 
 #: modules/StoreReview/Widgets/StoreRating.php:255
 #: assets/js/block/store-banner/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Left"
 msgstr ""
 
@@ -2351,6 +2384,7 @@ msgstr ""
 
 #: modules/StoreShipping/Country_Shipping.php:317
 #: modules/StoreShipping/Distance_Shipping.php:161
+#: assets/js/index.js:5
 msgid "Free Shipping"
 msgstr ""
 
@@ -2432,17 +2466,18 @@ msgstr ""
 msgid "Shipping method deleted successfully"
 msgstr ""
 
-#: modules/StoreShipping/Util.php:111
+#: modules/StoreShipping/Util.php:113
 msgid "Shipping method not found."
 msgstr ""
 
-#: modules/StoreShipping/Util.php:143
+#: modules/StoreShipping/Util.php:145
 msgid "Shipping method not found"
 msgstr ""
 
 #: modules/StoreShipping/Zone_Shipping.php:53
 #: modules/StoreShipping/Zone_Shipping.php:205
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Shipping"
 msgstr ""
 
@@ -2497,6 +2532,7 @@ msgstr ""
 
 #: templates/store/shared-listing-single-product-tab.php:26
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Price"
 msgstr ""
 
@@ -2508,6 +2544,7 @@ msgstr ""
 #. Translators: label for single/multiple review counts.
 #: templates/store/store-banner-info.php:156
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 #: modules/StoreReview/assets/js/frontend.js:60
 msgid "Review"
 msgid_plural "Reviews"
@@ -2521,12 +2558,13 @@ msgstr ""
 #: templates/store/store-policy.php:25
 #: templates/store/store-single-product-policy-tab.php:24
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Policy"
 msgstr ""
 
 #: templates/store/store-policy.php:28
 #: templates/store/store-single-product-policy-tab.php:39
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Cancellation / Return / Exchange Policy"
 msgstr ""
 
@@ -2677,21 +2715,25 @@ msgstr ""
 
 #: assets/js/block/marketplace-coupons/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Date"
 msgstr ""
 
 #: assets/js/block/marketplace-coupons/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "ID"
 msgstr ""
 
 #: assets/js/block/marketplace-coupons/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Title"
 msgstr ""
 
 #: assets/js/block/marketplace-coupons/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Code"
 msgstr ""
 
@@ -2702,6 +2744,7 @@ msgstr ""
 #: assets/js/block/marketplace-coupons/index.js:1
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Order"
 msgstr ""
 
@@ -2841,13 +2884,14 @@ msgstr ""
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/block/marketplace-stores/view.js:1
 #: assets/js/block/setup-wizard/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Next"
 msgstr ""
 
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/block/marketplace-stores/view.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 #: assets/modules/StoreShipping/block/view.js:1
 msgid "Search for a location..."
 msgstr ""
@@ -2866,6 +2910,7 @@ msgstr ""
 
 #: assets/js/block/marketplace-stores/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Category"
 msgstr ""
 
@@ -2970,7 +3015,7 @@ msgstr ""
 #: assets/js/block/registration-form/index.js:3
 #: assets/js/block/registration-form/view.js:1
 #: assets/js/block/registration-form/view.js:3
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Note"
 msgstr ""
 
@@ -2996,19 +3041,25 @@ msgstr ""
 
 #. translators: %s: Field label.
 #: assets/js/block/registration-form/index.js:3
+#: assets/js/block/registration-form/index.js:5
 #: assets/js/block/registration-form/view.js:3
+#: assets/js/block/registration-form/view.js:5
 #, js-format
 msgid "%s is required."
 msgstr ""
 
 #: assets/js/block/registration-form/index.js:3
+#: assets/js/block/registration-form/index.js:5
 #: assets/js/block/registration-form/view.js:3
+#: assets/js/block/registration-form/view.js:5
 #: modules/MarketplaceCompliance/assets/js/frontend.js:122
 msgid "Please enter a valid email address."
 msgstr ""
 
 #: assets/js/block/registration-form/index.js:3
+#: assets/js/block/registration-form/index.js:5
 #: assets/js/block/registration-form/view.js:3
+#: assets/js/block/registration-form/view.js:5
 msgid "Please accept the Terms & Conditions."
 msgstr ""
 
@@ -3136,17 +3187,19 @@ msgid "Franchise"
 msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Back"
 msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Configure Your Store"
 msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "How stores sell on your marketplace."
 msgstr ""
 
@@ -3216,6 +3269,7 @@ msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Fixed"
 msgstr ""
 
@@ -3234,6 +3288,7 @@ msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Completed"
 msgstr ""
 
@@ -3254,6 +3309,7 @@ msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Migration"
 msgstr ""
 
@@ -3316,7 +3372,7 @@ msgid "Vendor-specific order history"
 msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store details"
 msgstr ""
 
@@ -3364,11 +3420,13 @@ msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "You're all set with the basics! Use the quick links below to fine-tune your marketplace now — or come back later anytime."
 msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Setup"
 msgstr ""
 
@@ -3378,17 +3436,17 @@ msgid "Adjust commission rules and payout behavior."
 msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Finish"
 msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Welcome to the MultivendorX family!"
 msgstr ""
 
 #: assets/js/block/setup-wizard/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Thank you for choosing MultiVendorX! This quick setup wizard will help you configure the basic settings and have your marketplace ready in no time. It’s completely optional and shouldn’t take longer than five minutes."
 msgstr ""
 
@@ -3426,7 +3484,7 @@ msgstr ""
 
 #: assets/js/block/store-banner/index.js:1
 #: assets/js/block/store-logo/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Height"
 msgstr ""
 
@@ -3570,7 +3628,7 @@ msgid "3:2"
 msgstr ""
 
 #: assets/js/block/store-logo/index.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Width"
 msgstr ""
 
@@ -3680,6 +3738,7 @@ msgstr ""
 
 #: assets/js/block/store-review/view.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Review"
 msgstr ""
 
@@ -3692,12 +3751,13 @@ msgid " out of 5"
 msgstr ""
 
 #: assets/js/block/store-review/view.js:1
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Read less"
 msgstr ""
 
 #: assets/js/block/store-review/view.js:1
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Read more"
 msgstr ""
 
@@ -3790,38 +3850,37 @@ msgid "Add to cart"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "All Stores"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to load stores"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Published"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Pending"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Delete"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Status"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Recipients"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Action"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Edit"
 msgstr ""
 
@@ -3830,22 +3889,31 @@ msgid "Failed to load announcement for editing"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Recipients"
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "All"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Draft"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to load announcements"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Select Stores"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Created Date"
 msgstr ""
 
@@ -3858,6 +3926,7 @@ msgid "Are you sure you want to delete this announcement?"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Cancel"
 msgstr ""
 
@@ -3866,6 +3935,7 @@ msgid "Central hub for managing marketplace announcements. Review past updates a
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add New"
 msgstr ""
 
@@ -3882,6 +3952,7 @@ msgid "Publish important news, updates, or alerts that appear directly in store 
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Save"
 msgstr ""
 
@@ -3906,6 +3977,11 @@ msgid "Announcement message"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Status"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Select the status of the announcement."
 msgstr ""
 
@@ -3914,11 +3990,8 @@ msgid "Failed to perform bulk action."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "By"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -3929,20 +4002,29 @@ msgstr ""
 msgid "Q:"
 msgstr ""
 
+#. translators: %d: number of votes.
+#: assets/js/index.js:1
+#, js-format
+msgid "%d vote"
+msgid_plural "%d votes"
+msgstr[0] ""
+msgstr[1] ""
+
 #: assets/js/index.js:1
 msgid "A:"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Votes"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Visibility"
+msgid "Asked by"
 msgstr ""
 
 #: assets/js/index.js:1
 msgid "Answer"
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "By"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -3954,6 +4036,7 @@ msgid "Public"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Private"
 msgstr ""
 
@@ -4010,6 +4093,7 @@ msgid "Create Product With AI"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product Name"
 msgstr ""
 
@@ -4018,6 +4102,7 @@ msgid "Short Description"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Description"
 msgstr ""
 
@@ -4031,10 +4116,6 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Name your article"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Write your explanation or tutorial"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4078,15 +4159,17 @@ msgid "Failed to perform bulk action"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "SKU"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Reported By"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reason"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Date created"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4114,14 +4197,7 @@ msgid "Review reports and maintain quality."
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Amount"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Commission"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refund Reason"
 msgstr ""
 
@@ -4130,7 +4206,18 @@ msgid "View Details"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reject"
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Amount"
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Commission"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4178,38 +4265,47 @@ msgid "Monitor refund trends and stay informed on returns."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Customer"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reply / Edit"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to fetch review data"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Select Rating"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "5 Stars & Up"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "4 Stars & Up"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "3 Stars & Up"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "2 Stars & Up"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "1 Stars & Up"
 msgstr ""
 
@@ -4222,6 +4318,7 @@ msgid "Are you sure you want to delete review?"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reply to Review"
 msgstr ""
 
@@ -4230,10 +4327,12 @@ msgid "Review customer feedback submitted for this store and approve, reject, or
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to save reply"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Respond to customer"
 msgstr ""
 
@@ -4242,10 +4341,12 @@ msgid "Control if this review appears publicly, stays under moderation, or is ex
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Approved"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Rejected"
 msgstr ""
 
@@ -4266,15 +4367,15 @@ msgid "Sales Report"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Hi Store Owner"
+msgid "Your weekly sales summary from {siteName}"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Here's your sales report for the week of April 1-7, 2026."
+msgid "Hi {storeName},"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "48"
+msgid "Here's how your store performed on {siteName} this week."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4282,15 +4383,7 @@ msgid "Total orders"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "$3,240"
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "Total sales"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "$2,831"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4298,11 +4391,11 @@ msgid "Your earnings"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Marketplace commission (10%)"
+msgid "Earnings breakdown"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "−$324.00"
+msgid "Marketplace commission ({commissionRate})"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4310,19 +4403,11 @@ msgid "Total refunds"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "−$85.00"
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "Net earnings"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "$2324.00"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Your payout will be processed within 2–3 business days. Reply to this email for any questions."
+msgid "Your payout will be processed within 2–3 business days. Reply to this email if you have any questions."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4330,7 +4415,7 @@ msgid "Best regards,"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "The Marketplace Team"
+msgid "The {siteName} Team"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -4926,6 +5011,7 @@ msgid "Automatic renewals and access control at expiry"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Facilitator"
 msgstr ""
 
@@ -5058,6 +5144,7 @@ msgid "Notification"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Announcement"
 msgstr ""
 
@@ -5222,6 +5309,7 @@ msgid "Membership Rewards & Commission"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Charge your sellers a monthly or yearly membership fee to sell on your marketplace - predictable revenue every month."
 msgstr ""
 
@@ -5230,6 +5318,7 @@ msgid "Verified Stores Only"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Screen stores with document verification and approval - build a trusted marketplace from day one."
 msgstr ""
 
@@ -5246,6 +5335,7 @@ msgid "Vacation Mode for Stores"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stores can pause their stores temporarily with automatic buyer notifications - no missed messages."
 msgstr ""
 
@@ -5262,6 +5352,7 @@ msgid "Autopilot Notifications"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Automatic emails and alerts for every order, refund, and payout - everyone stays in the loop."
 msgstr ""
 
@@ -5329,6 +5420,7 @@ msgid "This feature is currently unavailable. To activate it, please enable the 
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enable Now"
 msgstr ""
 
@@ -5369,11 +5461,11 @@ msgid "Decide how your marketplace takes commission from sales."
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "You are currently using the older vendor-specific commission system from previous versions of MultiVendorX. Because of that, the <b>Marketplace commission</b> and <b>Commission value</b> fields shown below will continue to work as vendor-specific until you update or modify this settings page.<br><br>Once you make any change, your marketplace will automatically switch to the new <b>Marketplace commission</b> model. From that point onward, all commissions will be calculated using the updated system, and this notice will no longer appear."
+msgid "Marketplace commission"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Marketplace commission"
+msgid "You are currently using the older vendor-specific commission system from previous versions of MultiVendorX. Because of that, the <b>Marketplace commission</b> and <b>Commission value</b> fields shown below will continue to work as vendor-specific until you update or modify this settings page.<br><br>Once you make any change, your marketplace will automatically switch to the new <b>Marketplace commission</b> model. From that point onward, all commissions will be calculated using the updated system, and this notice will no longer appear."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -5389,6 +5481,7 @@ msgid "Set your default commission rate that will apply to all orders. You can c
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Remove"
 msgstr ""
 
@@ -5477,6 +5570,7 @@ msgid "Determine which fees to deduct from the store earning."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Marketplace fees"
 msgstr ""
 
@@ -5497,6 +5591,7 @@ msgid "to be"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Facilitator fees"
 msgstr ""
 
@@ -5562,6 +5657,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Tailor your marketplace commission plan to fit your revenue sharing preferences."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Payout Schedule"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -5829,6 +5928,10 @@ msgid "AI services can be enabled to assist with creating product details and en
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "AI provider API keys"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Gemini"
 msgstr ""
 
@@ -6077,11 +6180,16 @@ msgid "Enter the App Secret for the selected TalkJS project. Copy it from the pr
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Min/Max"
 msgstr ""
 
 #: assets/js/index.js:1
 msgid "Set purchase limits for individual products to prevent bulk buying or ensure minimum order quantities."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product Purchase Limits"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6097,10 +6205,12 @@ msgid "<strong>Example:</strong> You set <em>Min = 1</em> and <em>Max = 5</em> f
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Min"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Max"
 msgstr ""
 
@@ -6321,11 +6431,16 @@ msgid "Wholesale price only"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Overview"
 msgstr ""
 
 #: assets/js/index.js:1
 msgid "Configure the essential system pages required for your marketplace - including store registration, store dashboard."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Marketplace pages"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6353,15 +6468,7 @@ msgid "Set a custom base for your store URL. For example, in the URL: https://yo
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Customer-facing order presentation & invoicing"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Customers will see information for"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Choose which order statuses will send customers email notifications, PDF invoices, and display order details in their account."
+msgid "Orders shown to customers"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6393,11 +6500,7 @@ msgid "Customers receive both a single marketplace order and individual store or
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Enable content styling tools for stores"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "TinyMCE API"
+msgid "Enable store content styling with TinyMCE"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6406,10 +6509,6 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Shortcode library"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Available shortcodes"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6457,6 +6556,7 @@ msgid "Control which store information fields can be modified after a store has 
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store description"
 msgstr ""
 
@@ -6473,7 +6573,12 @@ msgid "Phone and email"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store name"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Store role capabilities"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6514,6 +6619,15 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Define what each store role can access and manage within the marketplace."
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Modules"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Manage marketplace features by enabling or disabling modules. Turning a module on activates its settings and workflows, while turning it off hides them from admin and stores."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6581,7 +6695,11 @@ msgid "Events Delivery"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Get notified about important updates. Choose how you want to receive notifications from your marketplace - by email, text message, or both."
+msgid "Get notified about important updates by email. Sender identity, SMS gateways, and the admin SMS number are now configured in VuloMail."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Notification recipients"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6593,127 +6711,11 @@ msgid "noreply@yourstore.com"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "The primary email address that will receive system and marketplace notifications."
+msgid "The primary email address that will receive system and marketplace notifications. VuloMail has no equivalent setting, so this stays here."
 msgstr ""
 
 #: assets/js/index.js:1
 msgid "You can add multiple email addresses separated by commas to notify additional recipients."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Receiver phone number"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "9000012345"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "The phone number that will receive SMS notifications. Use country code followed by phone number."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Email delivery settings"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Email provider"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Use the WordPress-supported SMTP plugin, which you can find here: <a href=\"https://wordpress.org/plugins/tags/smtp/\" target=\"_blank\">WordPress SMTP Plugins</a>.<br><strong>Important:</strong> <strong>Sender Email Address</strong> configured in your SMTP plugin match the sender email set in your email delivery setup settings.<br>Otherwise, WordPress may fall back to its default mail method."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Sender name"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Marketplace Team"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "The name that will appear in the \"From\" field of outgoing emails."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Sender email address"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "The email address from which marketplace notifications will be sent."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "The email address from which notifications are sent is provided. Test emails can be sent to confirm delivery."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "SMS delivery settings"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Sender phone number"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "4151234567"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "The phone number SMS messages are sent from. Use country code followed by phone number."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "SMS configuration"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Select SMS gateway"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Pick the SMS service your marketplace will use to send text alerts."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Vonage"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Account SID"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Send SMS notifications using Twilio.<br> Get your <strong>Account SID</strong> and <strong>Auth Token</strong> from your Twilio dashboard: <a href=\"https://www.twilio.com/console\" target=\"_blank\">Twilio Console</a>.<br> <strong>Important:</strong> Make sure the Account SID and Token you enter here match your Twilio account details exactly.<br> Follow Twilio’s setup instructions to complete the SMS gateway configuration."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Auth Token"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "API Key"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Send SMS notifications using Vonage (formerly Nexmo).<br> Get your <strong>API Key</strong> and <strong>API Secret</strong> from your Vonage dashboard: <a href=\"https://dashboard.nexmo.com\" target=\"_blank\">Vonage Dashboard</a>.<br> <strong>Important:</strong> Make sure the API Key and Secret you enter here match your Vonage account details exactly.<br> Follow Vonage’s setup instructions to complete the SMS gateway configuration."
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "API Secret"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "<ul> Send SMS notifications using Clickatell.<br> Get your <strong>API Key</strong> from your Clickatell dashboard: <a href=\"https://platform.clickatell.com/\" target=\"_blank\">Clickatell Dashboard</a>.<br> <strong>Important:</strong> Make sure the API Key you enter here matches your Clickatell account details exactly.<br> Follow Clickatell’s setup instructions to complete the SMS gateway configuration. </ul>"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Auth ID"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "<ul> Send SMS notifications using Plivo.<br> Get your <strong>Auth ID</strong> and <strong>Auth Token</strong> from your Plivo dashboard: <a href=\"https://console.plivo.com/\" target=\"_blank\">Plivo Console</a>.<br> <strong>Important:</strong> Make sure the Auth ID and Token you enter here match your Plivo account details exactly.<br> Follow Plivo’s setup instructions to complete the SMS gateway configuration. </ul>"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -6953,6 +6955,10 @@ msgid "Manage how store details are shared with customers, from branding and con
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Store Profile Visibility"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Store branding"
 msgstr ""
 
@@ -6961,6 +6967,7 @@ msgid "Decide which details appear with products and on store pages."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Logo"
 msgstr ""
 
@@ -7025,6 +7032,7 @@ msgid "Give stores the option to create their own policies instead of using mark
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping"
 msgstr ""
 
@@ -7093,6 +7101,7 @@ msgid "<b>Note</b>: Users can report products for various issues. When enabling 
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Great!"
 msgstr ""
 
@@ -7149,6 +7158,7 @@ msgid "When a listing contains these words, the system flags it"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Type tag…"
 msgstr ""
 
@@ -7245,6 +7255,7 @@ msgid "adminfont-verification9"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Identity Verification"
 msgstr ""
 
@@ -7397,11 +7408,15 @@ msgid "Decide which product/listing types, fields, and features stores can acces
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Allowed product/listing options"
+msgid "Product/listing options"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Select the product/listing fields stores can configure when adding or managing their products/listings."
+msgid "Choose which product types and editing sections stores can use when creating or updating products."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Allowed product/listing options"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7413,15 +7428,12 @@ msgid "Virtual"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Downloadable"
 msgstr ""
 
 #: assets/js/index.js:1
 msgid "Edit product/listing page blocks"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Control which product/listing data fields are available to stores when creating or editing products/listing."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7433,6 +7445,7 @@ msgid "Store can add description, and price of the product/listing."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stock & inventory"
 msgstr ""
 
@@ -7453,6 +7466,7 @@ msgid "Allow stores to add return, refund, or warranty policies to products/list
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product tag"
 msgstr ""
 
@@ -7481,10 +7495,6 @@ msgid "Product/listing category selection"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Choose whether stores follow a guided category selection flow or freely choose multiple categories."
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "<ul><li><strong>Hierarchical selection</strong> – Stores select categories through a structured parent-to-child hierarchy.</li><li><strong>Free selection</strong> – Stores can select multiple categories freely without following a hierarchy.</li></ul>"
 msgstr ""
 
@@ -7509,10 +7519,6 @@ msgid "SKU management for products/listing"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Choose how SKUs for simple, external, or parent products/listing are generated."
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "<ul><li><strong>Never (let me set them)</strong> – SKUs will not be generated automatically. Stores must manually enter a SKU.</li><li><strong>Using the product/listing slug (name)</strong> – Automatically generate the SKU from the product or listing slug if none is provided.</li><li><strong>Using the product/listing ID</strong> – Automatically generate the SKU using the product or listing ID if none is provided.</li></ul>"
 msgstr ""
 
@@ -7530,10 +7536,6 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "SKU space handling"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Choose how spaces in attribute names should be handled when generating SKUs."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7565,10 +7567,6 @@ msgid "Recommendation source"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Choose whether related products/listings are shown from the same store only or from the entire marketplace."
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "<ul><li>Same store - Show related products/listing only from the current store.</li><li>All stores - Show related products/listings from across the marketplace.</li><li>Do not display - Hide related products/listings completely.</li><ul>"
 msgstr ""
 
@@ -7585,7 +7583,12 @@ msgid "Do not display"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Loading..."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Settings not found."
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7718,6 +7721,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "Set a marketplace logo to strengthen brand identity across all connected stores."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Marketplace Branding"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -7889,6 +7896,7 @@ msgid "Packing Slip"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Pro"
 msgstr ""
 
@@ -7925,6 +7933,7 @@ msgid "Payment received and order is being prepared for shipment."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Paid"
 msgstr ""
 
@@ -8069,7 +8078,11 @@ msgid "Choose how new stores enter your marketplace, review them manually or all
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "New store registration approval"
+msgid "Store registration"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Approval method"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -8137,6 +8150,7 @@ msgid "Requires stores to submit government-issued documents, business address v
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store policies"
 msgstr ""
 
@@ -8229,10 +8243,12 @@ msgid "Location restriction"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "City"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "State"
 msgstr ""
 
@@ -8293,6 +8309,7 @@ msgid "Policies created by the admin are displayed by default. Stores can edit a
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store policy"
 msgstr ""
 
@@ -8301,6 +8318,7 @@ msgid "Admin-created shipping policies are displayed by default. Stores can modi
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping policy"
 msgstr ""
 
@@ -8309,6 +8327,7 @@ msgid "Admin creates refund policies. Stores can adjust them for their store."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refund policy"
 msgstr ""
 
@@ -8317,6 +8336,7 @@ msgid "Default cancellation, return, or exchange policies set by the admin are d
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Cancellation / return / exchange policy"
 msgstr ""
 
@@ -8381,6 +8401,7 @@ msgid "The store application has been rejected. Sellers can view the rejection r
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Permanently Rejected"
 msgstr ""
 
@@ -8393,6 +8414,7 @@ msgid "Post-activation flow"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Active"
 msgstr ""
 
@@ -8401,6 +8423,7 @@ msgid "The store is active and fully operational. Stores have complete access to
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Under Review"
 msgstr ""
 
@@ -8409,6 +8432,7 @@ msgid "The store is under review due to compliance concerns. Selling is paused, 
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Suspended"
 msgstr ""
 
@@ -8417,6 +8441,7 @@ msgid "The store has been suspended due to policy violations. Products are hidde
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Permanently Deactivated"
 msgstr ""
 
@@ -8457,6 +8482,11 @@ msgid "Site errors and events are logged for easy troubleshooting."
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Cache & Database Tools"
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Clear Transients"
 msgstr ""
 
@@ -8745,14 +8775,17 @@ msgid "Message shown to stores under review"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Address *"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Zip code"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Country"
 msgstr ""
 
@@ -8765,6 +8798,7 @@ msgid "Profile Image"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Upload Image"
 msgstr ""
 
@@ -8793,6 +8827,7 @@ msgid "Add your store’s contact details so customers can reach you easily thro
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Phone"
 msgstr ""
 
@@ -8801,6 +8836,7 @@ msgid "Email / Additional Email"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "General"
 msgstr ""
 
@@ -8809,6 +8845,7 @@ msgid "Update your store’s core information - name, slug, description, and buy
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Storefront link"
 msgstr ""
 
@@ -8825,6 +8862,7 @@ msgid "Enter your payment information and select the method you’d like to use 
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Payment Method"
 msgstr ""
 
@@ -8849,6 +8887,7 @@ msgid "Deactivation Reason"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage your store’s shipping method, pricing rules, and location-based rates."
 msgstr ""
 
@@ -8909,6 +8948,7 @@ msgid "Check your available balance and request a payout - your money, whenever 
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Notifications"
 msgstr ""
 
@@ -8933,14 +8973,17 @@ msgid "Track your order commissions and watch your earnings grow."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Order Overview"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Order Details"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Transaction Type"
 msgstr ""
 
@@ -8949,18 +8992,22 @@ msgid "Payment Mode"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Credit"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Debit"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Balance"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Error"
 msgstr ""
 
@@ -8985,10 +9032,12 @@ msgid "SKU:"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Qty"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Total"
 msgstr ""
 
@@ -9017,6 +9066,7 @@ msgid "Please Select a customer"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Postcode / ZIP"
 msgstr ""
 
@@ -9129,6 +9179,7 @@ msgid "Enter your product details - name, price, stock, and image & publish."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View"
 msgstr ""
 
@@ -9146,6 +9197,14 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "A clear, descriptive title that helps customers find your product"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Set competitive prices including any sale or discount options"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stock"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -9257,6 +9316,7 @@ msgid "Add Gallery Image"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store saved successfully!"
 msgstr ""
 
@@ -9285,11 +9345,12 @@ msgid "Hide Phone"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Order Amount"
+msgid "Amounts"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Commission Summary"
+#: assets/js/index.js:5
+msgid "Order Amount"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -9297,34 +9358,42 @@ msgid "Total Earned"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Tax Amount"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping Tax"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping Amount"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Platform Fee"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Facilitator Fee"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Gateway Fee"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View Commission"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Download CSV"
 msgstr ""
 
@@ -9333,22 +9402,27 @@ msgid "Details of commissions earned by your store for every order, including or
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Unpaid"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refunded"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Partially Refunded"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Cancelled"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Search..."
 msgstr ""
 
@@ -9373,6 +9447,7 @@ msgid "Store Verification"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Total Products"
 msgstr ""
 
@@ -9421,6 +9496,7 @@ msgid "Missing"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Upload"
 msgstr ""
 
@@ -9565,6 +9641,14 @@ msgid "Confirms the stores physical or operational business address."
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Percentage discount"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Fixed product discount"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Coupon code is required"
 msgstr ""
 
@@ -9629,31 +9713,31 @@ msgid "Allowed emails"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Discount Type"
+msgid "Created / Expiry"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Usage / Limit"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Expiry Date"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Select Coupon Type"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Percentage Discount"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Fixed Cart Discount"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Fixed Product Discount"
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Percentage"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Select Coupon Type"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -9685,6 +9769,11 @@ msgid "Delete Coupon"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Edit Product"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Customer Questions"
 msgstr ""
 
@@ -9697,19 +9786,8 @@ msgid "Saving..."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Order ID"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Qty:"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Order Status"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "SKU"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -9765,10 +9843,12 @@ msgid "Your first sale is just around the corner!"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Last Withdrawal"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stripe"
 msgstr ""
 
@@ -9777,14 +9857,17 @@ msgid "Direct to Local Bank (INR)"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "PayPal"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Earnings will appear here once you make a withdrawal."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View transaction history"
 msgstr ""
 
@@ -9805,6 +9888,7 @@ msgid "Start selling to discover your top products!"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commission Overview"
 msgstr ""
 
@@ -9825,6 +9909,7 @@ msgid "Refund requests will appear here when submitted."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Top Customers"
 msgstr ""
 
@@ -9837,6 +9922,7 @@ msgid "Store Activity"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Activity will show up here as your store grows!"
 msgstr ""
 
@@ -9869,30 +9955,32 @@ msgid "New"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No notifications"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View all notifications"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View all activities"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Type"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Cost"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Tax"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Error!"
 msgstr ""
 
@@ -9913,6 +10001,7 @@ msgid "Commission:"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Total:"
 msgstr ""
 
@@ -9957,6 +10046,7 @@ msgid "No billing address provided"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Payment method"
 msgstr ""
 
@@ -10021,6 +10111,7 @@ msgid "No access to view the order"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed"
 msgstr ""
 
@@ -10053,38 +10144,47 @@ msgid "Tracking Number"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Total Order Amount"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping Tax Amount"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commission Total"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commission Refunded"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Admin Net Earning"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Net Earning"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Grand Total"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage your store information and preferences"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Revenue breakdown"
 msgstr ""
 
@@ -10121,31 +10221,27 @@ msgid "Select Stock Status"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "In Stock"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Out of Stock"
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "On Backorder"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Stock"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Categories"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "-"
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "Copy URL"
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Categories"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -10157,6 +10253,7 @@ msgid "Products are created, updated, and managed for your store."
 msgstr ""
 
 #: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Auto Draft"
 msgstr ""
 
@@ -10201,6 +10298,11 @@ msgid "Passwords do not match"
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "View Order"
+msgstr ""
+
+#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refund Amount"
 msgstr ""
 
@@ -10213,10 +10315,6 @@ msgid "Zone Name"
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Region(s)"
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "Shipping Method(s)"
 msgstr ""
 
@@ -10224,2419 +10322,2489 @@ msgstr ""
 msgid "Add Shipping Method"
 msgstr ""
 
+#. translators: %s: Shipping method title.
 #: assets/js/index.js:1
+#, js-format
+msgid "Are you sure you want to delete \"%s\"?"
+msgstr ""
+
+#. translators: %s: Shipping method title.
+#: assets/js/index.js:3
+#, js-format
+msgid "Failed to delete \"%s\"."
+msgstr ""
+
+#. translators: %s: Shipping method title.
+#: assets/js/index.js:5
+#, js-format
+msgid "Error deleting \"%s\"."
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Add New Method"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Region(s)"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Zone-wise Shipping Configuration"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No shipping zones found"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Edit Shipping"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add Shipping"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Update"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Shipping Method"
+#: assets/js/index.js:5
+msgid "Local Pickup"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Local pickup"
+#: assets/js/index.js:5
+msgid "Local pickup shipping method"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Free shipping"
+#: assets/js/index.js:5
+msgid "Free shipping method"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Flat Rate"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Flat rate shipping method"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Shipping Method"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Local pickup"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Free shipping"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Enter cost"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Set the fee customers need to pay when choosing Local Pickup."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Min Order"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Coupon"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Minimum Order Cost"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Free shipping is applied when the order reaches a minimum amount. Enter that value in the Minimum Order Amount field."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enter a "
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "fixed amount"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid " or use a "
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "formula"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid " if you want shipping to change based on the number of items or order value."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Base shipping cost: <b>$10</b> + Heavy item adjustment: <b>$20</b>  Total shipping: <b>$30</b> <br> Leave empty if no additional cost is needed for this shipping class."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Cost of Shipping Class"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enter class cost"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "This amount is "
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "added to the base shipping cost."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>10 </b> Fixed base shipping cost <br><b> 10 + (2 × [qty]) </b> Base cost + $2 per item <br><b>10 + [fee percent='10'] - </b>  Base cost + 10% of order value <br>  Use <b>[qty]</b> for item count and <b>[fee percent='x']</b> for percentage-based fees. You can also set <b>min_fee or max_fee.</b> <br> If you're unsure, simply enter a <b>fixed amount like 10.</b>"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Method Type"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Choose your preferred shipping method."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Default Shipping Rules"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Set base rates that apply to all orders"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "This is the shipping cost applied to every order."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "This amount will be added to the Default Shipping Price for each additional product type in the cart."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "This amount will be added to the Default Shipping Price for each additional quantity of the same product."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "If the customer's order total exceeds this amount, shipping becomes free. Leave empty if you do not want to offer free shipping."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "NO Free Shipping"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "This is the fee customers need to pay if they choose Local Pickup as the delivery option."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Country-Specific Rates"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Country-specific rates will be added to the Default Shipping Price. If state/region rates are defined, the final shipping cost will be State Rate + Default Shipping Price."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Distance-wise Shipping Configuration"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Apply default shipping charge to orders that do not match any configured distance-based shipping range."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Distance Type"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Choose kilometers or miles based on your region so shipping charges are calculated correctly."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Kilometers (km)"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Miles (mi)"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Max Distance"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Set how far you are willing to deliver orders (leave blank to deliver everywhere)."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Set the fee for customers who pick up their order themselves (use 0 for free pickup, or leave blank to turn it off)."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Distance–Cost Rules"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Create custom shipping rates based on distance ranges. <br> For example, charge $5 for 0–10 km, $10 for 11–25 km, and $15 for 26–50 km. These rates replace the default fee so customers pay according to their delivery distance"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add Rule"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Up to"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No shipping methods are available at the moment."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Select Country"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Everywhere Else"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Select State"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add Country"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "State / Region Rates"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add State/Region"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Identity Documents"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Required"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Verify Now"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Required Information"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Social Profiles"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Verify via LinkedIn"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Verify via Google"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Verify via Facebook"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Verify via Twitter"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "You haven’t enabled any payment methods yet."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to update onboarding status"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Profile"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Set up how your store appears"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "The name shown on your store page and product listings."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Describe your store to help customers understand your business."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store logo"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Banner image (optional)"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Contact phone"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "United States"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "United Kingdom"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Canada"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Australia"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Payout Method"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Choose how you receive earnings"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Click to configure"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Other Methods"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Policies"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Set your selling rules."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refund & return policy"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping terms"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store terms and conditions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Government-issued ID"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Business address proof"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Registration or tax documents"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "First Product"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add at least one item"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product title"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product description"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Inventory"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product images"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add listings to your shop"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Search by an existing listing"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Search by"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "UPC"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "ISBN"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "to locate the right listing."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Find and add existing marketplace listings to start selling instantly or"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Create New listing"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Copy"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No Category"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Not found"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Followed On"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Followers"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "See all your store followers, engage with them, and grow your loyal customer base."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "See all customer reviews and ratings submitted for your store in one centralized list."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View customer reviews and respond to feedback to build trust with shoppers."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Use these tools if your store dashboard is showing outdated or incorrect information."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refresh store dashboard data"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Your dashboard stores temporary data (transients) to load faster. If your dashboard shows outdated information or recent changes are not visible, clearing the transients will refresh the data and display the latest updates."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Transaction"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Select Transaction Type"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Withdrawal"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reversed"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "COD received"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Financial Transactions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Track your earnings, withdrawals, and current balance at a glance."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Processed"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Upcoming"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Method"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Details of this commission including stores, order breakdown, and notes."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Associated Order"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Order Status"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Commission Notes"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commission Status"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commission Amount"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commission refund"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Activities"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Track important marketplace updates and activities, including order alerts, store notifications, and recent actions across the platform."
 msgstr ""
 
-#: assets/js/index.js:1
+#. translators: 1: Country name, 2: Number of visitors.
+#: assets/js/index.js:5
+#, js-format
+msgid "%1$s - %2$d visitor"
+msgid_plural "%1$s - %2$d visitors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/js/index.js:5
 msgid "View and keep track of your withdrawals."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Ready to withdraw"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Minimum required to withdraw - "
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "minimum required to withdraw"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No minimum"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reserve balance - "
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "reserve balance"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No reserve set"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Upcoming Balance"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "This amount is being processed and will be released "
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid " by the admin."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "automatically every hour."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No pending earning in clearence"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Free Withdrawals"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Then"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "fee"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Request Withdrawal"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Disburse payment"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Release earnings to your stores in a few simple steps - amount, payment processor, and an optional note."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Disburse"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Please configure a valid payment method before requesting a withdrawal."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Withdrawable balance"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Payment Processor"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No payment method saved"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View and configure your disbursement settings here."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Marketplace commissions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Configure"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commission Value"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Here you can enable or disable marketplace modules."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Deactivated"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Since"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Contact"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Lifetime Earning"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Primary Owner"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Storefront"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Contact"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Primary Owner"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Special characters are not allowed."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Slug cannot be blank"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Invalid phone number"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 #: modules/MarketplaceCompliance/assets/js/frontend.js:149
 msgid "Success"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Contact information"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store email(s)"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Tip:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "You can add multiple email addresses. All added emails will receive notifications."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Primary email:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Click the star icon to set an email as primary. This email will appear on your storefront, and all other email IDs will be hidden from display."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Communication address"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage store status"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Current status"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Learn what permissions each status provides, visit Store satus settings"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage storefront link"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Current storefront link"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store URL"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Social information"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to save store settings. Please try again."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Withdrawal methods"
 msgstr ""
 
 #. translators: %s: link to payment integration settings
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 #, js-format
 msgid "You haven’t enabled any payment methods yet. Configure payout options <a href=\"%s\">from here</a> to allow stores to receive their earnings."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store-specific commission"
 msgstr ""
 
 #. translators: %s: URL to the global commission settings page.
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 #, js-format
 msgid "Set the commission the <b>marketplace earns</b> from each store sale. If not set, the <a href=\"%s\">global commission</a> will automatically apply."
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Percentage"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store ownership"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Primary owner"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Primary owner cannot be removed."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Transfer"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Additional owners"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Email: "
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Co-owner"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add additional owner"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Method type"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Choose your preferred payment method."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "0.00"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "This amount will be added to the Default Shipping Price for each additional product type in the cart. Example: If Default Shipping is $5 and this is set to $2, a customer buying Product A and Product B will pay $5 (for Product A) + $2 (for Product B) = $7 total shipping."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "This amount will be added to the Default Shipping Price for each additional quantity of the same product. Example: If Default Shipping is $5 and this is set to $1, a customer buying 3 units of Product A will pay $5 (first unit) + $1 (second unit) + $1 (third unit) = $7 total shipping."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "If the customer's order total exceeds this amount, shipping becomes free. Leave this field empty if you do not want to offer free shipping."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "0"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Distance-Cost Rules"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Please enable or configure shipping methods to continue."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Registration Data"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store submitted application without filling out registration form."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "[Not Provided]"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Download Attachment"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store approved successfully!"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store rejected successfully!"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No store details available."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Optional note for approval or rejection"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reject store permanently"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Approve"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Registration Details"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Download PDF"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Activity Log"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Wallet Balance"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Requested Payout"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Recent payouts"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No recent payout"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Latest products"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "sku"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No recent products found."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Latest reviews"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Latest refunds"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store overview"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Compliance & records"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View details"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Information"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Payment"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Payment Methods"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Staff"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Staff"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View Storefront"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage status"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Delete store"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enter your description"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Registered since: "
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Primary Owner:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "0 Review"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage store deletion"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Choose the appropriate action to take when deleting this store."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Deletion method"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Change store owner"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Assign product to Admin"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Permanently Delete"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Assign new store owner"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product & store tools"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Multiple stores per product"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store reviews"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Follow store"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Privacy controls to show/hide store details)"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Confirm vendor identity with documents"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Bulk upload/download product via CSV"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Display store opening/closing times"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store can temporarily close shop with customer notice"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Assign assistants to your store and control what they can access"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid " Get paid without hassle"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Bank transfer"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "PayPal payout"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stripe connect"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Razorpay"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Real-time split payments"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid " Deliver seamless shopping experiences"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product Q&A"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Marketplace refunds"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product abuse report"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Invoices & packing slips"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Live chat"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Customer support"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product enquiry"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid " Ship the way you want"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Zone-based shipping"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Distance-based shipping"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Country restrictions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Weight-based shipping"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Per-product shipping"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid " Sell in different ways"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Optimize store & product SEO with Yoast or Rank Math"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Sales, revenue, and order reports"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store with different capabilities as per subsctiption plan"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Paid product promotions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Special pricing & bulk rules for groups"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Low-stock alerts, waitlists, inventory management"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Automate rules and commissions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Payment gateway fees"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Min/Max quantities"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Free vs Pro comparison"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "See what you get with MultiVendorX Pro"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Get Pro Access Today!"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Join 8,000+ successful marketplace owners"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Build, manage, and expand your marketplace with confidence. Loved by entrepreneurs globally."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Flexible selling models"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Effortless inventory control"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Intelligent alert system"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Secure seller onboarding"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Recurring revenue tools"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Upgrade Now"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Launch Setup Wizard"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Redirecting..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Plugin already installed. Redirecting to activate..."
 msgstr ""
 
 #. translators: %s: Plugin slug or plugin name.
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 #, js-format
 msgid "Could not install \"%s\"."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Step-by-step guides to set up and manage your marketplace."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Explore Docs"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Expert consultation"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Get tailored advice from our marketplace specialists."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Book Consultation"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Developer community"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Connect with our team and fellow builders on Discord."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Join Discord"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Facebook group"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Share experiences and tips with other marketplace owners."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Join Group"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Membership rewards & commission"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Verified stores only"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Diversified marketplace"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enable bookings, subscriptions, and auctions to boost sales and engagement."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Vacation mode for stores"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Never run out of stock"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Real-time inventory tracking with automatic low-stock alerts keeps sellers prepared and buyers happy."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Autopilot notifications"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Welcome to MultiVendorX"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Expand your WooCommerce store by creating a marketplace for multiple stores. Manage, grow, and scale seamlessly."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Build a professional marketplace"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Unlock advanced features and premium modules to create a marketplace that stands out."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Create, manage, and grow your marketplace with confidence. Trusted by thousands of entrepreneurs worldwide."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "15-day money-back guarantee"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View All"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Extend your website"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "CatalogX Pro"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Advanced product catalog with enhanced enquiry features and premium templates"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Get Pro"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "CatalogX"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Turn your store into a product catalog with enquiry-based sales"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Installing..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Install"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Notifima Pro"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Advanced stock alerts, wishlist features, and premium notification system"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Notifima"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Advanced stock alerts and wishlist features for WooCommerce"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Need help getting started?"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Marketplace Commission"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Email:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Earnings distribution"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Top Selling Coupons"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Used"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "times"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No top coupons found."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No top customers found."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Top Stores"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No top stores found."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to load dashboard data"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Items sold"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Net sales"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Date Created"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Revenue & Sales Comparison"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Net Sales"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Items Sold"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "item sold"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Uncategorized"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Revenue & Sales Comparison"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Net Sales"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "No product sales data found."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Total Sales:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No reviewed products found."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No top selling products found."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Revenue Distribution"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Active Stores"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Pending Stores"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Deactivated Stores"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Commission Summary"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Order Total"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Commission"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Admin Earnings"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Since"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Top revenue generating stores"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Account Overview"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Applied On"
+#: assets/js/index.js:5
+msgid "Desc"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enter reason for rejecting this store..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 #: modules/CustomerQueries/assets/js/frontend.js:29
 #: modules/StoreReview/assets/js/frontend.js:151
 msgid "Submitting..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enter reason for rejecting this product..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enter reason for rejecting this coupon..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Withdraw Amount"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to load notifications"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No payment method configured"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No recent payouts transactions found."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No pending earning in clearance"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Disburse Payment"
 msgstr ""
 
 #. translators: %s: Number of free withdrawals left.
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 #, js-format
 msgid "Burning 1 out of %s free withdrawals"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Free withdrawal limit reached"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Fee:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Actual withdrawal:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Free vs Pro"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Manage marketplace features by enabling or disabling modules. Turning a module on activates its settings and workflows, while turning it off hides them from admin and stores."
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage marketplace stores with ease. Review, edit, or add new stores anytime."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add Store"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Create a new store and set it up with essential details."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Slug"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "already exists."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Something went wrong while saving the store."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Primary owner is required."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store email is required."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store slug is required."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store name is required."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store slug"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Check Slug"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Available"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Email"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Profile image"
 msgstr ""
 
-#: assets/js/index.js:1
-msgid "Store Earning"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Marketplace Earning"
-msgstr ""
-
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Regenerate Commission"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Store Earning"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Marketplace Earning"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Details of commissions earned by each store for every order, including order amount, commission rate, and payout status."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage store reviews, support requests, financial transactions, and reported issues."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Looks like customer support isn’t set up yet!"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Turn on a support module to start assisting your customers."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Looks like the compliance module isn’t active yet!"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enable it to review and manage complaints about stores and products."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Eager to join the marketplace"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store in review queue"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Next in line! Approve or reject new store join requests."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Pending your approval"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Products awaiting review"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Approve these listings to start generating sales in your marketplace."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Need a quick review"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Coupons up for review"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Approve, decline, or tweak before they go live."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Queued for disbursement"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Withdrawals awaiting approval"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Review and process store payouts."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Deactivations"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Permanent store closure request"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stores requesting deactivation"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Approve or reject marketplace joiners."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Manage all pending administrative actions including approvals, payouts, and notifications."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Error fetching stores:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Wallet Transaction"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Direct Transaction"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Storewise Transaction History"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View and manage storewise transactions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Switch Store:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Real-time store payments"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Track all direct marketplace payments in real time from a single admin dashboard."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Jan"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Feb"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Mar"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Apr"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "May"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Jun"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Jul"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Aug"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No. of Orders"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Admin Commission"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Vendor Payout Pending"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Amount Refunds"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No. of Refunds"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Vendor Commission"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Vendor Net Commission"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Sub Total"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Marketplace"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Orders"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refunded Orders"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Track sales, earnings, and store performance with real-time marketplace insights."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "How to Set Up MultiVendorX Marketplace"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "A step-by-step guide to setting up your multivendor marketplace."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Vendor Dashboard Overview"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Learn everything about the vendor dashboard and features."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enable Vendor Subscriptions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Understand how to set up subscription-based vendor plans."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Facebook community"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Connect with other store owners, share tips, and get quick solutions."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "WordPress support forum"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Ask questions and get expert guidance from the WordPress community."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Our forum"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Discuss MultiVendorX features, report issues, and collaborate with other users."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Get real-time support from our team for setup, troubleshooting, and guidance."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Official documentation"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Step-by-step guides for every MultiVendorX feature."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "YouTube tutorials"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Watch videos on marketplace setup, store management, payments, and more."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "FAQs"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Quick answers to the most common questions about features and troubleshooting."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Coding support"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Professional help for customizations, integrations, and technical issues."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Get fast help, expert guidance, and easy-to-follow resources - all in one place."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Community & forums"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Documentation & Learning"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "What's New"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Get Support"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Community"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Request a Feature"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Import Dummy Data"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>Earn from store memberships:</b> Create paid plans and charge stores to join or access special features on your marketplace."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>Automatic tax invoices:</b> Generate clear invoices for orders, commissions, and payouts so your records stay organized."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>Franchise marketplaces:</b> Let partners operate their own local version of your marketplace under your brand."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>Earn recurring income:</b> Allow stores to sell subscription products and generate regular monthly or yearly revenue."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>Sell services and bookings:</b> Let stores accept bookings for services, appointments, rentals, or experiences."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>Create a rental marketplace:</b> Allow products to be rented for specific dates instead of being purchased permanently."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>Verified stores:</b> Verify store identities using documents and badges to help customers trust your marketplace."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "<b>Vacation mode for stores:</b> Stores can temporarily pause orders during holidays while keeping their products visible."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Modules & Settings"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Get a hands-on feel of your marketplace in minutes."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Get a hands-on feel of your marketplace in minutes. Import demo stores, store owners, products, and commission data to see how everything works together."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Important:"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Delete all demo data before going live so your real marketplace data stays clean and reliable."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Dummy data imported successfully!"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to import dummy data."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Importing store owners..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store owners imported"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to import store owners"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Creating stores..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stores created"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to create stores"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Importing products..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Products imported"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to import products"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Creating commissions..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Commissions created"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to create commissions"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Creating orders..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Orders created"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to create orders"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Creating reviews..."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reviews created"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to create reviews"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Import"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Migrate successfully!"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Failed to migrate."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
+msgid "Light mode"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Dark mode"
+msgstr ""
+
+#: assets/js/index.js:5
 msgid "Add product"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "View storefront"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Full Screen"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "My Profile"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Store Settings"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Switch stores"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Sign Out"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Click here to reapply"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No active store selected for this user."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "To get started, register your store."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Create your store"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "You do not have permission to access this page."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Contact Admin"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "404 not found"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Attributes"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Define product attributes such as size, color, or material. These attributes can be used to create product variations and help customers choose the right option."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add variants Like size or color"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add New Attribute"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Option value"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add another value"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No variant name"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Select or Upload File"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Use this file"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "No downloadable files added"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Add new"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Download limit"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Download Expiry"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Track your available quantity and let customers know what's in stock."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stock management"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Used to identify this product in your inventory."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "GTIN, UPC, EAN, or ISBN"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Enter the product identifier (GTIN, UPC, EAN, or ISBN)."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Stock Status"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Quantity"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Allow backorders?"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Low stock threshold"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Define the minimum and maximum values."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Policies - What should customers know before they buy?"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Being upfront about shipping, returns, and cancellations builds trust and reduces disputes later."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping policy - How will you ship it and how long will it take?"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Refund policy - Can customers return or exchange it?"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Cancellation policy - Can they cancel their order after placing it?"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Where should this product appear in your store?"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Reset"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shop and search results"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shop only"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Search results only"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Hidden"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Publishing"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Featured product"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Catalog Visibility"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Product Status"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Cataloged at"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Related products - Suggest other products from your shop"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Help customers discover more of what you sell - great for increasing your average order size."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Recommend alongside this product"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shown as \"You might also like\" on the product page."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Offer as an add-on at checkout"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Suggested when a customer adds this item to their cart."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "How will this be delivered?"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Choose how customers receive this product after purchase."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Physical - I pack and post it"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Item is packed and shipped to the customer address."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Customer receives digital file - e.g. a PDF, software etc."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Digital service - Delivered online"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Remote service only. No shipping or downloadable files."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Something else"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Anything that does not fit the above."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Package dimensions & weight"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Used to calculate accurate shipping rates at checkout."
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Weight (kg)"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Shipping classes"
 msgstr ""
 
-#: assets/js/index.js:1
+#: assets/js/index.js:5
 msgid "Length"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Fulfilled"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Refund Rejected"
+msgstr ""
+
+#: assets/js/index.js:5
+msgid "Refund Requested"
 msgstr ""
 
 #: modules/FollowStore/assets/js/frontend.js:46

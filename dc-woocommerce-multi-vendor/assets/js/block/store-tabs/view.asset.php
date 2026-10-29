@@ -5,5 +5,5 @@
 		'wp-element',
 		'wp-polyfill'
 	),
-	'version' => '6b18478a9d576484fe4d'
+	'version' => '94fc3a8d876197c84cba'
 );
